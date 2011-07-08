@@ -7,13 +7,16 @@ The software is written in python. You must have python 2.x and the [Python Imag
 
 A number of artwork files are supported. The most recent files include:
 
-    .../iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Shared@2x.artwork
-    .../iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Shared~ipad.artwork
-    .../iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Shared~iphone.artwork
+    .../iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Shared@2x.artwork
+    .../iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Shared~ipad.artwork
+    .../iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Shared~iphone.artwork
+    .../iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Keyboard-Emoji@2x.artwork
         
 To get going, download the python source code.
 
-Next, find the appropriate artwork files on disk. This tool supports iOS 2.0.0, 2.2.0, 3.2.0, 4.1.0, and 4.2.1 artwork files.
+Next, find the appropriate artwork files on disk. This tool supports iOS 2.0.0, 2.2.0, 3.2.0, 4.1.0, 4.2.1, and 4.3.2 artwork files.
+
+I apologize that there isn't a GUI version of this just yet. That would make things a lot easier and I have it on my list of stuff to do somewhere down the road...
 
 ### EXPORTING
 
