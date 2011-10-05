@@ -97,6 +97,10 @@ class ArtworkSetInformation(Struct):
     def name(self):
         return CFString(self.endian, self.data, self.set_name_offset).string
     
+    @property
+    def is_2x(self):
+        return "@2x" in self.name
+    
     def read_offset(self, offset):
         """Dereference an address found at `offset`"""
         return struct.unpack_from('%sL' % self.endian, self.data, offset)[0]
@@ -110,11 +114,16 @@ class ArtworkSetInformation(Struct):
             ai = ArtworkSizeInformation(self.endian, self.data, size_offset)
             name_pointer = self.read_offset(name_offset)
             name_cfstring = CFString(self.endian, self.data, name_pointer)
-            
+
             size_offset += ArtworkSizeInformation.SIZE
             name_offset += 4
             
-            yield (name_cfstring.string, ai)
+            final_name_string = name_cfstring.string
+            if self.is_2x:
+                final_name_split = final_name_string.split('.')
+                final_name_string = "%s@2x.%s" % (final_name_split[0], final_name_split[1])
+            
+            yield (final_name_string, ai)
             
     
 #-------------------------------------------------------------------------------
@@ -122,8 +131,30 @@ class ArtworkSetInformation(Struct):
 #-------------------------------------------------------------------------------
 
 class ArtworkSizeInformation(Struct):
-    """Appears to be struct { unsigned long offset_into_artwork_file; unsigned int width; unsigned int height; }"""
+    """
+    Appears to be struct 
+    { 
+        unsigned int24_t offset_into_artwork_file; 
+        unsigned char flags; // these are deep and mysterious.
+        unsigned int width; 
+        unsigned int height; 
+    }
+    """
     SIZE = 8
     def __init__(self, endian, data, offset):
         super(ArtworkSizeInformation, self).__init__()
-        self.offset, self.width, self.height = struct.unpack_from(("%sLHH" % endian), data, offset)
+        offset_with_flags, self.width, self.height = struct.unpack_from(("%sLHH" % endian), data, offset)
+        self.flags = (offset_with_flags & 0xFF) # Flags only
+        self.offset = (offset_with_flags & 0xFFFFFF00) # Remove the flags
+        
+    @property
+    def is_premultiplied_alpha(self):
+        return True # Appears to be true for all images
+        
+    @property
+    def is_greyscale(self):
+        # HACK. I only _think_ this is correct. It seems to be.
+        return (self.flags & 0x02) != 0
+    
+    
+        

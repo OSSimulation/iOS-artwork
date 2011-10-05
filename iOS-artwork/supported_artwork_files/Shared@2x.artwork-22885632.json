@@ -1,4570 +1,5331 @@
 {
     "images": [
         [
-            "AssistNext.png", 
+            "AssistNext@2x.png", 
             32, 
             40, 
+            0, 
             0
         ], 
         [
-            "AssistPrevious.png", 
+            "AssistPrevious@2x.png", 
             32, 
             40, 
-            8192
+            8192, 
+            0
         ], 
         [
-            "Black_0_Bars.png", 
+            "Black_0_Bars@2x.png", 
             38, 
             40, 
-            16384
+            16384, 
+            0
         ], 
         [
-            "Black_0_WifiBars.png", 
+            "Black_0_WifiBars@2x.png", 
             40, 
             40, 
-            24576
+            24576, 
+            0
         ], 
         [
-            "Black_1_Bars.png", 
+            "Black_1_Bars@2x.png", 
             38, 
             40, 
-            32768
+            32768, 
+            0
         ], 
         [
-            "Black_1_WifiBars.png", 
+            "Black_1_WifiBars@2x.png", 
             40, 
             40, 
-            40960
+            40960, 
+            0
         ], 
         [
-            "Black_2_Bars.png", 
+            "Black_2_Bars@2x.png", 
             38, 
             40, 
-            49152
+            49152, 
+            0
         ], 
         [
-            "Black_2_WifiBars.png", 
+            "Black_2_WifiBars@2x.png", 
             40, 
             40, 
-            57344
+            57344, 
+            0
         ], 
         [
-            "Black_3_Bars.png", 
+            "Black_3_Bars@2x.png", 
             38, 
             40, 
-            65536
+            65536, 
+            0
         ], 
         [
-            "Black_3_WifiBars.png", 
+            "Black_3_WifiBars@2x.png", 
             40, 
             40, 
-            73728
+            73728, 
+            0
         ], 
         [
-            "Black_4_Bars.png", 
+            "Black_4_Bars@2x.png", 
             38, 
             40, 
-            81920
+            81920, 
+            0
         ], 
         [
-            "Black_5_Bars.png", 
+            "Black_5_Bars@2x.png", 
             38, 
             40, 
-            90112
+            90112, 
+            0
         ], 
         [
-            "Black_Airplane.png", 
+            "Black_Airplane@2x.png", 
             32, 
             40, 
-            98304
+            98304, 
+            0
         ], 
         [
-            "Black_Alarm.png", 
+            "Black_Alarm@2x.png", 
             20, 
             40, 
-            106496
+            106496, 
+            0
         ], 
         [
-            "Black_Base.png", 
+            "Black_Base@2x.png", 
             10, 
             40, 
-            110593
+            110592, 
+            1
         ], 
         [
-            "Black_BatteryCharged.png", 
+            "Black_BatteryCharged@2x.png", 
             42, 
             40, 
-            114688
+            114688, 
+            0
         ], 
         [
-            "Black_BatteryCharging.png", 
+            "Black_BatteryCharging@2x.png", 
             42, 
             40, 
-            122880
+            122880, 
+            0
         ], 
         [
-            "Black_BatteryDrainingBG.png", 
+            "Black_BatteryDrainingBG@2x.png", 
             42, 
             40, 
-            131072
+            131072, 
+            0
         ], 
         [
-            "Black_BatteryDrainingInsides.png", 
+            "Black_BatteryDrainingInsides@2x.png", 
             6, 
             40, 
-            139264
+            139264, 
+            0
         ], 
         [
-            "Black_BatteryDrainingInsidesLow.png", 
+            "Black_BatteryDrainingInsidesLow@2x.png", 
             6, 
             40, 
-            143360
+            143360, 
+            0
         ], 
         [
-            "Black_Bluetooth.png", 
+            "Black_Bluetooth@2x.png", 
             22, 
             40, 
-            147456
+            147456, 
+            0
         ], 
         [
-            "Black_BluetoothConnected.png", 
+            "Black_BluetoothConnected@2x.png", 
             22, 
             40, 
-            151552
+            151552, 
+            0
         ], 
         [
-            "Black_CARRIER_IPOD.png", 
+            "Black_CARRIER_IPOD@2x.png", 
             50, 
             40, 
-            155648
+            155648, 
+            0
         ], 
         [
-            "Black_CallForward.png", 
+            "Black_CallForward@2x.png", 
             24, 
             40, 
-            167936
+            167936, 
+            0
         ], 
         [
-            "Black_DataTypeEDGE.png", 
+            "Black_DataTypeEDGE@2x.png", 
             12, 
             40, 
-            172032
+            172032, 
+            0
         ], 
         [
-            "Black_DataTypeGPRS.png", 
+            "Black_DataTypeGPRS@2x.png", 
             14, 
             40, 
-            176128
+            176128, 
+            0
         ], 
         [
-            "Black_DataTypeUMTS.png", 
+            "Black_DataTypeUMTS@2x.png", 
             30, 
             40, 
-            180224
+            180224, 
+            0
         ], 
         [
-            "Black_DataTypeiOSHotspot.png", 
+            "Black_DataTypeiOSHotspot@2x.png", 
             34, 
             40, 
-            188416
+            188416, 
+            0
         ], 
         [
-            "Black_HeadsetBatteryBG.png", 
+            "Black_HeadsetBatteryBG@2x.png", 
             38, 
             40, 
-            196608
+            196608, 
+            0
         ], 
         [
-            "Black_Location.png", 
+            "Black_Location@2x.png", 
             23, 
             40, 
-            204800
+            204800, 
+            0
         ], 
         [
-            "Black_Lock.png", 
+            "Black_Lock@2x.png", 
             20, 
             40, 
-            208896
+            208896, 
+            0
         ], 
         [
-            "Black_PercentLow_%.png", 
+            "Black_PercentLow_%@2x.png", 
             24, 
             40, 
-            212992
+            212992, 
+            0
         ], 
         [
-            "Black_PercentLow_0.png", 
+            "Black_PercentLow_0@2x.png", 
             16, 
             40, 
-            217088
+            217088, 
+            0
         ], 
         [
-            "Black_PercentLow_1.png", 
+            "Black_PercentLow_1@2x.png", 
             10, 
             40, 
-            221184
+            221184, 
+            0
         ], 
         [
-            "Black_PercentLow_2.png", 
+            "Black_PercentLow_2@2x.png", 
             14, 
             40, 
-            225280
+            225280, 
+            0
         ], 
         [
-            "Black_PercentLow_3.png", 
+            "Black_PercentLow_3@2x.png", 
             14, 
             40, 
-            229376
+            229376, 
+            0
         ], 
         [
-            "Black_PercentLow_4.png", 
+            "Black_PercentLow_4@2x.png", 
             16, 
             40, 
-            233472
+            233472, 
+            0
         ], 
         [
-            "Black_PercentLow_5.png", 
+            "Black_PercentLow_5@2x.png", 
             14, 
             40, 
-            237568
+            237568, 
+            0
         ], 
         [
-            "Black_PercentLow_6.png", 
+            "Black_PercentLow_6@2x.png", 
             14, 
             40, 
-            241664
+            241664, 
+            0
         ], 
         [
-            "Black_PercentLow_7.png", 
+            "Black_PercentLow_7@2x.png", 
             14, 
             40, 
-            245760
+            245760, 
+            0
         ], 
         [
-            "Black_PercentLow_8.png", 
+            "Black_PercentLow_8@2x.png", 
             14, 
             40, 
-            249856
+            249856, 
+            0
         ], 
         [
-            "Black_PercentLow_9.png", 
+            "Black_PercentLow_9@2x.png", 
             14, 
             40, 
-            253952
+            253952, 
+            0
         ], 
         [
-            "Black_Percent_%.png", 
+            "Black_Percent_%@2x.png", 
             24, 
             40, 
-            258048
+            258048, 
+            0
         ], 
         [
-            "Black_Percent_0.png", 
+            "Black_Percent_0@2x.png", 
             16, 
             40, 
-            262144
+            262144, 
+            0
         ], 
         [
-            "Black_Percent_1.png", 
+            "Black_Percent_1@2x.png", 
             10, 
             40, 
-            266240
+            266240, 
+            0
         ], 
         [
-            "Black_Percent_2.png", 
+            "Black_Percent_2@2x.png", 
             14, 
             40, 
-            270336
+            270336, 
+            0
         ], 
         [
-            "Black_Percent_3.png", 
+            "Black_Percent_3@2x.png", 
             14, 
             40, 
-            274432
+            274432, 
+            0
         ], 
         [
-            "Black_Percent_4.png", 
+            "Black_Percent_4@2x.png", 
             16, 
             40, 
-            278528
+            278528, 
+            0
         ], 
         [
-            "Black_Percent_5.png", 
+            "Black_Percent_5@2x.png", 
             14, 
             40, 
-            282624
+            282624, 
+            0
         ], 
         [
-            "Black_Percent_6.png", 
+            "Black_Percent_6@2x.png", 
             14, 
             40, 
-            286720
+            286720, 
+            0
         ], 
         [
-            "Black_Percent_7.png", 
+            "Black_Percent_7@2x.png", 
             14, 
             40, 
-            290816
+            290816, 
+            0
         ], 
         [
-            "Black_Percent_8.png", 
+            "Black_Percent_8@2x.png", 
             14, 
             40, 
-            294912
+            294912, 
+            0
         ], 
         [
-            "Black_Percent_9.png", 
+            "Black_Percent_9@2x.png", 
             14, 
             40, 
-            299008
+            299008, 
+            0
         ], 
         [
-            "Black_Play.png", 
+            "Black_Play@2x.png", 
             20, 
             40, 
-            303104
+            303104, 
+            0
         ], 
         [
-            "Black_Plus.png", 
+            "Black_Plus@2x.png", 
             20, 
             40, 
-            307200
+            307200, 
+            0
         ], 
         [
-            "Black_RotationLock.png", 
+            "Black_RotationLock@2x.png", 
             40, 
             40, 
-            311296
+            311296, 
+            0
         ], 
         [
-            "Black_TTY.png", 
+            "Black_TTY@2x.png", 
             22, 
             40, 
-            319488
+            319488, 
+            0
         ], 
         [
-            "Black_VPN.png", 
+            "Black_VPN@2x.png", 
             40, 
             40, 
-            323584
+            323584, 
+            0
         ], 
         [
-            "Corners_Black.png", 
+            "Corners_Black@2x.png", 
             8, 
             8, 
-            331776
+            331776, 
+            0
         ], 
         [
-            "Error_Base.png", 
+            "Error_Base@2x.png", 
             2, 
             40, 
-            335872
+            335872, 
+            0
         ], 
         [
-            "GradientFill.png", 
+            "GradientFill@2x.png", 
             2, 
             444, 
-            339969
+            339968, 
+            1
         ], 
         [
-            "InCall_Base.png", 
+            "InCall_Base@2x.png", 
             640, 
             80, 
-            356352
+            356352, 
+            0
         ], 
         [
-            "InCall_Glow.png", 
+            "InCall_Glow@2x.png", 
             640, 
             80, 
-            561152
+            561152, 
+            0
         ], 
         [
-            "InVideoConference_Base.png", 
+            "InVideoConference_Base@2x.png", 
             640, 
             80, 
-            765952
+            765952, 
+            0
         ], 
         [
-            "InVideoConference_Glow.png", 
+            "InVideoConference_Glow@2x.png", 
             640, 
             80, 
-            970752
+            970752, 
+            0
         ], 
         [
-            "LSbody.png", 
+            "LSbody@2x.png", 
             960, 
             536, 
-            1175553
+            1175552, 
+            1
         ], 
         [
-            "LSedgeTopMarginThin.png", 
+            "LSedgeTopMarginThin@2x.png", 
             960, 
             22, 
-            3235840
+            3235840, 
+            0
         ], 
         [
-            "ProgressBarInnerLeft_Gray.png", 
+            "ProgressBarInnerLeft_Gray@2x.png", 
             12, 
             24, 
-            3321856
+            3321856, 
+            0
         ], 
         [
-            "ProgressBarInnerLeft_White.png", 
+            "ProgressBarInnerLeft_White@2x.png", 
             12, 
             24, 
-            3325952
+            3325952, 
+            0
         ], 
         [
-            "ProgressBarInnerRight_Gray.png", 
+            "ProgressBarInnerRight_Gray@2x.png", 
             12, 
             24, 
-            3330048
+            3330048, 
+            0
         ], 
         [
-            "ProgressBarInnerRight_White.png", 
+            "ProgressBarInnerRight_White@2x.png", 
             12, 
             24, 
-            3334144
+            3334144, 
+            0
         ], 
         [
-            "ProgressBarInner_Bar.png", 
+            "ProgressBarInner_Bar@2x.png", 
             22, 
             22, 
-            3338240
+            3338240, 
+            0
         ], 
         [
-            "ProgressBarInner_Default.png", 
+            "ProgressBarInner_Default@2x.png", 
             22, 
             18, 
-            3342336
+            3342336, 
+            0
         ], 
         [
-            "ProgressBarOuterLeft_Gray.png", 
-            18, 
-            36, 
-            3346432
-        ], 
-        [
-            "ProgressBarOuterLeft_White.png", 
+            "ProgressBarOuterLeft_Gray@2x.png", 
             18, 
             36, 
-            3350528
+            3346432, 
+            0
         ], 
         [
-            "ProgressBarOuterRight_Gray.png", 
+            "ProgressBarOuterLeft_White@2x.png", 
             18, 
             36, 
-            3354624
+            3350528, 
+            0
         ], 
         [
-            "ProgressBarOuterRight_White.png", 
+            "ProgressBarOuterRight_Gray@2x.png", 
             18, 
             36, 
-            3358720
+            3354624, 
+            0
         ], 
         [
-            "ProgressBarOuter_Bar.png", 
-            22, 
-            22, 
-            3362816
+            "ProgressBarOuterRight_White@2x.png", 
+            18, 
+            36, 
+            3358720, 
+            0
         ], 
         [
-            "ProgressBarOuter_Default.png", 
+            "ProgressBarOuter_Bar@2x.png", 
+            22, 
+            22, 
+            3362816, 
+            0
+        ], 
+        [
+            "ProgressBarOuter_Default@2x.png", 
             22, 
             18, 
-            3366912
+            3366912, 
+            0
         ], 
         [
-            "ProgressGear10_Gray.png", 
+            "ProgressGear10_Gray@2x.png", 
             40, 
             40, 
-            3371008
+            3371008, 
+            0
         ], 
         [
-            "ProgressGear10_Gray_small.png", 
+            "ProgressGear10_Gray_small@2x.png", 
             28, 
             30, 
-            3379200
+            3379200, 
+            0
         ], 
         [
-            "ProgressGear10_White.png", 
+            "ProgressGear10_White@2x.png", 
             40, 
             40, 
-            3383296
+            3383296, 
+            0
         ], 
         [
-            "ProgressGear10_White_large.png", 
+            "ProgressGear10_White_large@2x.png", 
             74, 
             74, 
-            3391488
+            3391488, 
+            0
         ], 
         [
-            "ProgressGear10_White_small.png", 
+            "ProgressGear10_White_small@2x.png", 
             28, 
             30, 
-            3416064
+            3416064, 
+            0
         ], 
         [
-            "ProgressGear11_Gray.png", 
+            "ProgressGear11_Gray@2x.png", 
             40, 
             40, 
-            3420160
+            3420160, 
+            0
         ], 
         [
-            "ProgressGear11_Gray_small.png", 
+            "ProgressGear11_Gray_small@2x.png", 
             28, 
             30, 
-            3428352
+            3428352, 
+            0
         ], 
         [
-            "ProgressGear11_White.png", 
+            "ProgressGear11_White@2x.png", 
             40, 
             40, 
-            3432448
+            3432448, 
+            0
         ], 
         [
-            "ProgressGear11_White_large.png", 
+            "ProgressGear11_White_large@2x.png", 
             74, 
             74, 
-            3440640
+            3440640, 
+            0
         ], 
         [
-            "ProgressGear11_White_small.png", 
+            "ProgressGear11_White_small@2x.png", 
             28, 
             30, 
-            3465216
+            3465216, 
+            0
         ], 
         [
-            "ProgressGear12_Gray.png", 
+            "ProgressGear12_Gray@2x.png", 
             40, 
             40, 
-            3469312
+            3469312, 
+            0
         ], 
         [
-            "ProgressGear12_Gray_small.png", 
+            "ProgressGear12_Gray_small@2x.png", 
             28, 
             30, 
-            3477504
+            3477504, 
+            0
         ], 
         [
-            "ProgressGear12_White.png", 
+            "ProgressGear12_White@2x.png", 
             40, 
             40, 
-            3481600
+            3481600, 
+            0
         ], 
         [
-            "ProgressGear12_White_large.png", 
+            "ProgressGear12_White_large@2x.png", 
             74, 
             74, 
-            3489792
+            3489792, 
+            0
         ], 
         [
-            "ProgressGear12_White_small.png", 
+            "ProgressGear12_White_small@2x.png", 
             28, 
             30, 
-            3514368
+            3514368, 
+            0
         ], 
         [
-            "ProgressGear13_Gray_small.png", 
+            "ProgressGear13_Gray_small@2x.png", 
             28, 
             30, 
-            3518464
+            3518464, 
+            0
         ], 
         [
-            "ProgressGear13_White_small.png", 
+            "ProgressGear13_White_small@2x.png", 
             28, 
             30, 
-            3522560
+            3522560, 
+            0
         ], 
         [
-            "ProgressGear14_Gray_small.png", 
+            "ProgressGear14_Gray_small@2x.png", 
             28, 
             30, 
-            3526656
+            3526656, 
+            0
         ], 
         [
-            "ProgressGear14_White_small.png", 
+            "ProgressGear14_White_small@2x.png", 
             28, 
             30, 
-            3530752
+            3530752, 
+            0
         ], 
         [
-            "ProgressGear15_Gray_small.png", 
+            "ProgressGear15_Gray_small@2x.png", 
             28, 
             30, 
-            3534848
+            3534848, 
+            0
         ], 
         [
-            "ProgressGear15_White_small.png", 
+            "ProgressGear15_White_small@2x.png", 
             28, 
             30, 
-            3538944
+            3538944, 
+            0
         ], 
         [
-            "ProgressGear16_Gray_small.png", 
+            "ProgressGear16_Gray_small@2x.png", 
             28, 
             30, 
-            3543040
+            3543040, 
+            0
         ], 
         [
-            "ProgressGear16_White_small.png", 
+            "ProgressGear16_White_small@2x.png", 
             28, 
             30, 
-            3547136
+            3547136, 
+            0
         ], 
         [
-            "ProgressGear1_Gray.png", 
+            "ProgressGear1_Gray@2x.png", 
             40, 
             40, 
-            3551232
+            3551232, 
+            0
         ], 
         [
-            "ProgressGear1_Gray_small.png", 
+            "ProgressGear1_Gray_small@2x.png", 
             28, 
             30, 
-            3559424
+            3559424, 
+            0
         ], 
         [
-            "ProgressGear1_White.png", 
+            "ProgressGear1_White@2x.png", 
             40, 
             40, 
-            3563520
+            3563520, 
+            0
         ], 
         [
-            "ProgressGear1_White_large.png", 
+            "ProgressGear1_White_large@2x.png", 
             74, 
             74, 
-            3571712
+            3571712, 
+            0
         ], 
         [
-            "ProgressGear1_White_small.png", 
+            "ProgressGear1_White_small@2x.png", 
             28, 
             30, 
-            3596288
+            3596288, 
+            0
         ], 
         [
-            "ProgressGear2_Gray.png", 
+            "ProgressGear2_Gray@2x.png", 
             40, 
             40, 
-            3600384
+            3600384, 
+            0
         ], 
         [
-            "ProgressGear2_Gray_small.png", 
+            "ProgressGear2_Gray_small@2x.png", 
             28, 
             30, 
-            3608576
+            3608576, 
+            0
         ], 
         [
-            "ProgressGear2_White.png", 
+            "ProgressGear2_White@2x.png", 
             40, 
             40, 
-            3612672
+            3612672, 
+            0
         ], 
         [
-            "ProgressGear2_White_large.png", 
+            "ProgressGear2_White_large@2x.png", 
             74, 
             74, 
-            3620864
+            3620864, 
+            0
         ], 
         [
-            "ProgressGear2_White_small.png", 
+            "ProgressGear2_White_small@2x.png", 
             28, 
             30, 
-            3645440
+            3645440, 
+            0
         ], 
         [
-            "ProgressGear3_Gray.png", 
+            "ProgressGear3_Gray@2x.png", 
             40, 
             40, 
-            3649536
+            3649536, 
+            0
         ], 
         [
-            "ProgressGear3_Gray_small.png", 
+            "ProgressGear3_Gray_small@2x.png", 
             28, 
             30, 
-            3657728
+            3657728, 
+            0
         ], 
         [
-            "ProgressGear3_White.png", 
+            "ProgressGear3_White@2x.png", 
             40, 
             40, 
-            3661824
+            3661824, 
+            0
         ], 
         [
-            "ProgressGear3_White_large.png", 
+            "ProgressGear3_White_large@2x.png", 
             74, 
             74, 
-            3670016
+            3670016, 
+            0
         ], 
         [
-            "ProgressGear3_White_small.png", 
+            "ProgressGear3_White_small@2x.png", 
             28, 
             30, 
-            3694592
+            3694592, 
+            0
         ], 
         [
-            "ProgressGear4_Gray.png", 
+            "ProgressGear4_Gray@2x.png", 
             40, 
             40, 
-            3698688
+            3698688, 
+            0
         ], 
         [
-            "ProgressGear4_Gray_small.png", 
+            "ProgressGear4_Gray_small@2x.png", 
             28, 
             30, 
-            3706880
+            3706880, 
+            0
         ], 
         [
-            "ProgressGear4_White.png", 
+            "ProgressGear4_White@2x.png", 
             40, 
             40, 
-            3710976
+            3710976, 
+            0
         ], 
         [
-            "ProgressGear4_White_large.png", 
+            "ProgressGear4_White_large@2x.png", 
             74, 
             74, 
-            3719168
+            3719168, 
+            0
         ], 
         [
-            "ProgressGear4_White_small.png", 
+            "ProgressGear4_White_small@2x.png", 
             28, 
             30, 
-            3743744
+            3743744, 
+            0
         ], 
         [
-            "ProgressGear5_Gray.png", 
+            "ProgressGear5_Gray@2x.png", 
             40, 
             40, 
-            3747840
+            3747840, 
+            0
         ], 
         [
-            "ProgressGear5_Gray_small.png", 
+            "ProgressGear5_Gray_small@2x.png", 
             28, 
             30, 
-            3756032
+            3756032, 
+            0
         ], 
         [
-            "ProgressGear5_White.png", 
+            "ProgressGear5_White@2x.png", 
             40, 
             40, 
-            3760128
+            3760128, 
+            0
         ], 
         [
-            "ProgressGear5_White_large.png", 
+            "ProgressGear5_White_large@2x.png", 
             74, 
             74, 
-            3768320
+            3768320, 
+            0
         ], 
         [
-            "ProgressGear5_White_small.png", 
+            "ProgressGear5_White_small@2x.png", 
             28, 
             30, 
-            3792896
+            3792896, 
+            0
         ], 
         [
-            "ProgressGear6_Gray.png", 
+            "ProgressGear6_Gray@2x.png", 
             40, 
             40, 
-            3796992
+            3796992, 
+            0
         ], 
         [
-            "ProgressGear6_Gray_small.png", 
+            "ProgressGear6_Gray_small@2x.png", 
             28, 
             30, 
-            3805184
+            3805184, 
+            0
         ], 
         [
-            "ProgressGear6_White.png", 
+            "ProgressGear6_White@2x.png", 
             40, 
             40, 
-            3809280
+            3809280, 
+            0
         ], 
         [
-            "ProgressGear6_White_large.png", 
+            "ProgressGear6_White_large@2x.png", 
             74, 
             74, 
-            3817472
+            3817472, 
+            0
         ], 
         [
-            "ProgressGear6_White_small.png", 
+            "ProgressGear6_White_small@2x.png", 
             28, 
             30, 
-            3842048
+            3842048, 
+            0
         ], 
         [
-            "ProgressGear7_Gray.png", 
+            "ProgressGear7_Gray@2x.png", 
             40, 
             40, 
-            3846144
+            3846144, 
+            0
         ], 
         [
-            "ProgressGear7_Gray_small.png", 
+            "ProgressGear7_Gray_small@2x.png", 
             28, 
             30, 
-            3854336
+            3854336, 
+            0
         ], 
         [
-            "ProgressGear7_White.png", 
+            "ProgressGear7_White@2x.png", 
             40, 
             40, 
-            3858432
+            3858432, 
+            0
         ], 
         [
-            "ProgressGear7_White_large.png", 
+            "ProgressGear7_White_large@2x.png", 
             74, 
             74, 
-            3866624
+            3866624, 
+            0
         ], 
         [
-            "ProgressGear7_White_small.png", 
+            "ProgressGear7_White_small@2x.png", 
             28, 
             30, 
-            3891200
+            3891200, 
+            0
         ], 
         [
-            "ProgressGear8_Gray.png", 
+            "ProgressGear8_Gray@2x.png", 
             40, 
             40, 
-            3895296
+            3895296, 
+            0
         ], 
         [
-            "ProgressGear8_Gray_small.png", 
+            "ProgressGear8_Gray_small@2x.png", 
             28, 
             30, 
-            3903488
+            3903488, 
+            0
         ], 
         [
-            "ProgressGear8_White.png", 
+            "ProgressGear8_White@2x.png", 
             40, 
             40, 
-            3907584
+            3907584, 
+            0
         ], 
         [
-            "ProgressGear8_White_large.png", 
+            "ProgressGear8_White_large@2x.png", 
             74, 
             74, 
-            3915776
+            3915776, 
+            0
         ], 
         [
-            "ProgressGear8_White_small.png", 
+            "ProgressGear8_White_small@2x.png", 
             28, 
             30, 
-            3940352
+            3940352, 
+            0
         ], 
         [
-            "ProgressGear9_Gray.png", 
+            "ProgressGear9_Gray@2x.png", 
             40, 
             40, 
-            3944448
+            3944448, 
+            0
         ], 
         [
-            "ProgressGear9_Gray_small.png", 
+            "ProgressGear9_Gray_small@2x.png", 
             28, 
             30, 
-            3952640
+            3952640, 
+            0
         ], 
         [
-            "ProgressGear9_White.png", 
+            "ProgressGear9_White@2x.png", 
             40, 
             40, 
-            3956736
+            3956736, 
+            0
         ], 
         [
-            "ProgressGear9_White_large.png", 
+            "ProgressGear9_White_large@2x.png", 
             74, 
             74, 
-            3964928
+            3964928, 
+            0
         ], 
         [
-            "ProgressGear9_White_small.png", 
+            "ProgressGear9_White_small@2x.png", 
             28, 
             30, 
-            3989504
+            3989504, 
+            0
         ], 
         [
-            "Recording_Base.png", 
+            "Recording_Base@2x.png", 
             640, 
             80, 
-            3993600
+            3993600, 
+            0
         ], 
         [
-            "Recording_Glow.png", 
+            "Recording_Glow@2x.png", 
             640, 
             80, 
-            4198400
+            4198400, 
+            0
         ], 
         [
-            "Silver_0_Bars.png", 
+            "Silver_0_Bars@2x.png", 
             38, 
             40, 
-            4403200
+            4403200, 
+            0
         ], 
         [
-            "Silver_0_WifiBars.png", 
+            "Silver_0_WifiBars@2x.png", 
             40, 
             40, 
-            4411392
+            4411392, 
+            0
         ], 
         [
-            "Silver_1_Bars.png", 
+            "Silver_1_Bars@2x.png", 
             38, 
             40, 
-            4419584
+            4419584, 
+            0
         ], 
         [
-            "Silver_1_WifiBars.png", 
+            "Silver_1_WifiBars@2x.png", 
             40, 
             40, 
-            4427776
+            4427776, 
+            0
         ], 
         [
-            "Silver_2_Bars.png", 
+            "Silver_2_Bars@2x.png", 
             38, 
             40, 
-            4435968
+            4435968, 
+            0
         ], 
         [
-            "Silver_2_WifiBars.png", 
+            "Silver_2_WifiBars@2x.png", 
             40, 
             40, 
-            4444160
+            4444160, 
+            0
         ], 
         [
-            "Silver_3_Bars.png", 
+            "Silver_3_Bars@2x.png", 
             38, 
             40, 
-            4452352
+            4452352, 
+            0
         ], 
         [
-            "Silver_3_WifiBars.png", 
+            "Silver_3_WifiBars@2x.png", 
             40, 
             40, 
-            4460544
+            4460544, 
+            0
         ], 
         [
-            "Silver_4_Bars.png", 
+            "Silver_4_Bars@2x.png", 
             38, 
             40, 
-            4468736
+            4468736, 
+            0
         ], 
         [
-            "Silver_5_Bars.png", 
+            "Silver_5_Bars@2x.png", 
             38, 
             40, 
-            4476928
+            4476928, 
+            0
         ], 
         [
-            "Silver_Airplane.png", 
+            "Silver_Airplane@2x.png", 
             32, 
             40, 
-            4485120
+            4485120, 
+            0
         ], 
         [
-            "Silver_Alarm.png", 
+            "Silver_Alarm@2x.png", 
             20, 
             40, 
-            4493312
+            4493312, 
+            0
         ], 
         [
-            "Silver_Base.png", 
+            "Silver_Base@2x.png", 
             10, 
             40, 
-            4497409
+            4497408, 
+            1
         ], 
         [
-            "Silver_BatteryCharged.png", 
+            "Silver_BatteryCharged@2x.png", 
             42, 
             40, 
-            4501504
+            4501504, 
+            0
         ], 
         [
-            "Silver_BatteryCharging.png", 
+            "Silver_BatteryCharging@2x.png", 
             42, 
             40, 
-            4509696
+            4509696, 
+            0
         ], 
         [
-            "Silver_BatteryDrainingBG.png", 
+            "Silver_BatteryDrainingBG@2x.png", 
             42, 
             40, 
-            4517888
+            4517888, 
+            0
         ], 
         [
-            "Silver_BatteryDrainingInsides.png", 
+            "Silver_BatteryDrainingInsides@2x.png", 
             6, 
             40, 
-            4526080
+            4526080, 
+            0
         ], 
         [
-            "Silver_BatteryDrainingInsidesLow.png", 
+            "Silver_BatteryDrainingInsidesLow@2x.png", 
             6, 
             40, 
-            4530176
+            4530176, 
+            0
         ], 
         [
-            "Silver_Bluetooth.png", 
+            "Silver_Bluetooth@2x.png", 
             22, 
             40, 
-            4534272
+            4534272, 
+            0
         ], 
         [
-            "Silver_BluetoothConnected.png", 
+            "Silver_BluetoothConnected@2x.png", 
             22, 
             40, 
-            4538368
+            4538368, 
+            0
         ], 
         [
-            "Silver_CARRIER_IPOD.png", 
+            "Silver_CARRIER_IPOD@2x.png", 
             50, 
             40, 
-            4542464
+            4542464, 
+            0
         ], 
         [
-            "Silver_CallForward.png", 
+            "Silver_CallForward@2x.png", 
             24, 
             40, 
-            4554752
+            4554752, 
+            0
         ], 
         [
-            "Silver_DataTypeEDGE.png", 
+            "Silver_DataTypeEDGE@2x.png", 
             12, 
             40, 
-            4558848
+            4558848, 
+            0
         ], 
         [
-            "Silver_DataTypeGPRS.png", 
+            "Silver_DataTypeGPRS@2x.png", 
             14, 
             40, 
-            4562944
+            4562944, 
+            0
         ], 
         [
-            "Silver_DataTypeUMTS.png", 
+            "Silver_DataTypeUMTS@2x.png", 
             30, 
             40, 
-            4567040
+            4567040, 
+            0
         ], 
         [
-            "Silver_DataTypeiOSHotspot.png", 
+            "Silver_DataTypeiOSHotspot@2x.png", 
             34, 
             40, 
-            4575232
+            4575232, 
+            0
         ], 
         [
-            "Silver_HeadsetBatteryBG.png", 
+            "Silver_HeadsetBatteryBG@2x.png", 
             38, 
             40, 
-            4583424
+            4583424, 
+            0
         ], 
         [
-            "Silver_HeadsetBatteryFill.png", 
+            "Silver_HeadsetBatteryFill@2x.png", 
             2, 
             40, 
-            4591616
+            4591616, 
+            0
         ], 
         [
-            "Silver_HeadsetLowBatteryFill.png", 
+            "Silver_HeadsetLowBatteryFill@2x.png", 
             2, 
             40, 
-            4595712
+            4595712, 
+            0
         ], 
         [
-            "Silver_Location.png", 
+            "Silver_Location@2x.png", 
             26, 
             40, 
-            4599808
+            4599808, 
+            0
         ], 
         [
-            "Silver_PercentLow_%.png", 
+            "Silver_PercentLow_%@2x.png", 
             24, 
             40, 
-            4608000
+            4608000, 
+            0
         ], 
         [
-            "Silver_PercentLow_0.png", 
+            "Silver_PercentLow_0@2x.png", 
             16, 
             40, 
-            4612096
+            4612096, 
+            0
         ], 
         [
-            "Silver_PercentLow_1.png", 
+            "Silver_PercentLow_1@2x.png", 
             10, 
             40, 
-            4616192
+            4616192, 
+            0
         ], 
         [
-            "Silver_PercentLow_2.png", 
+            "Silver_PercentLow_2@2x.png", 
             14, 
             40, 
-            4620288
+            4620288, 
+            0
         ], 
         [
-            "Silver_PercentLow_3.png", 
+            "Silver_PercentLow_3@2x.png", 
             14, 
             40, 
-            4624384
+            4624384, 
+            0
         ], 
         [
-            "Silver_PercentLow_4.png", 
+            "Silver_PercentLow_4@2x.png", 
             16, 
             40, 
-            4628480
+            4628480, 
+            0
         ], 
         [
-            "Silver_PercentLow_5.png", 
+            "Silver_PercentLow_5@2x.png", 
             14, 
             40, 
-            4632576
+            4632576, 
+            0
         ], 
         [
-            "Silver_PercentLow_6.png", 
+            "Silver_PercentLow_6@2x.png", 
             14, 
             40, 
-            4636672
+            4636672, 
+            0
         ], 
         [
-            "Silver_PercentLow_7.png", 
+            "Silver_PercentLow_7@2x.png", 
             14, 
             40, 
-            4640768
+            4640768, 
+            0
         ], 
         [
-            "Silver_PercentLow_8.png", 
+            "Silver_PercentLow_8@2x.png", 
             14, 
             40, 
-            4644864
+            4644864, 
+            0
         ], 
         [
-            "Silver_PercentLow_9.png", 
+            "Silver_PercentLow_9@2x.png", 
             14, 
             40, 
-            4648960
+            4648960, 
+            0
         ], 
         [
-            "Silver_Percent_%.png", 
+            "Silver_Percent_%@2x.png", 
             24, 
             40, 
-            4653056
+            4653056, 
+            0
         ], 
         [
-            "Silver_Percent_0.png", 
+            "Silver_Percent_0@2x.png", 
             16, 
             40, 
-            4657152
+            4657152, 
+            0
         ], 
         [
-            "Silver_Percent_1.png", 
+            "Silver_Percent_1@2x.png", 
             10, 
             40, 
-            4661248
+            4661248, 
+            0
         ], 
         [
-            "Silver_Percent_2.png", 
+            "Silver_Percent_2@2x.png", 
             14, 
             40, 
-            4665344
+            4665344, 
+            0
         ], 
         [
-            "Silver_Percent_3.png", 
+            "Silver_Percent_3@2x.png", 
             14, 
             40, 
-            4669440
+            4669440, 
+            0
         ], 
         [
-            "Silver_Percent_4.png", 
+            "Silver_Percent_4@2x.png", 
             16, 
             40, 
-            4673536
+            4673536, 
+            0
         ], 
         [
-            "Silver_Percent_5.png", 
+            "Silver_Percent_5@2x.png", 
             14, 
             40, 
-            4677632
+            4677632, 
+            0
         ], 
         [
-            "Silver_Percent_6.png", 
+            "Silver_Percent_6@2x.png", 
             14, 
             40, 
-            4681728
+            4681728, 
+            0
         ], 
         [
-            "Silver_Percent_7.png", 
+            "Silver_Percent_7@2x.png", 
             14, 
             40, 
-            4685824
+            4685824, 
+            0
         ], 
         [
-            "Silver_Percent_8.png", 
+            "Silver_Percent_8@2x.png", 
             14, 
             40, 
-            4689920
+            4689920, 
+            0
         ], 
         [
-            "Silver_Percent_9.png", 
+            "Silver_Percent_9@2x.png", 
             14, 
             40, 
-            4694016
+            4694016, 
+            0
         ], 
         [
-            "Silver_Play.png", 
+            "Silver_Play@2x.png", 
             19, 
             40, 
-            4698112
+            4698112, 
+            0
         ], 
         [
-            "Silver_Plus.png", 
+            "Silver_Plus@2x.png", 
             20, 
             40, 
-            4702208
+            4702208, 
+            0
         ], 
         [
-            "Silver_RotationLock.png", 
+            "Silver_RotationLock@2x.png", 
             40, 
             40, 
-            4706304
+            4706304, 
+            0
         ], 
         [
-            "Silver_TTY.png", 
+            "Silver_TTY@2x.png", 
             22, 
             40, 
-            4714496
+            4714496, 
+            0
         ], 
         [
-            "Silver_VPN.png", 
+            "Silver_VPN@2x.png", 
             40, 
             40, 
-            4718592
+            4718592, 
+            0
         ], 
         [
-            "TetheringSingle_Base.png", 
+            "TetheringSingle_Base@2x.png", 
             2, 
             42, 
-            4726784
+            4726784, 
+            0
         ], 
         [
-            "Tethering_Base.png", 
+            "Tethering_Base@2x.png", 
             640, 
             80, 
-            4730880
+            4730880, 
+            0
         ], 
         [
-            "Tethering_Glow.png", 
+            "Tethering_Glow@2x.png", 
             640, 
             80, 
-            4935681
+            4935680, 
+            1
         ], 
         [
-            "TopShine.png", 
+            "TopShine@2x.png", 
             2, 
             44, 
-            5140481
+            5140480, 
+            1
         ], 
         [
-            "Translucent_Base.png", 
+            "Translucent_Base@2x.png", 
             10, 
             40, 
-            5144576
+            5144576, 
+            0
         ], 
         [
-            "UIActionSheetButtonTableMask.png", 
+            "UIActionSheetButtonTableMask@2x.png", 
             46, 
             56, 
-            5148672
+            5148672, 
+            0
         ], 
         [
-            "UIActionSheetButtonTableShadow.png", 
+            "UIActionSheetButtonTableShadow@2x.png", 
             46, 
             56, 
-            5160960
+            5160960, 
+            0
         ], 
         [
-            "UIActionSheetTableDecoration.png", 
+            "UIActionSheetTableDecoration@2x.png", 
             56, 
             58, 
-            5173248
+            5173248, 
+            0
         ], 
         [
-            "UIAlertSheetBlackButton.png", 
+            "UIAlertSheetBlackButton@2x.png", 
             54, 
             92, 
-            5189632
+            5189632, 
+            0
         ], 
         [
-            "UIAlertSheetBlackButtonPressed.png", 
+            "UIAlertSheetBlackButtonPressed@2x.png", 
             54, 
             92, 
-            5214208
+            5214208, 
+            0
         ], 
         [
-            "UIAlertSheetBlackCancelButton.png", 
+            "UIAlertSheetBlackCancelButton@2x.png", 
             54, 
             92, 
-            5238784
+            5238784, 
+            0
         ], 
         [
-            "UIAlertSheetBlackDestroyButton.png", 
+            "UIAlertSheetBlackDestroyButton@2x.png", 
             50, 
             92, 
-            5263360
+            5263360, 
+            0
         ], 
         [
-            "UIAlertSheetBlackDestroyButtonPressed.png", 
+            "UIAlertSheetBlackDestroyButtonPressed@2x.png", 
             50, 
             92, 
-            5287936
+            5287936, 
+            0
         ], 
         [
-            "UIAlertSheetBlackTransDestroyButton.png", 
+            "UIAlertSheetBlackTransDestroyButton@2x.png", 
             50, 
             92, 
-            5312512
+            5312512, 
+            0
         ], 
         [
-            "UIAlertSheetBlackTransDestroyButtonPressed.png", 
+            "UIAlertSheetBlackTransDestroyButtonPressed@2x.png", 
             50, 
             92, 
-            5337088
+            5337088, 
+            0
         ], 
         [
-            "UIAlertSheetDefaultBackground.png", 
+            "UIAlertSheetDefaultBackground@2x.png", 
             2, 
             88, 
-            5361664
+            5361664, 
+            0
         ], 
         [
-            "UIAlertSheetDefaultButton.png", 
+            "UIAlertSheetDefaultButton@2x.png", 
             54, 
             92, 
-            5365760
+            5365760, 
+            0
         ], 
         [
-            "UIAlertSheetDefaultButtonPressed.png", 
+            "UIAlertSheetDefaultButtonPressed@2x.png", 
             54, 
             92, 
-            5390336
+            5390336, 
+            0
         ], 
         [
-            "UIAlertSheetDefaultCancelButton.png", 
+            "UIAlertSheetDefaultCancelButton@2x.png", 
             54, 
             92, 
-            5414912
+            5414912, 
+            0
         ], 
         [
-            "UIAlertSheetDefaultDestroyButton.png", 
+            "UIAlertSheetDefaultDestroyButton@2x.png", 
             50, 
             92, 
-            5439488
+            5439488, 
+            0
         ], 
         [
-            "UIAlertSheetDefaultDestroyButtonPressed.png", 
+            "UIAlertSheetDefaultDestroyButtonPressed@2x.png", 
             50, 
             92, 
-            5464064
+            5464064, 
+            0
         ], 
         [
-            "UIAlertSheetSeparatorLine.png", 
+            "UIAlertSheetSeparatorLine@2x.png", 
             560, 
             4, 
-            5488640
+            5488640, 
+            0
         ], 
         [
-            "UIAlertSheetTextFieldGroupedBackground.png", 
+            "UIAlertSheetTextFieldGroupedBackground@2x.png", 
             18, 
             20, 
-            5500928
+            5500928, 
+            0
         ], 
         [
-            "UIAlertViewTableDecoration.png", 
+            "UIAlertViewTableDecoration@2x.png", 
             28, 
             164, 
-            5505024
+            5505024, 
+            0
         ], 
         [
-            "UIAtomBackgroundSelected.png", 
+            "UIAtomBackgroundSelected@2x.png", 
             50, 
             50, 
-            5529600
+            5529600, 
+            0
         ], 
         [
-            "UIAtomBackgroundSelectedPurple.png", 
+            "UIAtomBackgroundSelectedPurple@2x.png", 
             50, 
             50, 
-            5541888
+            5541888, 
+            0
         ], 
         [
-            "UIButtonBarAction.png", 
+            "UIButtonBarAction@2x.png", 
             46, 
             36, 
-            5554176
+            5554176, 
+            0
         ], 
         [
-            "UIButtonBarActionSmall.png", 
+            "UIButtonBarActionSmall@2x.png", 
             44, 
             34, 
-            5562368
+            5562368, 
+            0
         ], 
         [
-            "UIButtonBarArrowDown.png", 
+            "UIButtonBarArrowDown@2x.png", 
             42, 
             36, 
-            5570560
+            5570560, 
+            0
         ], 
         [
-            "UIButtonBarArrowDownSmall.png", 
+            "UIButtonBarArrowDownSmall@2x.png", 
             34, 
             28, 
-            5578752
+            5578752, 
+            0
         ], 
         [
-            "UIButtonBarArrowLeft.png", 
+            "UIButtonBarArrowLeft@2x.png", 
             32, 
             38, 
-            5586944
+            5586944, 
+            0
         ], 
         [
-            "UIButtonBarArrowLeftLandscape.png", 
+            "UIButtonBarArrowLeftLandscape@2x.png", 
             26, 
             26, 
-            5595136
+            5595136, 
+            0
         ], 
         [
-            "UIButtonBarArrowRight.png", 
+            "UIButtonBarArrowRight@2x.png", 
             32, 
             38, 
-            5599232
+            5599232, 
+            0
         ], 
         [
-            "UIButtonBarArrowRightLandscape.png", 
+            "UIButtonBarArrowRightLandscape@2x.png", 
             26, 
             26, 
-            5607424
+            5607424, 
+            0
         ], 
         [
-            "UIButtonBarArrowUp.png", 
+            "UIButtonBarArrowUp@2x.png", 
             42, 
             36, 
-            5611520
+            5611520, 
+            0
         ], 
         [
-            "UIButtonBarArrowUpSmall.png", 
+            "UIButtonBarArrowUpSmall@2x.png", 
             34, 
             28, 
-            5619712
+            5619712, 
+            0
         ], 
         [
-            "UIButtonBarBadge.png", 
+            "UIButtonBarBadge@2x.png", 
             44, 
             46, 
-            5627904
+            5627904, 
+            0
         ], 
         [
-            "UIButtonBarBadgeOff.png", 
+            "UIButtonBarBadgeOff@2x.png", 
             54, 
             56, 
-            5640192
+            5640192, 
+            0
         ], 
         [
-            "UIButtonBarBadgeOn.png", 
+            "UIButtonBarBadgeOn@2x.png", 
             54, 
             56, 
-            5656576
+            5656576, 
+            0
         ], 
         [
-            "UIButtonBarBlackOpaqueBackground.png", 
+            "UIButtonBarBlackOpaqueBackground@2x.png", 
             2, 
             88, 
-            5672960
+            5672960, 
+            0
         ], 
         [
-            "UIButtonBarBlackOpaqueBackgroundTall.png", 
+            "UIButtonBarBlackOpaqueBackgroundTall@2x.png", 
             2, 
             98, 
-            5677057
+            5677056, 
+            1
         ], 
         [
-            "UIButtonBarBlackTranslucentBackground.png", 
+            "UIButtonBarBlackTranslucentBackground@2x.png", 
             2, 
             88, 
-            5681152
+            5681152, 
+            0
         ], 
         [
-            "UIButtonBarBookmarks.png", 
+            "UIButtonBarBookmarks@2x.png", 
             48, 
             32, 
-            5685248
+            5685248, 
+            0
         ], 
         [
-            "UIButtonBarBookmarksLandscape.png", 
+            "UIButtonBarBookmarksLandscape@2x.png", 
             40, 
             32, 
-            5693440
+            5693440, 
+            0
         ], 
         [
-            "UIButtonBarCamera.png", 
+            "UIButtonBarCamera@2x.png", 
             48, 
             36, 
-            5701632
+            5701632, 
+            0
         ], 
         [
-            "UIButtonBarCameraSmall.png", 
+            "UIButtonBarCameraSmall@2x.png", 
             40, 
             30, 
-            5709824
+            5709824, 
+            0
         ], 
         [
-            "UIButtonBarCompose.png", 
+            "UIButtonBarCompose@2x.png", 
             44, 
             36, 
-            5718016
+            5718016, 
+            0
         ], 
         [
-            "UIButtonBarComposeLandscape.png", 
+            "UIButtonBarComposeLandscape@2x.png", 
             36, 
             28, 
-            5726208
+            5726208, 
+            0
         ], 
         [
-            "UIButtonBarContactAdd.png", 
+            "UIButtonBarContactAdd@2x.png", 
             58, 
             58, 
-            5734400
+            5734400, 
+            0
         ], 
         [
-            "UIButtonBarContactAddPressed.png", 
+            "UIButtonBarContactAddPressed@2x.png", 
             58, 
             58, 
-            5750784
+            5750784, 
+            0
         ], 
         [
-            "UIButtonBarDefaultBackground.png", 
+            "UIButtonBarDefaultBackground@2x.png", 
             2, 
             88, 
-            5767169
+            5767168, 
+            1
         ], 
         [
-            "UIButtonBarFastForward.png", 
+            "UIButtonBarFastForward@2x.png", 
             42, 
             38, 
-            5771264
+            5771264, 
+            0
         ], 
         [
-            "UIButtonBarGarbageClose1.png", 
+            "UIButtonBarGarbageClose1@2x.png", 
             62, 
             72, 
-            5779456
+            5779456, 
+            0
         ], 
         [
-            "UIButtonBarGarbageClose10.png", 
+            "UIButtonBarGarbageClose10@2x.png", 
             62, 
             72, 
-            5799936
+            5799936, 
+            0
         ], 
         [
-            "UIButtonBarGarbageClose11.png", 
+            "UIButtonBarGarbageClose11@2x.png", 
             62, 
             72, 
-            5820416
+            5820416, 
+            0
         ], 
         [
-            "UIButtonBarGarbageClose12.png", 
+            "UIButtonBarGarbageClose12@2x.png", 
             62, 
             72, 
-            5840896
+            5840896, 
+            0
         ], 
         [
-            "UIButtonBarGarbageClose13.png", 
+            "UIButtonBarGarbageClose13@2x.png", 
             62, 
             72, 
-            5861376
+            5861376, 
+            0
         ], 
         [
-            "UIButtonBarGarbageClose14.png", 
+            "UIButtonBarGarbageClose14@2x.png", 
             62, 
             72, 
-            5881856
+            5881856, 
+            0
         ], 
         [
-            "UIButtonBarGarbageClose15.png", 
+            "UIButtonBarGarbageClose15@2x.png", 
             62, 
             72, 
-            5902336
+            5902336, 
+            0
         ], 
         [
-            "UIButtonBarGarbageClose16.png", 
+            "UIButtonBarGarbageClose16@2x.png", 
             62, 
             72, 
-            5922816
+            5922816, 
+            0
         ], 
         [
-            "UIButtonBarGarbageClose2.png", 
+            "UIButtonBarGarbageClose2@2x.png", 
             62, 
             72, 
-            5943296
+            5943296, 
+            0
         ], 
         [
-            "UIButtonBarGarbageClose3.png", 
+            "UIButtonBarGarbageClose3@2x.png", 
             62, 
             72, 
-            5963776
+            5963776, 
+            0
         ], 
         [
-            "UIButtonBarGarbageClose4.png", 
+            "UIButtonBarGarbageClose4@2x.png", 
             62, 
             72, 
-            5984256
+            5984256, 
+            0
         ], 
         [
-            "UIButtonBarGarbageClose5.png", 
+            "UIButtonBarGarbageClose5@2x.png", 
             62, 
             72, 
-            6004736
+            6004736, 
+            0
         ], 
         [
-            "UIButtonBarGarbageClose6.png", 
+            "UIButtonBarGarbageClose6@2x.png", 
             62, 
             72, 
-            6025216
+            6025216, 
+            0
         ], 
         [
-            "UIButtonBarGarbageClose7.png", 
+            "UIButtonBarGarbageClose7@2x.png", 
             62, 
             72, 
-            6045696
+            6045696, 
+            0
         ], 
         [
-            "UIButtonBarGarbageClose8.png", 
+            "UIButtonBarGarbageClose8@2x.png", 
             62, 
             72, 
-            6066176
+            6066176, 
+            0
         ], 
         [
-            "UIButtonBarGarbageClose9.png", 
+            "UIButtonBarGarbageClose9@2x.png", 
             62, 
             72, 
-            6086656
+            6086656, 
+            0
         ], 
         [
-            "UIButtonBarGarbageCloseSmall1.png", 
+            "UIButtonBarGarbageCloseSmall1@2x.png", 
             52, 
             54, 
-            6107136
+            6107136, 
+            0
         ], 
         [
-            "UIButtonBarGarbageCloseSmall10.png", 
+            "UIButtonBarGarbageCloseSmall10@2x.png", 
             52, 
             54, 
-            6119424
+            6119424, 
+            0
         ], 
         [
-            "UIButtonBarGarbageCloseSmall11.png", 
+            "UIButtonBarGarbageCloseSmall11@2x.png", 
             52, 
             54, 
-            6131712
+            6131712, 
+            0
         ], 
         [
-            "UIButtonBarGarbageCloseSmall12.png", 
+            "UIButtonBarGarbageCloseSmall12@2x.png", 
             52, 
             54, 
-            6144000
+            6144000, 
+            0
         ], 
         [
-            "UIButtonBarGarbageCloseSmall13.png", 
+            "UIButtonBarGarbageCloseSmall13@2x.png", 
             52, 
             54, 
-            6156288
+            6156288, 
+            0
         ], 
         [
-            "UIButtonBarGarbageCloseSmall14.png", 
+            "UIButtonBarGarbageCloseSmall14@2x.png", 
             52, 
             54, 
-            6168576
+            6168576, 
+            0
         ], 
         [
-            "UIButtonBarGarbageCloseSmall15.png", 
+            "UIButtonBarGarbageCloseSmall15@2x.png", 
             52, 
             54, 
-            6180864
+            6180864, 
+            0
         ], 
         [
-            "UIButtonBarGarbageCloseSmall16.png", 
+            "UIButtonBarGarbageCloseSmall16@2x.png", 
             52, 
             54, 
-            6193152
+            6193152, 
+            0
         ], 
         [
-            "UIButtonBarGarbageCloseSmall2.png", 
+            "UIButtonBarGarbageCloseSmall2@2x.png", 
             52, 
             54, 
-            6205440
+            6205440, 
+            0
         ], 
         [
-            "UIButtonBarGarbageCloseSmall3.png", 
+            "UIButtonBarGarbageCloseSmall3@2x.png", 
             52, 
             54, 
-            6217728
+            6217728, 
+            0
         ], 
         [
-            "UIButtonBarGarbageCloseSmall4.png", 
+            "UIButtonBarGarbageCloseSmall4@2x.png", 
             52, 
             54, 
-            6230016
+            6230016, 
+            0
         ], 
         [
-            "UIButtonBarGarbageCloseSmall5.png", 
+            "UIButtonBarGarbageCloseSmall5@2x.png", 
             52, 
             54, 
-            6242304
+            6242304, 
+            0
         ], 
         [
-            "UIButtonBarGarbageCloseSmall6.png", 
+            "UIButtonBarGarbageCloseSmall6@2x.png", 
             52, 
             54, 
-            6254592
+            6254592, 
+            0
         ], 
         [
-            "UIButtonBarGarbageCloseSmall7.png", 
+            "UIButtonBarGarbageCloseSmall7@2x.png", 
             52, 
             54, 
-            6266880
+            6266880, 
+            0
         ], 
         [
-            "UIButtonBarGarbageCloseSmall8.png", 
+            "UIButtonBarGarbageCloseSmall8@2x.png", 
             52, 
             54, 
-            6279168
+            6279168, 
+            0
         ], 
         [
-            "UIButtonBarGarbageCloseSmall9.png", 
+            "UIButtonBarGarbageCloseSmall9@2x.png", 
             52, 
             54, 
-            6291456
+            6291456, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpen1.png", 
+            "UIButtonBarGarbageOpen1@2x.png", 
             62, 
             72, 
-            6303744
+            6303744, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpen10.png", 
+            "UIButtonBarGarbageOpen10@2x.png", 
             62, 
             72, 
-            6324224
+            6324224, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpen11.png", 
+            "UIButtonBarGarbageOpen11@2x.png", 
             62, 
             72, 
-            6344704
+            6344704, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpen12.png", 
+            "UIButtonBarGarbageOpen12@2x.png", 
             62, 
             72, 
-            6365184
+            6365184, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpen13.png", 
+            "UIButtonBarGarbageOpen13@2x.png", 
             62, 
             72, 
-            6385664
+            6385664, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpen14.png", 
+            "UIButtonBarGarbageOpen14@2x.png", 
             62, 
             72, 
-            6406144
+            6406144, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpen15.png", 
+            "UIButtonBarGarbageOpen15@2x.png", 
             62, 
             72, 
-            6426624
+            6426624, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpen2.png", 
+            "UIButtonBarGarbageOpen2@2x.png", 
             62, 
             72, 
-            6447104
+            6447104, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpen3.png", 
+            "UIButtonBarGarbageOpen3@2x.png", 
             62, 
             72, 
-            6467584
+            6467584, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpen4.png", 
+            "UIButtonBarGarbageOpen4@2x.png", 
             62, 
             72, 
-            6488064
+            6488064, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpen5.png", 
+            "UIButtonBarGarbageOpen5@2x.png", 
             62, 
             72, 
-            6508544
+            6508544, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpen6.png", 
+            "UIButtonBarGarbageOpen6@2x.png", 
             62, 
             72, 
-            6529024
+            6529024, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpen7.png", 
+            "UIButtonBarGarbageOpen7@2x.png", 
             62, 
             72, 
-            6549504
+            6549504, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpen8.png", 
+            "UIButtonBarGarbageOpen8@2x.png", 
             62, 
             72, 
-            6569984
+            6569984, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpen9.png", 
+            "UIButtonBarGarbageOpen9@2x.png", 
             62, 
             72, 
-            6590464
+            6590464, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpenSmall1.png", 
+            "UIButtonBarGarbageOpenSmall1@2x.png", 
             52, 
             54, 
-            6610944
+            6610944, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpenSmall10.png", 
+            "UIButtonBarGarbageOpenSmall10@2x.png", 
             52, 
             54, 
-            6623232
+            6623232, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpenSmall11.png", 
+            "UIButtonBarGarbageOpenSmall11@2x.png", 
             52, 
             54, 
-            6635520
+            6635520, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpenSmall12.png", 
+            "UIButtonBarGarbageOpenSmall12@2x.png", 
             52, 
             54, 
-            6647808
+            6647808, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpenSmall13.png", 
+            "UIButtonBarGarbageOpenSmall13@2x.png", 
             52, 
             54, 
-            6660096
+            6660096, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpenSmall14.png", 
+            "UIButtonBarGarbageOpenSmall14@2x.png", 
             52, 
             54, 
-            6672384
+            6672384, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpenSmall15.png", 
+            "UIButtonBarGarbageOpenSmall15@2x.png", 
             52, 
             54, 
-            6684672
+            6684672, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpenSmall2.png", 
+            "UIButtonBarGarbageOpenSmall2@2x.png", 
             52, 
             54, 
-            6696960
+            6696960, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpenSmall3.png", 
+            "UIButtonBarGarbageOpenSmall3@2x.png", 
             52, 
             54, 
-            6709248
+            6709248, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpenSmall4.png", 
+            "UIButtonBarGarbageOpenSmall4@2x.png", 
             52, 
             54, 
-            6721536
+            6721536, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpenSmall5.png", 
+            "UIButtonBarGarbageOpenSmall5@2x.png", 
             52, 
             54, 
-            6733824
+            6733824, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpenSmall6.png", 
+            "UIButtonBarGarbageOpenSmall6@2x.png", 
             52, 
             54, 
-            6746112
+            6746112, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpenSmall7.png", 
+            "UIButtonBarGarbageOpenSmall7@2x.png", 
             52, 
             54, 
-            6758400
+            6758400, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpenSmall8.png", 
+            "UIButtonBarGarbageOpenSmall8@2x.png", 
             52, 
             54, 
-            6770688
+            6770688, 
+            0
         ], 
         [
-            "UIButtonBarGarbageOpenSmall9.png", 
+            "UIButtonBarGarbageOpenSmall9@2x.png", 
             52, 
             54, 
-            6782976
+            6782976, 
+            0
         ], 
         [
-            "UIButtonBarInfo.png", 
+            "UIButtonBarInfo@2x.png", 
             36, 
             38, 
-            6795264
+            6795264, 
+            0
         ], 
         [
-            "UIButtonBarInfoDark.png", 
+            "UIButtonBarInfoDark@2x.png", 
             36, 
             38, 
-            6803456
+            6803456, 
+            0
         ], 
         [
-            "UIButtonBarLocate.png", 
+            "UIButtonBarLocate@2x.png", 
             38, 
             38, 
-            6811648
+            6811648, 
+            0
         ], 
         [
-            "UIButtonBarLocateSmall.png", 
+            "UIButtonBarLocateSmall@2x.png", 
             34, 
             34, 
-            6819840
+            6819840, 
+            0
         ], 
         [
-            "UIButtonBarMiniBlackOpaqueBackground.png", 
+            "UIButtonBarMiniBlackOpaqueBackground@2x.png", 
             2, 
             64, 
-            6828032
+            6828032, 
+            0
         ], 
         [
-            "UIButtonBarMiniBlackTranslucentBackground.png", 
+            "UIButtonBarMiniBlackTranslucentBackground@2x.png", 
             2, 
             64, 
-            6832128
+            6832128, 
+            0
         ], 
         [
-            "UIButtonBarMiniDefaultBackground.png", 
+            "UIButtonBarMiniDefaultBackground@2x.png", 
             2, 
             64, 
-            6836225
+            6836224, 
+            1
         ], 
         [
-            "UIButtonBarMore.png", 
+            "UIButtonBarMore@2x.png", 
             58, 
             32, 
-            6840320
+            6840320, 
+            0
         ], 
         [
-            "UIButtonBarMoreSelected.png", 
+            "UIButtonBarMoreSelected@2x.png", 
             66, 
             32, 
-            6848512
+            6848512, 
+            0
         ], 
         [
-            "UIButtonBarNew.png", 
+            "UIButtonBarNew@2x.png", 
             36, 
             36, 
-            6860800
+            6860800, 
+            0
         ], 
         [
-            "UIButtonBarNewLandscape.png", 
+            "UIButtonBarNewLandscape@2x.png", 
             30, 
             30, 
-            6868992
+            6868992, 
+            0
         ], 
         [
-            "UIButtonBarNewSmall.png", 
+            "UIButtonBarNewSmall@2x.png", 
             26, 
             26, 
-            6873088
+            6873088, 
+            0
         ], 
         [
-            "UIButtonBarNextSlide.png", 
+            "UIButtonBarNextSlide@2x.png", 
             46, 
             36, 
-            6877184
+            6877184, 
+            0
         ], 
         [
-            "UIButtonBarOrganize.png", 
+            "UIButtonBarOrganize@2x.png", 
             38, 
             38, 
-            6885376
+            6885376, 
+            0
         ], 
         [
-            "UIButtonBarOrganizeLandscape.png", 
+            "UIButtonBarOrganizeLandscape@2x.png", 
             32, 
             34, 
-            6893568
+            6893568, 
+            0
         ], 
         [
-            "UIButtonBarPageCurlBlackOpaque.png", 
+            "UIButtonBarPageCurlBlackOpaque@2x.png", 
             68, 
             60, 
-            6901760
+            6901760, 
+            0
         ], 
         [
-            "UIButtonBarPageCurlBlackOpaqueLandscape.png", 
+            "UIButtonBarPageCurlBlackOpaqueLandscape@2x.png", 
             56, 
             48, 
-            6922240
+            6922240, 
+            0
         ], 
         [
-            "UIButtonBarPageCurlBlackTranslucent.png", 
+            "UIButtonBarPageCurlBlackTranslucent@2x.png", 
             68, 
             60, 
-            6934528
+            6934528, 
+            0
         ], 
         [
-            "UIButtonBarPageCurlBlackTranslucentLandscape.png", 
+            "UIButtonBarPageCurlBlackTranslucentLandscape@2x.png", 
             56, 
             48, 
-            6955008
+            6955008, 
+            0
         ], 
         [
-            "UIButtonBarPageCurlDefault.png", 
+            "UIButtonBarPageCurlDefault@2x.png", 
             68, 
             60, 
-            6967296
+            6967296, 
+            0
         ], 
         [
-            "UIButtonBarPageCurlDefaultLandscape.png", 
+            "UIButtonBarPageCurlDefaultLandscape@2x.png", 
             56, 
             48, 
-            6987776
+            6987776, 
+            0
         ], 
         [
-            "UIButtonBarPageCurlSelected.png", 
+            "UIButtonBarPageCurlSelected@2x.png", 
             68, 
             60, 
-            7000064
+            7000064, 
+            0
         ], 
         [
-            "UIButtonBarPageCurlSelectedDown.png", 
+            "UIButtonBarPageCurlSelectedDown@2x.png", 
             68, 
             60, 
-            7020544
+            7020544, 
+            0
         ], 
         [
-            "UIButtonBarPageCurlSelectedDownLandscape.png", 
+            "UIButtonBarPageCurlSelectedDownLandscape@2x.png", 
             56, 
             48, 
-            7041024
+            7041024, 
+            0
         ], 
         [
-            "UIButtonBarPageCurlSelectedLandscape.png", 
+            "UIButtonBarPageCurlSelectedLandscape@2x.png", 
             56, 
             48, 
-            7053312
+            7053312, 
+            0
         ], 
         [
-            "UIButtonBarPause.png", 
+            "UIButtonBarPause@2x.png", 
             28, 
             32, 
-            7065600
+            7065600, 
+            0
         ], 
         [
-            "UIButtonBarPlay.png", 
+            "UIButtonBarPlay@2x.png", 
             30, 
             36, 
-            7069696
+            7069696, 
+            0
         ], 
         [
-            "UIButtonBarPlus.png", 
+            "UIButtonBarPlus@2x.png", 
             32, 
             34, 
-            7077888
+            7077888, 
+            0
         ], 
         [
-            "UIButtonBarPressedIndicator.png", 
+            "UIButtonBarPressedIndicator@2x.png", 
             200, 
             200, 
-            7086080
+            7086080, 
+            0
         ], 
         [
-            "UIButtonBarPreviousSlide.png", 
+            "UIButtonBarPreviousSlide@2x.png", 
             46, 
             36, 
-            7249920
+            7249920, 
+            0
         ], 
         [
-            "UIButtonBarPrint.png", 
+            "UIButtonBarPrint@2x.png", 
             40, 
             32, 
-            7258112
+            7258112, 
+            0
         ], 
         [
-            "UIButtonBarRefresh.png", 
+            "UIButtonBarRefresh@2x.png", 
             36, 
             44, 
-            7266304
+            7266304, 
+            0
         ], 
         [
-            "UIButtonBarRefreshLandscape.png", 
+            "UIButtonBarRefreshLandscape@2x.png", 
             28, 
             34, 
-            7274496
+            7274496, 
+            0
         ], 
         [
-            "UIButtonBarReply.png", 
+            "UIButtonBarReply@2x.png", 
             49, 
             36, 
-            7282688
+            7282688, 
+            0
         ], 
         [
-            "UIButtonBarReplyLandscape.png", 
+            "UIButtonBarReplyLandscape@2x.png", 
             40, 
             32, 
-            7290880
+            7290880, 
+            0
         ], 
         [
-            "UIButtonBarRewind.png", 
+            "UIButtonBarRewind@2x.png", 
             42, 
             38, 
-            7299072
+            7299072, 
+            0
         ], 
         [
-            "UIButtonBarSearch.png", 
+            "UIButtonBarSearch@2x.png", 
             40, 
             40, 
-            7307264
+            7307264, 
+            0
         ], 
         [
-            "UIButtonBarSelectedIndicator.png", 
+            "UIButtonBarSelectedIndicator@2x.png", 
             14, 
             14, 
-            7315456
+            7315456, 
+            0
         ], 
         [
-            "UIButtonBarStop.png", 
+            "UIButtonBarStop@2x.png", 
             34, 
             34, 
-            7319552
+            7319552, 
+            0
         ], 
         [
-            "UIButtonBarTrash.png", 
+            "UIButtonBarTrash@2x.png", 
             32, 
             42, 
-            7327744
+            7327744, 
+            0
         ], 
         [
-            "UICalloutBarArrowBottom.png", 
+            "UICalloutBarArrowBottom@2x.png", 
             48, 
             34, 
-            7335936
+            7335936, 
+            0
         ], 
         [
-            "UICalloutBarArrowBottomHi.png", 
+            "UICalloutBarArrowBottomHi@2x.png", 
             48, 
             34, 
-            7344128
+            7344128, 
+            0
         ], 
         [
-            "UICalloutBarArrowLeft.png", 
+            "UICalloutBarArrowLeft@2x.png", 
             52, 
             76, 
-            7352320
+            7352320, 
+            0
         ], 
         [
-            "UICalloutBarArrowLeftHi.png", 
+            "UICalloutBarArrowLeftHi@2x.png", 
             52, 
             76, 
-            7372800
+            7372800, 
+            0
         ], 
         [
-            "UICalloutBarArrowRight.png", 
+            "UICalloutBarArrowRight@2x.png", 
             52, 
             76, 
-            7393280
+            7393280, 
+            0
         ], 
         [
-            "UICalloutBarArrowRightHi.png", 
+            "UICalloutBarArrowRightHi@2x.png", 
             52, 
             76, 
-            7413760
+            7413760, 
+            0
         ], 
         [
-            "UICalloutBarArrowSingleLeft.png", 
+            "UICalloutBarArrowSingleLeft@2x.png", 
             94, 
             76, 
-            7434240
+            7434240, 
+            0
         ], 
         [
-            "UICalloutBarArrowSingleLeftHi.png", 
+            "UICalloutBarArrowSingleLeftHi@2x.png", 
             94, 
             76, 
-            7467008
+            7467008, 
+            0
         ], 
         [
-            "UICalloutBarArrowSingleRight.png", 
+            "UICalloutBarArrowSingleRight@2x.png", 
             94, 
             76, 
-            7499776
+            7499776, 
+            0
         ], 
         [
-            "UICalloutBarArrowSingleRightHi.png", 
+            "UICalloutBarArrowSingleRightHi@2x.png", 
             94, 
             76, 
-            7532544
+            7532544, 
+            0
         ], 
         [
-            "UICalloutBarArrowTop.png", 
+            "UICalloutBarArrowTop@2x.png", 
             48, 
             24, 
-            7565312
+            7565312, 
+            0
         ], 
         [
-            "UICalloutBarArrowTopHi.png", 
+            "UICalloutBarArrowTopHi@2x.png", 
             48, 
             24, 
-            7573504
+            7573504, 
+            0
         ], 
         [
-            "UICalloutBarCut.png", 
+            "UICalloutBarCut@2x.png", 
             4, 
             76, 
-            7581696
+            7581696, 
+            0
         ], 
         [
-            "UICalloutBarLeft.png", 
+            "UICalloutBarLeft@2x.png", 
             42, 
             76, 
-            7585792
+            7585792, 
+            0
         ], 
         [
-            "UICalloutBarLeftHi.png", 
+            "UICalloutBarLeftHi@2x.png", 
             42, 
             76, 
-            7602176
+            7602176, 
+            0
         ], 
         [
-            "UICalloutBarMiddle.png", 
+            "UICalloutBarMiddle@2x.png", 
             2, 
             76, 
-            7618560
+            7618560, 
+            0
         ], 
         [
-            "UICalloutBarMiddleHi.png", 
+            "UICalloutBarMiddleHi@2x.png", 
             2, 
             76, 
-            7622656
+            7622656, 
+            0
         ], 
         [
-            "UICalloutBarRight.png", 
+            "UICalloutBarRight@2x.png", 
             42, 
             76, 
-            7626752
+            7626752, 
+            0
         ], 
         [
-            "UICalloutBarRightHi.png", 
+            "UICalloutBarRightHi@2x.png", 
             42, 
             76, 
-            7643136
+            7643136, 
+            0
         ], 
         [
-            "UICalloutBarShadowLeft.png", 
+            "UICalloutBarShadowLeft@2x.png", 
             22, 
             34, 
-            7659520
+            7659520, 
+            0
         ], 
         [
-            "UICalloutBarShadowMiddle.png", 
+            "UICalloutBarShadowMiddle@2x.png", 
             2, 
             34, 
-            7663616
+            7663616, 
+            0
         ], 
         [
-            "UICalloutBarShadowRight.png", 
+            "UICalloutBarShadowRight@2x.png", 
             22, 
             34, 
-            7667712
+            7667712, 
+            0
         ], 
         [
-            "UICalloutBarSingle.png", 
+            "UICalloutBarSingle@2x.png", 
             42, 
             76, 
-            7671808
+            7671808, 
+            0
         ], 
         [
-            "UICalloutBarSingleHi.png", 
+            "UICalloutBarSingleHi@2x.png", 
             42, 
             76, 
-            7688192
+            7688192, 
+            0
         ], 
         [
-            "UICalloutBarTextLtoR.png", 
+            "UICalloutBarTextLtoR@2x.png", 
             48, 
             44, 
-            7704576
+            7704576, 
+            0
         ], 
         [
-            "UICalloutBarTextRtoL.png", 
+            "UICalloutBarTextRtoL@2x.png", 
             48, 
             44, 
-            7716864
+            7716864, 
+            0
         ], 
         [
-            "UICalloutViewBackground.png", 
+            "UICalloutViewBackground@2x.png", 
             2, 
             114, 
-            7729152
+            7729152, 
+            0
         ], 
         [
-            "UICalloutViewBottomAnchor.png", 
+            "UICalloutViewBottomAnchor@2x.png", 
             82, 
             140, 
-            7733248
+            7733248, 
+            0
         ], 
         [
-            "UICalloutViewLeftCap.png", 
+            "UICalloutViewLeftCap@2x.png", 
             34, 
             114, 
-            7786496
+            7786496, 
+            0
         ], 
         [
-            "UICalloutViewRightCap.png", 
+            "UICalloutViewRightCap@2x.png", 
             34, 
             114, 
-            7806976
+            7806976, 
+            0
         ], 
         [
-            "UICalloutViewTopAnchor.png", 
+            "UICalloutViewTopAnchor@2x.png", 
             82, 
             140, 
-            7827456
+            7827456, 
+            0
         ], 
         [
-            "UICompletionTableShadow.png", 
+            "UICompletionTableShadow@2x.png", 
             6, 
             38, 
-            7880704
+            7880704, 
+            0
         ], 
         [
-            "UILCDBackground.png", 
+            "UILCDBackground@2x.png", 
             2, 
             192, 
-            7884800
+            7884800, 
+            0
         ], 
         [
-            "UIMovieScrubberEditingFill.png", 
+            "UIMovieScrubberEditingFill@2x.png", 
             2, 
             86, 
-            7892992
+            7892992, 
+            0
         ], 
         [
-            "UIMovieScrubberEditingGlassFill.png", 
+            "UIMovieScrubberEditingGlassFill@2x.png", 
             2, 
             86, 
-            7897088
+            7897088, 
+            0
         ], 
         [
-            "UIMovieScrubberEditingGlassLeft.png", 
+            "UIMovieScrubberEditingGlassLeft@2x.png", 
             42, 
             86, 
-            7901184
+            7901184, 
+            0
         ], 
         [
-            "UIMovieScrubberEditingGlassRight.png", 
+            "UIMovieScrubberEditingGlassRight@2x.png", 
             42, 
             86, 
-            7921664
+            7921664, 
+            0
         ], 
         [
-            "UIMovieScrubberEditingLeft.png", 
+            "UIMovieScrubberEditingLeft@2x.png", 
             42, 
             86, 
-            7942144
+            7942144, 
+            0
         ], 
         [
-            "UIMovieScrubberEditingRight.png", 
+            "UIMovieScrubberEditingRight@2x.png", 
             42, 
             86, 
-            7962624
+            7962624, 
+            0
         ], 
         [
-            "UIMovieScrubberFillFill.png", 
+            "UIMovieScrubberFillFill@2x.png", 
             2, 
             60, 
-            7983104
+            7983104, 
+            0
         ], 
         [
-            "UIMovieScrubberFillLeft.png", 
+            "UIMovieScrubberFillLeft@2x.png", 
             8, 
             60, 
-            7987200
+            7987200, 
+            0
         ], 
         [
-            "UIMovieScrubberFillRight.png", 
+            "UIMovieScrubberFillRight@2x.png", 
             8, 
             60, 
-            7991296
+            7991296, 
+            0
         ], 
         [
-            "UIMovieScrubberInnerShadow.png", 
+            "UIMovieScrubberInnerShadow@2x.png", 
             18, 
             60, 
-            7995392
+            7995392, 
+            0
         ], 
         [
-            "UIMovieScrubberMaskFill.png", 
+            "UIMovieScrubberMaskFill@2x.png", 
             2, 
             60, 
-            8003584
+            8003584, 
+            0
         ], 
         [
-            "UIMovieScrubberMaskLeft.png", 
+            "UIMovieScrubberMaskLeft@2x.png", 
             8, 
             60, 
-            8007680
+            8007680, 
+            0
         ], 
         [
-            "UIMovieScrubberMaskRight.png", 
+            "UIMovieScrubberMaskRight@2x.png", 
             8, 
             60, 
-            8011776
+            8011776, 
+            0
         ], 
         [
-            "UIMovieScrubberShadow.png", 
+            "UIMovieScrubberShadow@2x.png", 
             18, 
             60, 
-            8015872
+            8015872, 
+            0
         ], 
         [
-            "UIMovieScrubberThumb.png", 
+            "UIMovieScrubberThumb@2x.png", 
             30, 
             86, 
-            8024064
+            8024064, 
+            0
         ], 
         [
-            "UINavigationBarAddButton.png", 
+            "UINavigationBarAddButton@2x.png", 
             26, 
             32, 
-            8036352
+            8036352, 
+            0
         ], 
         [
-            "UINavigationBarBackArrow.png", 
+            "UINavigationBarBackArrow@2x.png", 
             46, 
             38, 
-            8040448
+            8040448, 
+            0
         ], 
         [
-            "UINavigationBarBlackOpaqueBack.png", 
+            "UINavigationBarBlackOpaqueBack@2x.png", 
             42, 
             60, 
-            8048640
+            8048640, 
+            0
         ], 
         [
-            "UINavigationBarBlackOpaqueBackPressed.png", 
+            "UINavigationBarBlackOpaqueBackPressed@2x.png", 
             42, 
             60, 
-            8060928
+            8060928, 
+            0
         ], 
         [
-            "UINavigationBarBlackOpaqueBackground.png", 
+            "UINavigationBarBlackOpaqueBackground@2x.png", 
             2, 
             88, 
-            8073217
+            8073216, 
+            1
         ], 
         [
-            "UINavigationBarBlackOpaqueButton.png", 
+            "UINavigationBarBlackOpaqueButton@2x.png", 
             22, 
             60, 
-            8077312
+            8077312, 
+            0
         ], 
         [
-            "UINavigationBarBlackOpaqueButtonPressed.png", 
+            "UINavigationBarBlackOpaqueButtonPressed@2x.png", 
             22, 
             60, 
-            8085504
+            8085504, 
+            0
         ], 
         [
-            "UINavigationBarBlackOpaqueTallBackground.png", 
+            "UINavigationBarBlackOpaqueTallBackground@2x.png", 
             2, 
             148, 
-            8093697
+            8093696, 
+            1
         ], 
         [
-            "UINavigationBarBlackTranslucentBack.png", 
+            "UINavigationBarBlackTranslucentBack@2x.png", 
             42, 
             60, 
-            8101888
+            8101888, 
+            0
         ], 
         [
-            "UINavigationBarBlackTranslucentBackPressed.png", 
+            "UINavigationBarBlackTranslucentBackPressed@2x.png", 
             42, 
             60, 
-            8114176
+            8114176, 
+            0
         ], 
         [
-            "UINavigationBarBlackTranslucentBackground.png", 
+            "UINavigationBarBlackTranslucentBackground@2x.png", 
             2, 
             88, 
-            8126464
+            8126464, 
+            0
         ], 
         [
-            "UINavigationBarBlackTranslucentButton.png", 
+            "UINavigationBarBlackTranslucentButton@2x.png", 
             22, 
             60, 
-            8130560
+            8130560, 
+            0
         ], 
         [
-            "UINavigationBarBlackTranslucentButtonPressed.png", 
+            "UINavigationBarBlackTranslucentButtonPressed@2x.png", 
             22, 
             60, 
-            8138752
+            8138752, 
+            0
         ], 
         [
-            "UINavigationBarBlackTranslucentTallBackground.png", 
+            "UINavigationBarBlackTranslucentTallBackground@2x.png", 
             2, 
             148, 
-            8146944
+            8146944, 
+            0
         ], 
         [
-            "UINavigationBarDefaultBack.png", 
+            "UINavigationBarDefaultBack@2x.png", 
             42, 
             60, 
-            8155136
+            8155136, 
+            0
         ], 
         [
-            "UINavigationBarDefaultBackPressed.png", 
+            "UINavigationBarDefaultBackPressed@2x.png", 
             42, 
             60, 
-            8167424
+            8167424, 
+            0
         ], 
         [
-            "UINavigationBarDefaultBackground.png", 
+            "UINavigationBarDefaultBackground@2x.png", 
             2, 
             88, 
-            8179713
+            8179712, 
+            1
         ], 
         [
-            "UINavigationBarDefaultButton.png", 
+            "UINavigationBarDefaultButton@2x.png", 
             22, 
             60, 
-            8183808
+            8183808, 
+            0
         ], 
         [
-            "UINavigationBarDefaultButtonPressed.png", 
+            "UINavigationBarDefaultButtonPressed@2x.png", 
             22, 
             60, 
-            8192000
+            8192000, 
+            0
         ], 
         [
-            "UINavigationBarDefaultTallBackground.png", 
+            "UINavigationBarDefaultTallBackground@2x.png", 
             2, 
             148, 
-            8200193
+            8200192, 
+            1
         ], 
         [
-            "UINavigationBarDoneButton.png", 
+            "UINavigationBarDoneButton@2x.png", 
             22, 
             60, 
-            8208384
+            8208384, 
+            0
         ], 
         [
-            "UINavigationBarDoneButtonPressed.png", 
+            "UINavigationBarDoneButtonPressed@2x.png", 
             22, 
             60, 
-            8216576
+            8216576, 
+            0
         ], 
         [
-            "UINavigationBarMiniBlackOpaqueBack.png", 
+            "UINavigationBarMiniBlackOpaqueBack@2x.png", 
             30, 
             48, 
-            8224768
+            8224768, 
+            0
         ], 
         [
-            "UINavigationBarMiniBlackOpaqueBackPressed.png", 
+            "UINavigationBarMiniBlackOpaqueBackPressed@2x.png", 
             30, 
             48, 
-            8232960
+            8232960, 
+            0
         ], 
         [
-            "UINavigationBarMiniBlackOpaqueBackground.png", 
+            "UINavigationBarMiniBlackOpaqueBackground@2x.png", 
             2, 
             64, 
-            8241153
+            8241152, 
+            1
         ], 
         [
-            "UINavigationBarMiniBlackOpaqueButton.png", 
+            "UINavigationBarMiniBlackOpaqueButton@2x.png", 
             18, 
             48, 
-            8245248
+            8245248, 
+            0
         ], 
         [
-            "UINavigationBarMiniBlackOpaqueButtonPressed.png", 
+            "UINavigationBarMiniBlackOpaqueButtonPressed@2x.png", 
             18, 
             48, 
-            8253440
+            8253440, 
+            0
         ], 
         [
-            "UINavigationBarMiniBlackTranslucentBack.png", 
+            "UINavigationBarMiniBlackTranslucentBack@2x.png", 
             30, 
             48, 
-            8261632
+            8261632, 
+            0
         ], 
         [
-            "UINavigationBarMiniBlackTranslucentBackPressed.png", 
+            "UINavigationBarMiniBlackTranslucentBackPressed@2x.png", 
             30, 
             48, 
-            8269824
+            8269824, 
+            0
         ], 
         [
-            "UINavigationBarMiniBlackTranslucentBackground.png", 
+            "UINavigationBarMiniBlackTranslucentBackground@2x.png", 
             2, 
             64, 
-            8278016
+            8278016, 
+            0
         ], 
         [
-            "UINavigationBarMiniBlackTranslucentButton.png", 
+            "UINavigationBarMiniBlackTranslucentButton@2x.png", 
             18, 
             48, 
-            8282112
+            8282112, 
+            0
         ], 
         [
-            "UINavigationBarMiniBlackTranslucentButtonPressed.png", 
+            "UINavigationBarMiniBlackTranslucentButtonPressed@2x.png", 
             18, 
             48, 
-            8290304
+            8290304, 
+            0
         ], 
         [
-            "UINavigationBarMiniDefaultBack.png", 
+            "UINavigationBarMiniDefaultBack@2x.png", 
             30, 
             48, 
-            8298496
+            8298496, 
+            0
         ], 
         [
-            "UINavigationBarMiniDefaultBackPressed.png", 
+            "UINavigationBarMiniDefaultBackPressed@2x.png", 
             30, 
             48, 
-            8306688
+            8306688, 
+            0
         ], 
         [
-            "UINavigationBarMiniDefaultBackground.png", 
+            "UINavigationBarMiniDefaultBackground@2x.png", 
             2, 
             64, 
-            8314881
+            8314880, 
+            1
         ], 
         [
-            "UINavigationBarMiniDefaultButton.png", 
+            "UINavigationBarMiniDefaultButton@2x.png", 
             18, 
             48, 
-            8318976
+            8318976, 
+            0
         ], 
         [
-            "UINavigationBarMiniDefaultButtonPressed.png", 
+            "UINavigationBarMiniDefaultButtonPressed@2x.png", 
             18, 
             48, 
-            8327168
+            8327168, 
+            0
         ], 
         [
-            "UINavigationBarMiniDoneButton.png", 
+            "UINavigationBarMiniDoneButton@2x.png", 
             18, 
             48, 
-            8335360
+            8335360, 
+            0
         ], 
         [
-            "UINavigationBarMiniRemoveButton.png", 
+            "UINavigationBarMiniRemoveButton@2x.png", 
             18, 
             48, 
-            8343552
+            8343552, 
+            0
         ], 
         [
-            "UINavigationBarMiniRemoveButtonPressed.png", 
+            "UINavigationBarMiniRemoveButtonPressed@2x.png", 
             18, 
             48, 
-            8351744
+            8351744, 
+            0
         ], 
         [
-            "UINavigationBarRemoveButton.png", 
+            "UINavigationBarRemoveButton@2x.png", 
             22, 
             60, 
-            8359936
+            8359936, 
+            0
         ], 
         [
-            "UINavigationBarRemoveButtonPressed.png", 
+            "UINavigationBarRemoveButtonPressed@2x.png", 
             22, 
             60, 
-            8368128
+            8368128, 
+            0
         ], 
         [
-            "UIPageIndicator.png", 
+            "UIPageIndicator@2x.png", 
             12, 
             12, 
-            8376320
+            8376320, 
+            0
         ], 
         [
-            "UIPageIndicatorCurrent.png", 
+            "UIPageIndicatorCurrent@2x.png", 
             12, 
             12, 
-            8380416
+            8380416, 
+            0
         ], 
         [
-            "UIPasscodeFieldBackground.png", 
+            "UIPasscodeFieldBackground@2x.png", 
             124, 
             104, 
-            8384513
+            8384512, 
+            1
         ], 
         [
-            "UIPasscodeFieldBackground_Opaque.png", 
+            "UIPasscodeFieldBackground_Opaque@2x.png", 
             22, 
             106, 
-            8437761
+            8437760, 
+            1
         ], 
         [
-            "UIPasscodeFieldButton.png", 
+            "UIPasscodeFieldButton@2x.png", 
             30, 
             78, 
-            8450048
+            8450048, 
+            0
         ], 
         [
-            "UIPasscodeFieldButtonPressed.png", 
+            "UIPasscodeFieldButtonPressed@2x.png", 
             30, 
             78, 
-            8462336
+            8462336, 
+            0
         ], 
         [
-            "UIPickerTableCellChecked.png", 
+            "UIPickerTableCellChecked@2x.png", 
             36, 
             36, 
-            8474624
+            8474624, 
+            0
         ], 
         [
-            "UIPickerViewBackground-162.png", 
+            "UIPickerViewBackground-162@2x.png", 
             2, 
             324, 
-            8482817
+            8482816, 
+            1
         ], 
         [
-            "UIPickerViewBackground-180.png", 
+            "UIPickerViewBackground-180@2x.png", 
             2, 
             360, 
-            8495105
+            8495104, 
+            1
         ], 
         [
-            "UIPickerViewBackground.png", 
+            "UIPickerViewBackground@2x.png", 
             2, 
             432, 
-            8507393
+            8507392, 
+            1
         ], 
         [
-            "UIPickerViewFrameLeft-162-Bar.png", 
+            "UIPickerViewFrameLeft-162-Bar@2x.png", 
             30, 
             324, 
-            8523776
+            8523776, 
+            0
         ], 
         [
-            "UIPickerViewFrameLeft-162.png", 
+            "UIPickerViewFrameLeft-162@2x.png", 
             30, 
             324, 
-            8568832
+            8568832, 
+            0
         ], 
         [
-            "UIPickerViewFrameLeft-180-Bar.png", 
+            "UIPickerViewFrameLeft-180-Bar@2x.png", 
             30, 
             360, 
-            8613888
+            8613888, 
+            0
         ], 
         [
-            "UIPickerViewFrameLeft-180.png", 
+            "UIPickerViewFrameLeft-180@2x.png", 
             30, 
             360, 
-            8663040
+            8663040, 
+            0
         ], 
         [
-            "UIPickerViewFrameLeft-Bar.png", 
+            "UIPickerViewFrameLeft-Bar@2x.png", 
             30, 
             432, 
-            8712192
+            8712192, 
+            0
         ], 
         [
-            "UIPickerViewFrameLeft.png", 
+            "UIPickerViewFrameLeft@2x.png", 
             30, 
             432, 
-            8769536
+            8769536, 
+            0
         ], 
         [
-            "UIPickerViewFrameMiddle-162.png", 
+            "UIPickerViewFrameMiddle-162@2x.png", 
             2, 
             324, 
-            8826880
+            8826880, 
+            0
         ], 
         [
-            "UIPickerViewFrameMiddle-180.png", 
+            "UIPickerViewFrameMiddle-180@2x.png", 
             2, 
             360, 
-            8839168
+            8839168, 
+            0
         ], 
         [
-            "UIPickerViewFrameMiddle.png", 
+            "UIPickerViewFrameMiddle@2x.png", 
             2, 
             432, 
-            8851456
+            8851456, 
+            0
         ], 
         [
-            "UIPickerViewFrameRight-162-Bar.png", 
+            "UIPickerViewFrameRight-162-Bar@2x.png", 
             30, 
             324, 
-            8867840
+            8867840, 
+            0
         ], 
         [
-            "UIPickerViewFrameRight-162.png", 
+            "UIPickerViewFrameRight-162@2x.png", 
             30, 
             324, 
-            8912896
+            8912896, 
+            0
         ], 
         [
-            "UIPickerViewFrameRight-180-Bar.png", 
+            "UIPickerViewFrameRight-180-Bar@2x.png", 
             30, 
             360, 
-            8957952
+            8957952, 
+            0
         ], 
         [
-            "UIPickerViewFrameRight-180.png", 
+            "UIPickerViewFrameRight-180@2x.png", 
             30, 
             360, 
-            9007104
+            9007104, 
+            0
         ], 
         [
-            "UIPickerViewFrameRight-Bar.png", 
+            "UIPickerViewFrameRight-Bar@2x.png", 
             30, 
             432, 
-            9056256
+            9056256, 
+            0
         ], 
         [
-            "UIPickerViewFrameRight.png", 
+            "UIPickerViewFrameRight@2x.png", 
             30, 
             432, 
-            9113600
+            9113600, 
+            0
         ], 
         [
-            "UIPickerViewSelectionBar.png", 
+            "UIPickerViewSelectionBar@2x.png", 
             18, 
             88, 
-            9170945
+            9170944, 
+            1
         ], 
         [
-            "UIPickerViewSelectionBarAboveDivider.png", 
+            "UIPickerViewSelectionBarAboveDivider@2x.png", 
             2, 
             96, 
-            9183232
+            9183232, 
+            0
         ], 
         [
-            "UIPickerViewSelectionBarAboveWheel.png", 
+            "UIPickerViewSelectionBarAboveWheel@2x.png", 
             2, 
             124, 
-            9187328
+            9187328, 
+            0
         ], 
         [
-            "UIPickerViewShadowsAboveWheel-162.png", 
+            "UIPickerViewShadowsAboveWheel-162@2x.png", 
             2, 
             324, 
-            9191424
+            9191424, 
+            0
         ], 
         [
-            "UIPickerViewShadowsAboveWheel-180.png", 
+            "UIPickerViewShadowsAboveWheel-180@2x.png", 
             2, 
             360, 
-            9203712
+            9203712, 
+            0
         ], 
         [
-            "UIPickerViewShadowsAboveWheel.png", 
+            "UIPickerViewShadowsAboveWheel@2x.png", 
             2, 
             432, 
-            9216000
+            9216000, 
+            0
         ], 
         [
-            "UIPickerViewWheelBackground-162.png", 
+            "UIPickerViewWheelBackground-162@2x.png", 
             18, 
             324, 
-            9232385
+            9232384, 
+            1
         ], 
         [
-            "UIPickerViewWheelBackground-180.png", 
+            "UIPickerViewWheelBackground-180@2x.png", 
             18, 
             360, 
-            9265153
+            9265152, 
+            1
         ], 
         [
-            "UIPickerViewWheelBackground.png", 
+            "UIPickerViewWheelBackground@2x.png", 
             18, 
             432, 
-            9302017
+            9302016, 
+            1
         ], 
         [
-            "UIPinstripe.png", 
+            "UIPinstripe@2x.png", 
             14, 
             2, 
-            9347073
+            9347072, 
+            1
         ], 
         [
-            "UIPlacardButtonBkgnd-short.png", 
+            "UIPlacardButtonBkgnd-short@2x.png", 
             38, 
             66, 
-            9351168
+            9351168, 
+            0
         ], 
         [
-            "UIPlacardButtonBkgnd.png", 
+            "UIPlacardButtonBkgnd@2x.png", 
             38, 
             92, 
-            9363456
+            9363456, 
+            0
         ], 
         [
-            "UIPlacardButtonPressedBkgnd-short.png", 
+            "UIPlacardButtonPressedBkgnd-short@2x.png", 
             38, 
             66, 
-            9379840
+            9379840, 
+            0
         ], 
         [
-            "UIPlacardButtonPressedBkgnd.png", 
+            "UIPlacardButtonPressedBkgnd@2x.png", 
             38, 
             92, 
-            9392128
+            9392128, 
+            0
         ], 
         [
-            "UIPopoverButton.png", 
+            "UIPopoverButton@2x.png", 
             30, 
             88, 
-            9408512
+            9408512, 
+            0
         ], 
         [
-            "UIPopoverButtonPressed.png", 
+            "UIPopoverButtonPressed@2x.png", 
             30, 
             88, 
-            9420800
+            9420800, 
+            0
         ], 
         [
-            "UIPopupAlertListShadow.png", 
+            "UIPopupAlertListShadow@2x.png", 
             22, 
             28, 
-            9433088
+            9433088, 
+            0
         ], 
         [
-            "UIPopupAlertListShadowMask.png", 
+            "UIPopupAlertListShadowMask@2x.png", 
             11, 
             14, 
-            9437184
+            9437184, 
+            0
         ], 
         [
-            "UIPopupAlertSheetBackground (UNDO).png", 
+            "UIPopupAlertSheetBackground (UNDO)@2x.png", 
             568, 
             124, 
-            9441280
+            9441280, 
+            0
         ], 
         [
-            "UIPopupAlertSheetBackground.png", 
+            "UIPopupAlertSheetBackground@2x.png", 
             568, 
             124, 
-            9723904
+            9723904, 
+            0
         ], 
         [
-            "UIPopupAlertSheetButton.png", 
+            "UIPopupAlertSheetButton@2x.png", 
             22, 
             86, 
-            10006528
+            10006528, 
+            0
         ], 
         [
-            "UIPopupAlertSheetButtonPress.png", 
+            "UIPopupAlertSheetButtonPress@2x.png", 
             22, 
             86, 
-            10018816
+            10018816, 
+            0
         ], 
         [
-            "UIPopupAlertSheetDefaultButton.png", 
+            "UIPopupAlertSheetDefaultButton@2x.png", 
             22, 
             86, 
-            10031104
+            10031104, 
+            0
         ], 
         [
-            "UIPreferencesBlueCheck.png", 
+            "UIPreferencesBlueCheck@2x.png", 
             28, 
             28, 
-            10043392
+            10043392, 
+            0
         ], 
         [
-            "UIPreferencesDeleteButtonNormal.png", 
+            "UIPreferencesDeleteButtonNormal@2x.png", 
             26, 
             88, 
-            10047488
+            10047488, 
+            0
         ], 
         [
-            "UIPreferencesDeleteButtonPressed.png", 
+            "UIPreferencesDeleteButtonPressed@2x.png", 
             26, 
             88, 
-            10059776
+            10059776, 
+            0
         ], 
         [
-            "UIPreferencesGreenCheck.png", 
+            "UIPreferencesGreenCheck@2x.png", 
             28, 
             28, 
-            10072064
+            10072064, 
+            0
         ], 
         [
-            "UIPreferencesRedCheck.png", 
+            "UIPreferencesRedCheck@2x.png", 
             30, 
             22, 
-            10076160
+            10076160, 
+            0
         ], 
         [
-            "UIPreferencesWhiteCheck.png", 
+            "UIPreferencesWhiteCheck@2x.png", 
             28, 
             28, 
-            10080256
+            10080256, 
+            0
         ], 
         [
-            "UIPrintStatusGenericThumbnail.png", 
+            "UIPrintStatusGenericThumbnail@2x.png", 
             108, 
             108, 
-            10084353
+            10084352, 
+            1
         ], 
         [
-            "UIPrinterLock.png", 
+            "UIPrinterLock@2x.png", 
             22, 
             31, 
-            10133504
+            10133504, 
+            0
         ], 
         [
-            "UIPrinterLockSelected.png", 
+            "UIPrinterLockSelected@2x.png", 
             22, 
             31, 
-            10137600
+            10137600, 
+            0
         ], 
         [
-            "UIPrinterNoJobIcon.png", 
+            "UIPrinterNoJobIcon@2x.png", 
             172, 
             220, 
-            10141696
+            10141696, 
+            0
         ], 
         [
-            "UIPrinterUnlock.png", 
+            "UIPrinterUnlock@2x.png", 
             22, 
             31, 
-            10297344
+            10297344, 
+            0
         ], 
         [
-            "UIPrinterUnlockSelected.png", 
+            "UIPrinterUnlockSelected@2x.png", 
             22, 
             31, 
-            10301440
+            10301440, 
+            0
         ], 
         [
-            "UIRemoveControlMinus.png", 
+            "UIRemoveControlMinus@2x.png", 
             58, 
             58, 
-            10305536
+            10305536, 
+            0
         ], 
         [
-            "UIRemoveControlMultiCheckedImage.png", 
+            "UIRemoveControlMultiCheckedImage@2x.png", 
             58, 
             58, 
-            10321920
+            10321920, 
+            0
         ], 
         [
-            "UIRemoveControlMultiNotCheckedImage.png", 
+            "UIRemoveControlMultiNotCheckedImage@2x.png", 
             58, 
             58, 
-            10338304
+            10338304, 
+            0
         ], 
         [
-            "UIRemoveControlMultiSelectedImage.png", 
+            "UIRemoveControlMultiSelectedImage@2x.png", 
             58, 
             58, 
-            10354688
+            10354688, 
+            0
         ], 
         [
-            "UIRemoveControlPlus.png", 
+            "UIRemoveControlPlus@2x.png", 
             58, 
             58, 
-            10371072
+            10371072, 
+            0
         ], 
         [
-            "UIRemoveControlPressedRed.png", 
+            "UIRemoveControlPressedRed@2x.png", 
             34, 
             66, 
-            10387456
+            10387456, 
+            0
         ], 
         [
-            "UIRemoveControlRed.png", 
+            "UIRemoveControlRed@2x.png", 
             34, 
             66, 
-            10399744
+            10399744, 
+            0
         ], 
         [
-            "UIRoundedTextFieldLeft.png", 
+            "UIRoundedTextFieldLeft@2x.png", 
             16, 
             62, 
-            10412032
+            10412032, 
+            0
         ], 
         [
-            "UIRoundedTextFieldLeftInactive.png", 
+            "UIRoundedTextFieldLeftInactive@2x.png", 
             16, 
             62, 
-            10416128
+            10416128, 
+            0
         ], 
         [
-            "UIRoundedTextFieldLeftProgress.png", 
+            "UIRoundedTextFieldLeftProgress@2x.png", 
             16, 
             62, 
-            10420224
+            10420224, 
+            0
         ], 
         [
-            "UIRoundedTextFieldMiddle.png", 
+            "UIRoundedTextFieldMiddle@2x.png", 
             2, 
             62, 
-            10424320
+            10424320, 
+            0
         ], 
         [
-            "UIRoundedTextFieldMiddleInactive.png", 
+            "UIRoundedTextFieldMiddleInactive@2x.png", 
             2, 
             62, 
-            10428416
+            10428416, 
+            0
         ], 
         [
-            "UIRoundedTextFieldMiddleProgress.png", 
+            "UIRoundedTextFieldMiddleProgress@2x.png", 
             2, 
             62, 
-            10432512
+            10432512, 
+            0
         ], 
         [
-            "UIRoundedTextFieldRight.png", 
+            "UIRoundedTextFieldRight@2x.png", 
             16, 
             62, 
-            10436608
+            10436608, 
+            0
         ], 
         [
-            "UIRoundedTextFieldRightInactive.png", 
+            "UIRoundedTextFieldRightInactive@2x.png", 
             16, 
             62, 
-            10440704
+            10440704, 
+            0
         ], 
         [
-            "UIRoundedTextFieldRightProgress.png", 
+            "UIRoundedTextFieldRightProgress@2x.png", 
             16, 
             62, 
-            10444800
+            10444800, 
+            0
         ], 
         [
-            "UIScrollerContentShadowCorner.png", 
+            "UIScrollerContentShadowCorner@2x.png", 
             20, 
             20, 
-            10448896
+            10448896, 
+            0
         ], 
         [
-            "UIScrollerContentShadowFill.png", 
+            "UIScrollerContentShadowFill@2x.png", 
             2, 
             20, 
-            10452992
+            10452992, 
+            0
         ], 
         [
-            "UIScrollerIndicatorBlack.png", 
+            "UIScrollerIndicatorBlack@2x.png", 
             10, 
             10, 
-            10457088
+            10457088, 
+            0
         ], 
         [
-            "UIScrollerIndicatorDefault.png", 
+            "UIScrollerIndicatorDefault@2x.png", 
             14, 
             14, 
-            10461184
+            10461184, 
+            0
         ], 
         [
-            "UIScrollerIndicatorWhite.png", 
+            "UIScrollerIndicatorWhite@2x.png", 
             10, 
             10, 
-            10465280
+            10465280, 
+            0
         ], 
         [
-            "UIScrollerShadowCorner.png", 
+            "UIScrollerShadowCorner@2x.png", 
             108, 
             108, 
-            10469376
+            10469376, 
+            0
         ], 
         [
-            "UIScrollerShadowEdgeFill.png", 
+            "UIScrollerShadowEdgeFill@2x.png", 
             2, 
             12, 
-            10518528
+            10518528, 
+            0
         ], 
         [
-            "UIScrollerShadowFill.png", 
+            "UIScrollerShadowFill@2x.png", 
             2, 
             60, 
-            10522624
+            10522624, 
+            0
         ], 
         [
-            "UIScrubberBlueCap.png", 
+            "UIScrubberBlueCap@2x.png", 
             10, 
             18, 
-            10526720
+            10526720, 
+            0
         ], 
         [
-            "UIScrubberBlueCapRight.png", 
+            "UIScrubberBlueCapRight@2x.png", 
             10, 
             18, 
-            10530816
+            10530816, 
+            0
         ], 
         [
-            "UIScrubberBlueFill.png", 
+            "UIScrubberBlueFill@2x.png", 
             2, 
             18, 
-            10534912
+            10534912, 
+            0
         ], 
         [
-            "UIScrubberDownloadFill.png", 
+            "UIScrubberDownloadFill@2x.png", 
             2, 
             16, 
-            10539008
+            10539008, 
+            0
         ], 
         [
-            "UIScrubberDownloadingCapLeft.png", 
+            "UIScrubberDownloadingCapLeft@2x.png", 
             8, 
             16, 
-            10543104
+            10543104, 
+            0
         ], 
         [
-            "UIScrubberDownloadingCapRight.png", 
+            "UIScrubberDownloadingCapRight@2x.png", 
             8, 
             16, 
-            10547200
+            10547200, 
+            0
         ], 
         [
-            "UIScrubberKnob.png", 
+            "UIScrubberKnob@2x.png", 
             34, 
             36, 
-            10551296
+            10551296, 
+            0
         ], 
         [
-            "UIScrubberLargeKnob.png", 
+            "UIScrubberLargeKnob@2x.png", 
             44, 
             48, 
-            10559488
+            10559488, 
+            0
         ], 
         [
-            "UIScrubberWhiteCap.png", 
+            "UIScrubberWhiteCap@2x.png", 
             10, 
             18, 
-            10571776
+            10571776, 
+            0
         ], 
         [
-            "UIScrubberWhiteCapLeft.png", 
+            "UIScrubberWhiteCapLeft@2x.png", 
             10, 
             18, 
-            10575872
+            10575872, 
+            0
         ], 
         [
-            "UIScrubberWhiteFill.png", 
+            "UIScrubberWhiteFill@2x.png", 
             2, 
             18, 
-            10579968
+            10579968, 
+            0
         ], 
         [
-            "UISearchBarBookmarks.png", 
+            "UISearchBarBookmarks@2x.png", 
             80, 
             58, 
-            10584064
+            10584064, 
+            0
         ], 
         [
-            "UISearchBarBookmarksPressed.png", 
+            "UISearchBarBookmarksPressed@2x.png", 
             80, 
             58, 
-            10604544
+            10604544, 
+            0
         ], 
         [
-            "UISearchBarBorder.png", 
+            "UISearchBarBorder@2x.png", 
             70, 
             62, 
-            10625024
+            10625024, 
+            0
         ], 
         [
-            "UISearchBarBorderInactive.png", 
+            "UISearchBarBorderInactive@2x.png", 
             70, 
             62, 
-            10645504
+            10645504, 
+            0
         ], 
         [
-            "UISearchBarBorderInactiveInline.png", 
+            "UISearchBarBorderInactiveInline@2x.png", 
             70, 
             62, 
-            10665984
+            10665984, 
+            0
         ], 
         [
-            "UISearchBarBorderInline.png", 
+            "UISearchBarBorderInline@2x.png", 
             70, 
             62, 
-            10686464
+            10686464, 
+            0
         ], 
         [
-            "UISearchBarCancelButton.png", 
+            "UISearchBarCancelButton@2x.png", 
             22, 
             60, 
-            10706944
+            10706944, 
+            0
         ], 
         [
-            "UISearchBarCancelButtonPressed.png", 
+            "UISearchBarCancelButtonPressed@2x.png", 
             22, 
             60, 
-            10715136
+            10715136, 
+            0
         ], 
         [
-            "UISearchBarDefaultBackground.png", 
+            "UISearchBarDefaultBackground@2x.png", 
             2, 
             88, 
-            10723329
+            10723328, 
+            1
         ], 
         [
-            "UISearchBarDefaultSeparator.png", 
+            "UISearchBarDefaultSeparator@2x.png", 
             2, 
             2, 
-            10727425
+            10727424, 
+            1
         ], 
         [
-            "UISearchFieldIcon.png", 
+            "UISearchFieldIcon@2x.png", 
             30, 
             30, 
-            10731520
+            10731520, 
+            0
         ], 
         [
-            "UISearchFieldLeft.png", 
+            "UISearchFieldLeft@2x.png", 
             34, 
             62, 
-            10735616
+            10735616, 
+            0
         ], 
         [
-            "UISearchFieldLeftInactive.png", 
+            "UISearchFieldLeftInactive@2x.png", 
             34, 
             62, 
-            10747904
+            10747904, 
+            0
         ], 
         [
-            "UISearchFieldLeftProgress.png", 
+            "UISearchFieldLeftProgress@2x.png", 
             34, 
             62, 
-            10760192
+            10760192, 
+            0
         ], 
         [
-            "UISearchFieldMiddle.png", 
+            "UISearchFieldMiddle@2x.png", 
             2, 
             62, 
-            10772480
+            10772480, 
+            0
         ], 
         [
-            "UISearchFieldMiddleInactive.png", 
+            "UISearchFieldMiddleInactive@2x.png", 
             2, 
             62, 
-            10776576
+            10776576, 
+            0
         ], 
         [
-            "UISearchFieldMiddleProgress.png", 
+            "UISearchFieldMiddleProgress@2x.png", 
             2, 
             62, 
-            10780672
+            10780672, 
+            0
         ], 
         [
-            "UISearchFieldRight.png", 
+            "UISearchFieldRight@2x.png", 
             34, 
             62, 
-            10784768
+            10784768, 
+            0
         ], 
         [
-            "UISearchFieldRightInactive.png", 
+            "UISearchFieldRightInactive@2x.png", 
             34, 
             62, 
-            10797056
+            10797056, 
+            0
         ], 
         [
-            "UISearchFieldRightProgress.png", 
+            "UISearchFieldRightProgress@2x.png", 
             34, 
             62, 
-            10809344
+            10809344, 
+            0
         ], 
         [
-            "UISectionListHeaderBackground.png", 
+            "UISectionListHeaderBackground@2x.png", 
             2, 
             46, 
-            10821632
+            10821632, 
+            0
         ], 
         [
-            "UISectionListHeaderBackgroundOpaque.png", 
+            "UISectionListHeaderBackgroundOpaque@2x.png", 
             2, 
             46, 
-            10825729
+            10825728, 
+            1
         ], 
         [
-            "UISectionListPoundSign.png", 
+            "UISectionListPoundSign@2x.png", 
             16, 
             20, 
-            10829824
+            10829824, 
+            0
         ], 
         [
-            "UISegmentBarBlackButton.png", 
+            "UISegmentBarBlackButton@2x.png", 
             24, 
             60, 
-            10833920
+            10833920, 
+            0
         ], 
         [
-            "UISegmentBarBlackButtonHighlighted.png", 
+            "UISegmentBarBlackButtonHighlighted@2x.png", 
             24, 
             60, 
-            10842112
+            10842112, 
+            0
         ], 
         [
-            "UISegmentBarBlackDivider.png", 
+            "UISegmentBarBlackDivider@2x.png", 
             2, 
             60, 
-            10850304
+            10850304, 
+            0
         ], 
         [
-            "UISegmentBarBlackDividerHighlighted.png", 
+            "UISegmentBarBlackDividerHighlighted@2x.png", 
             2, 
             60, 
-            10854400
+            10854400, 
+            0
         ], 
         [
-            "UISegmentBarBlackMiniButton.png", 
+            "UISegmentBarBlackMiniButton@2x.png", 
             20, 
             48, 
-            10858496
+            10858496, 
+            0
         ], 
         [
-            "UISegmentBarBlackMiniButtonHighlighted.png", 
+            "UISegmentBarBlackMiniButtonHighlighted@2x.png", 
             20, 
             48, 
-            10866688
+            10866688, 
+            0
         ], 
         [
-            "UISegmentBarBlackMiniDivider.png", 
+            "UISegmentBarBlackMiniDivider@2x.png", 
             2, 
             48, 
-            10874880
+            10874880, 
+            0
         ], 
         [
-            "UISegmentBarBlackMiniDividerHighlighted.png", 
+            "UISegmentBarBlackMiniDividerHighlighted@2x.png", 
             2, 
             48, 
-            10878976
+            10878976, 
+            0
         ], 
         [
-            "UISegmentBarButton.png", 
+            "UISegmentBarButton@2x.png", 
             24, 
             60, 
-            10883072
+            10883072, 
+            0
         ], 
         [
-            "UISegmentBarButtonHighlighted.png", 
+            "UISegmentBarButtonHighlighted@2x.png", 
             24, 
             60, 
-            10891264
+            10891264, 
+            0
         ], 
         [
-            "UISegmentBarDivider.png", 
+            "UISegmentBarDivider@2x.png", 
             2, 
             60, 
-            10899456
+            10899456, 
+            0
         ], 
         [
-            "UISegmentBarDividerHighlighted.png", 
+            "UISegmentBarDividerHighlighted@2x.png", 
             2, 
             60, 
-            10903552
+            10903552, 
+            0
         ], 
         [
-            "UISegmentBarMiniButton.png", 
+            "UISegmentBarMiniButton@2x.png", 
             20, 
             48, 
-            10907648
+            10907648, 
+            0
         ], 
         [
-            "UISegmentBarMiniButtonHighlighted.png", 
+            "UISegmentBarMiniButtonHighlighted@2x.png", 
             20, 
             48, 
-            10915840
+            10915840, 
+            0
         ], 
         [
-            "UISegmentBarMiniDivider.png", 
+            "UISegmentBarMiniDivider@2x.png", 
             2, 
             48, 
-            10924032
+            10924032, 
+            0
         ], 
         [
-            "UISegmentBarMiniDividerHighlighted.png", 
+            "UISegmentBarMiniDividerHighlighted@2x.png", 
             2, 
             48, 
-            10928128
+            10928128, 
+            0
         ], 
         [
-            "UISegmentBorderedButton.png", 
+            "UISegmentBorderedButton@2x.png", 
             44, 
             88, 
-            10932224
+            10932224, 
+            0
         ], 
         [
-            "UISegmentBorderedButtonHighlighted.png", 
+            "UISegmentBorderedButtonHighlighted@2x.png", 
             44, 
             88, 
-            10952704
+            10952704, 
+            0
         ], 
         [
-            "UISegmentBorderedDivider.png", 
+            "UISegmentBorderedDivider@2x.png", 
             2, 
             88, 
-            10973184
+            10973184, 
+            0
         ], 
         [
-            "UISegmentBorderedDividerHilightedLeft.png", 
+            "UISegmentBorderedDividerHilightedLeft@2x.png", 
             12, 
             88, 
-            10977280
+            10977280, 
+            0
         ], 
         [
-            "UISegmentBorderedDividerHilightedRight.png", 
+            "UISegmentBorderedDividerHilightedRight@2x.png", 
             12, 
             88, 
-            10985472
+            10985472, 
+            0
         ], 
         [
-            "UISegmentButton.png", 
+            "UISegmentButton@2x.png", 
             44, 
             88, 
-            10993664
+            10993664, 
+            0
         ], 
         [
-            "UISegmentButtonHighlighted.png", 
+            "UISegmentButtonHighlighted@2x.png", 
             44, 
             88, 
-            11014144
+            11014144, 
+            0
         ], 
         [
-            "UISegmentDivider.png", 
+            "UISegmentDivider@2x.png", 
             2, 
             88, 
-            11034624
+            11034624, 
+            0
         ], 
         [
-            "UISegmentDividerHilightedLeft.png", 
+            "UISegmentDividerHilightedLeft@2x.png", 
             12, 
             88, 
-            11038720
+            11038720, 
+            0
         ], 
         [
-            "UISegmentDividerHilightedRight.png", 
+            "UISegmentDividerHilightedRight@2x.png", 
             12, 
             88, 
-            11046912
+            11046912, 
+            0
         ], 
         [
-            "UISegmentOptionsBackground.png", 
+            "UISegmentOptionsBackground@2x.png", 
             2, 
             88, 
-            11055105
+            11055104, 
+            1
         ], 
         [
-            "UISegmentOptionsButton.png", 
+            "UISegmentOptionsButton@2x.png", 
             22, 
             60, 
-            11059200
+            11059200, 
+            0
         ], 
         [
-            "UISegmentOptionsButtonSelected.png", 
+            "UISegmentOptionsButtonSelected@2x.png", 
             22, 
             60, 
-            11067392
+            11067392, 
+            0
         ], 
         [
-            "UISegmentOptionsDivider.png", 
+            "UISegmentOptionsDivider@2x.png", 
             2, 
             60, 
-            11075584
+            11075584, 
+            0
         ], 
         [
-            "UISegmentOptionsDividerSelected.png", 
+            "UISegmentOptionsDividerSelected@2x.png", 
             2, 
             60, 
-            11079680
+            11079680, 
+            0
         ], 
         [
-            "UISegmentTexturedButtonHighlightedCenter.png", 
+            "UISegmentTexturedButtonHighlightedCenter@2x.png", 
             92, 
             92, 
-            11083776
+            11083776, 
+            0
         ], 
         [
-            "UISegmentTexturedButtonHighlightedLeftCap.png", 
+            "UISegmentTexturedButtonHighlightedLeftCap@2x.png", 
             18, 
             92, 
-            11120640
+            11120640, 
+            0
         ], 
         [
-            "UISegmentTexturedButtonHighlightedRightCap.png", 
+            "UISegmentTexturedButtonHighlightedRightCap@2x.png", 
             18, 
             92, 
-            11132928
+            11132928, 
+            0
         ], 
         [
-            "UISegmentTexturedButtonSelectedCenter.png", 
+            "UISegmentTexturedButtonSelectedCenter@2x.png", 
             92, 
             92, 
-            11145216
+            11145216, 
+            0
         ], 
         [
-            "UISegmentTexturedButtonSelectedHighlightedCenter.png", 
+            "UISegmentTexturedButtonSelectedHighlightedCenter@2x.png", 
             92, 
             92, 
-            11182080
+            11182080, 
+            0
         ], 
         [
-            "UISegmentTexturedButtonSelectedHighlightedLeftCap.png", 
+            "UISegmentTexturedButtonSelectedHighlightedLeftCap@2x.png", 
             18, 
             92, 
-            11218944
+            11218944, 
+            0
         ], 
         [
-            "UISegmentTexturedButtonSelectedHighlightedRightCap.png", 
+            "UISegmentTexturedButtonSelectedHighlightedRightCap@2x.png", 
             18, 
             92, 
-            11231232
+            11231232, 
+            0
         ], 
         [
-            "UISegmentTexturedButtonSelectedLeftCap.png", 
+            "UISegmentTexturedButtonSelectedLeftCap@2x.png", 
             18, 
             92, 
-            11243520
+            11243520, 
+            0
         ], 
         [
-            "UISegmentTexturedButtonSelectedRightCap.png", 
+            "UISegmentTexturedButtonSelectedRightCap@2x.png", 
             18, 
             92, 
-            11255808
+            11255808, 
+            0
         ], 
         [
-            "UISegmentTexturedDivider.png", 
+            "UISegmentTexturedDivider@2x.png", 
             2, 
             92, 
-            11268096
+            11268096, 
+            0
         ], 
         [
-            "UISegmentTexturedHighlightedDivider.png", 
+            "UISegmentTexturedHighlightedDivider@2x.png", 
             2, 
             92, 
-            11272192
+            11272192, 
+            0
         ], 
         [
-            "UISegmentTexturedSelectedDivider.png", 
+            "UISegmentTexturedSelectedDivider@2x.png", 
             2, 
             92, 
-            11276288
+            11276288, 
+            0
         ], 
         [
-            "UISegmentTexturedSelectedHighlightedDivider.png", 
+            "UISegmentTexturedSelectedHighlightedDivider@2x.png", 
             2, 
             92, 
-            11280384
+            11280384, 
+            0
         ], 
         [
-            "UISliderBlue.png", 
+            "UISliderBlue@2x.png", 
             22, 
             18, 
-            11284480
+            11284480, 
+            0
         ], 
         [
-            "UISliderBlueCap.png", 
+            "UISliderBlueCap@2x.png", 
             10, 
             18, 
-            11288576
+            11288576, 
+            0
         ], 
         [
-            "UISliderBlueFill.png", 
+            "UISliderBlueFill@2x.png", 
             2, 
             18, 
-            11292673
+            11292672, 
+            1
         ], 
         [
-            "UISliderHandle.png", 
+            "UISliderHandle@2x.png", 
             46, 
             46, 
-            11296768
+            11296768, 
+            0
         ], 
         [
-            "UISliderHandleDown.png", 
+            "UISliderHandleDown@2x.png", 
             46, 
             46, 
-            11309056
+            11309056, 
+            0
         ], 
         [
-            "UISliderWhite.png", 
+            "UISliderWhite@2x.png", 
             22, 
             18, 
-            11321344
+            11321344, 
+            0
         ], 
         [
-            "UISliderWhiteCap.png", 
+            "UISliderWhiteCap@2x.png", 
             10, 
             18, 
-            11325440
+            11325440, 
+            0
         ], 
         [
-            "UISliderWhiteFill.png", 
+            "UISliderWhiteFill@2x.png", 
             2, 
             18, 
-            11329537
+            11329536, 
+            1
         ], 
         [
-            "UIStepperLeft.png", 
+            "UIStepperLeft@2x.png", 
             96, 
             54, 
-            11333632
+            11333632, 
+            0
         ], 
         [
-            "UIStepperLeftPressed.png", 
+            "UIStepperLeftPressed@2x.png", 
             96, 
             54, 
-            11358208
+            11358208, 
+            0
         ], 
         [
-            "UIStepperMiddle.png", 
+            "UIStepperMiddle@2x.png", 
             8, 
             54, 
-            11382785
+            11382784, 
+            1
         ], 
         [
-            "UIStepperMinus.png", 
+            "UIStepperMinus@2x.png", 
             28, 
             8, 
-            11386880
+            11386880, 
+            0
         ], 
         [
-            "UIStepperPlus.png", 
+            "UIStepperPlus@2x.png", 
             28, 
             28, 
-            11390976
+            11390976, 
+            0
         ], 
         [
-            "UIStepperRight.png", 
+            "UIStepperRight@2x.png", 
             96, 
             54, 
-            11395072
+            11395072, 
+            0
         ], 
         [
-            "UIStepperRightPressed.png", 
+            "UIStepperRightPressed@2x.png", 
             96, 
             54, 
-            11419648
+            11419648, 
+            0
         ], 
         [
-            "UIStockImageScrollViewTexturedBackgroundColor.png", 
+            "UIStockImageScrollViewTexturedBackgroundColor@2x.png", 
             512, 
             512, 
-            11444225
+            11444224, 
+            1
         ], 
         [
-            "UIStockImageUnderPageBackground.png", 
+            "UIStockImageUnderPageBackground@2x.png", 
             512, 
             512, 
-            12492801
+            12492800, 
+            1
         ], 
         [
-            "UIStockImageWidgetBacksideBackground.png", 
+            "UIStockImageWidgetBacksideBackground@2x.png", 
             640, 
             920, 
-            13541377
+            13541376, 
+            1
         ], 
         [
-            "UISwitchButtonFullShadowed.png", 
+            "UISwitchButtonFullShadowed@2x.png", 
             34, 
             54, 
-            15896576
+            15896576, 
+            0
         ], 
         [
-            "UISwitchButtonFullShadowedDown.png", 
+            "UISwitchButtonFullShadowedDown@2x.png", 
             34, 
             54, 
-            15908864
+            15908864, 
+            0
         ], 
         [
-            "UISwitchButtonLeftShadowed.png", 
+            "UISwitchButtonLeftShadowed@2x.png", 
             34, 
             54, 
-            15921152
+            15921152, 
+            0
         ], 
         [
-            "UISwitchButtonLeftShadowedDown.png", 
+            "UISwitchButtonLeftShadowedDown@2x.png", 
             34, 
             54, 
-            15933440
+            15933440, 
+            0
         ], 
         [
-            "UISwitchButtonOff.png", 
+            "UISwitchButtonOff@2x.png", 
             28, 
             32, 
-            15945728
+            15945728, 
+            0
         ], 
         [
-            "UISwitchButtonOn.png", 
+            "UISwitchButtonOn@2x.png", 
             4, 
             32, 
-            15949824
+            15949824, 
+            0
         ], 
         [
-            "UISwitchButtonRightShadowed.png", 
+            "UISwitchButtonRightShadowed@2x.png", 
             34, 
             54, 
-            15953920
+            15953920, 
+            0
         ], 
         [
-            "UISwitchButtonRightShadowedDown.png", 
+            "UISwitchButtonRightShadowedDown@2x.png", 
             34, 
             54, 
-            15966208
+            15966208, 
+            0
         ], 
         [
-            "UISwitchLeftCapOrange.png", 
+            "UISwitchLeftCapOrange@2x.png", 
             10, 
             54, 
-            15978496
+            15978496, 
+            0
         ], 
         [
-            "UISwitchTrackBlue.png", 
+            "UISwitchTrackBlue@2x.png", 
             22, 
             54, 
-            15982592
+            15982592, 
+            0
         ], 
         [
-            "UISwitchTrackClear.png", 
+            "UISwitchTrackClear@2x.png", 
             22, 
             54, 
-            15990784
+            15990784, 
+            0
         ], 
         [
-            "UISwitchTrackCustomEffects.png", 
+            "UISwitchTrackCustomEffects@2x.png", 
             22, 
             54, 
-            15998976
+            15998976, 
+            0
         ], 
         [
-            "UISwitchTrackCustomMask.png", 
+            "UISwitchTrackCustomMask@2x.png", 
             22, 
             54, 
-            16007168
+            16007168, 
+            0
         ], 
         [
-            "UISwitchTrackOrange.png", 
+            "UISwitchTrackOrange@2x.png", 
             22, 
             54, 
-            16015360
+            16015360, 
+            0
         ], 
         [
-            "UITabBarBlueGradient.png", 
+            "UITabBarBlueGradient@2x.png", 
             96, 
             64, 
-            16023553
+            16023552, 
+            1
         ], 
         [
-            "UITabBarBookmarksTemplate.png", 
+            "UITabBarBookmarksTemplate@2x.png", 
             56, 
             40, 
-            16048128
+            16048128, 
+            0
         ], 
         [
-            "UITabBarContactsTemplate.png", 
+            "UITabBarContactsTemplate@2x.png", 
             64, 
             58, 
-            16060416
+            16060416, 
+            0
         ], 
         [
-            "UITabBarDownloadsTemplate.png", 
+            "UITabBarDownloadsTemplate@2x.png", 
             58, 
             58, 
-            16076800
+            16076800, 
+            0
         ], 
         [
-            "UITabBarFavoritesTemplate.png", 
+            "UITabBarFavoritesTemplate@2x.png", 
             58, 
             56, 
-            16093184
+            16093184, 
+            0
         ], 
         [
-            "UITabBarFeatured.png", 
+            "UITabBarFeatured@2x.png", 
             80, 
             78, 
-            16109568
+            16109568, 
+            0
         ], 
         [
-            "UITabBarFeaturedSelected.png", 
+            "UITabBarFeaturedSelected@2x.png", 
             80, 
             78, 
-            16138240
+            16138240, 
+            0
         ], 
         [
-            "UITabBarFeaturedTemplate.png", 
+            "UITabBarFeaturedTemplate@2x.png", 
             76, 
             50, 
-            16166912
+            16166912, 
+            0
         ], 
         [
-            "UITabBarHistoryTemplate.png", 
+            "UITabBarHistoryTemplate@2x.png", 
             50, 
             50, 
-            16183296
+            16183296, 
+            0
         ], 
         [
-            "UITabBarMore.png", 
+            "UITabBarMore@2x.png", 
             58, 
             32, 
-            16195584
+            16195584, 
+            0
         ], 
         [
-            "UITabBarMoreSelected.png", 
+            "UITabBarMoreSelected@2x.png", 
             66, 
             32, 
-            16203776
+            16203776, 
+            0
         ], 
         [
-            "UITabBarMoreTemplate.png", 
+            "UITabBarMoreTemplate@2x.png", 
             58, 
             14, 
-            16216064
+            16216064, 
+            0
         ], 
         [
-            "UITabBarMostRecentTemplate.png", 
+            "UITabBarMostRecentTemplate@2x.png", 
             46, 
             46, 
-            16220160
+            16220160, 
+            0
         ], 
         [
-            "UITabBarMostViewedTemplate.png", 
+            "UITabBarMostViewedTemplate@2x.png", 
             70, 
             42, 
-            16232448
+            16232448, 
+            0
         ], 
         [
-            "UITabBarSearchTemplate.png", 
+            "UITabBarSearchTemplate@2x.png", 
             48, 
             48, 
-            16244736
+            16244736, 
+            0
         ], 
         [
-            "UITableCellShadowBottom.png", 
+            "UITableCellShadowBottom@2x.png", 
             6, 
             38, 
-            16257024
+            16257024, 
+            0
         ], 
         [
-            "UITableCellShadowTop.png", 
+            "UITableCellShadowTop@2x.png", 
             6, 
             38, 
-            16261120
+            16261120, 
+            0
         ], 
         [
-            "UITableGrabber.png", 
+            "UITableGrabber@2x.png", 
             38, 
             34, 
-            16265216
+            16265216, 
+            0
         ], 
         [
-            "UITableNext.png", 
+            "UITableNext@2x.png", 
             20, 
             26, 
-            16273408
+            16273408, 
+            0
         ], 
         [
-            "UITableNextButton.png", 
+            "UITableNextButton@2x.png", 
             58, 
             62, 
-            16277504
+            16277504, 
+            0
         ], 
         [
-            "UITableNextButtonPressed.png", 
+            "UITableNextButtonPressed@2x.png", 
             58, 
             62, 
-            16293888
+            16293888, 
+            0
         ], 
         [
-            "UITableNextSelected.png", 
+            "UITableNextSelected@2x.png", 
             20, 
             26, 
-            16310272
+            16310272, 
+            0
         ], 
         [
-            "UITableSelection.png", 
+            "UITableSelection@2x.png", 
             2, 
             86, 
-            16314369
+            16314368, 
+            1
         ], 
         [
-            "UITableSelectionGray.png", 
+            "UITableSelectionGray@2x.png", 
             2, 
             86, 
-            16318465
+            16318464, 
+            1
         ], 
         [
-            "UITableSelectionGrayBlue.png", 
+            "UITableSelectionGrayBlue@2x.png", 
             2, 
             86, 
-            16322561
+            16322560, 
+            1
         ], 
         [
-            "UITableSelectionGreen.png", 
+            "UITableSelectionGreen@2x.png", 
             2, 
             86, 
-            16326657
+            16326656, 
+            1
         ], 
         [
-            "UITableSelectionRed.png", 
+            "UITableSelectionRed@2x.png", 
             2, 
             86, 
-            16330753
+            16330752, 
+            1
         ], 
         [
-            "UITableViewIndexDot.png", 
+            "UITableViewIndexDot@2x.png", 
             12, 
             12, 
-            16334848
+            16334848, 
+            0
         ], 
         [
-            "UITableViewIndexSearchGlyph.png", 
+            "UITableViewIndexSearchGlyph@2x.png", 
             20, 
             20, 
-            16338944
+            16338944, 
+            0
         ], 
         [
-            "UITextFieldClearButton.png", 
+            "UITextFieldClearButton@2x.png", 
             38, 
             38, 
-            16343040
+            16343040, 
+            0
         ], 
         [
-            "UITextFieldClearButtonPressed.png", 
+            "UITextFieldClearButtonPressed@2x.png", 
             38, 
             38, 
-            16351232
+            16351232, 
+            0
         ], 
         [
-            "UITexturedButton.png", 
+            "UITexturedButton@2x.png", 
             604, 
             92, 
-            16359424
+            16359424, 
+            0
         ], 
         [
-            "UITexturedButtonTextGradient.png", 
+            "UITexturedButtonTextGradient@2x.png", 
             2, 
             34, 
-            16584705
+            16584704, 
+            1
         ], 
         [
-            "UITexturedButtonTextGradientSmall.png", 
+            "UITexturedButtonTextGradientSmall@2x.png", 
             2, 
             28, 
-            16588801
+            16588800, 
+            1
         ], 
         [
-            "UITexturedPressedButton.png", 
+            "UITexturedPressedButton@2x.png", 
             604, 
             92, 
-            16592896
+            16592896, 
+            0
         ], 
         [
-            "UITimerPickerBackground.png", 
+            "UITimerPickerBackground@2x.png", 
             2, 
             432, 
-            16818177
+            16818176, 
+            1
         ], 
         [
-            "UITimerPickerFrameLeft-Bar.png", 
+            "UITimerPickerFrameLeft-Bar@2x.png", 
             30, 
             432, 
-            16834560
+            16834560, 
+            0
         ], 
         [
-            "UITimerPickerFrameMiddle.png", 
+            "UITimerPickerFrameMiddle@2x.png", 
             2, 
             432, 
-            16891904
+            16891904, 
+            0
         ], 
         [
-            "UITimerPickerFrameRight-Bar.png", 
+            "UITimerPickerFrameRight-Bar@2x.png", 
             30, 
             432, 
-            16908288
+            16908288, 
+            0
         ], 
         [
-            "UITimerPickerSelectionBar.png", 
+            "UITimerPickerSelectionBar@2x.png", 
             18, 
             88, 
-            16965633
+            16965632, 
+            1
         ], 
         [
-            "UITimerPickerSelectionBarAboveDivider.png", 
+            "UITimerPickerSelectionBarAboveDivider@2x.png", 
             2, 
             96, 
-            16977920
+            16977920, 
+            0
         ], 
         [
-            "UITimerPickerSelectionBarAboveWheel.png", 
+            "UITimerPickerSelectionBarAboveWheel@2x.png", 
             2, 
             124, 
-            16982016
+            16982016, 
+            0
         ], 
         [
-            "UITimerPickerViewShadowsAboveWheel.png", 
+            "UITimerPickerViewShadowsAboveWheel@2x.png", 
             2, 
             432, 
-            16986112
+            16986112, 
+            0
         ], 
         [
-            "UITimerPickerWheelBackground.png", 
+            "UITimerPickerWheelBackground@2x.png", 
             18, 
             432, 
-            17002497
+            17002496, 
+            1
         ], 
         [
-            "UITintedBackButtonHighlight.png", 
+            "UITintedBackButtonHighlight@2x.png", 
             38, 
             60, 
-            17047552
+            17047552, 
+            0
         ], 
         [
-            "UITintedBackButtonMask.png", 
+            "UITintedBackButtonMask@2x.png", 
             38, 
             60, 
-            17059840
+            17059840, 
+            0
         ], 
         [
-            "UITintedBackButtonShadow.png", 
+            "UITintedBackButtonShadow@2x.png", 
             38, 
             60, 
-            17072128
+            17072128, 
+            0
         ], 
         [
-            "UITintedBottomBarHighlight.png", 
+            "UITintedBottomBarHighlight@2x.png", 
             2, 
             88, 
-            17084416
+            17084416, 
+            0
         ], 
         [
-            "UITintedButtonHighlight.png", 
+            "UITintedButtonHighlight@2x.png", 
             22, 
             60, 
-            17088512
+            17088512, 
+            0
         ], 
         [
-            "UITintedButtonMask.png", 
+            "UITintedButtonMask@2x.png", 
             22, 
             60, 
-            17096704
+            17096704, 
+            0
         ], 
         [
-            "UITintedButtonShadow.png", 
+            "UITintedButtonShadow@2x.png", 
             22, 
             60, 
-            17104896
+            17104896, 
+            0
         ], 
         [
-            "UITintedCircularButtonArrow.png", 
+            "UITintedCircularButtonArrow@2x.png", 
             58, 
             58, 
-            17113088
+            17113088, 
+            0
         ], 
         [
-            "UITintedCircularButtonCheckmark.png", 
+            "UITintedCircularButtonCheckmark@2x.png", 
             58, 
             58, 
-            17129472
+            17129472, 
+            0
         ], 
         [
-            "UITintedCircularButtonMask.png", 
+            "UITintedCircularButtonMask@2x.png", 
             58, 
             58, 
-            17145856
+            17145856, 
+            0
         ], 
         [
-            "UITintedCircularButtonPlus.png", 
+            "UITintedCircularButtonPlus@2x.png", 
             58, 
             58, 
-            17162240
+            17162240, 
+            0
         ], 
         [
-            "UITintedCircularButtonShadow.png", 
+            "UITintedCircularButtonShadow@2x.png", 
             58, 
             58, 
-            17178624
+            17178624, 
+            0
         ], 
         [
-            "UITintedMiniBackButtonHighlight.png", 
+            "UITintedMiniBackButtonHighlight@2x.png", 
             30, 
             48, 
-            17195008
+            17195008, 
+            0
         ], 
         [
-            "UITintedMiniBackButtonMask.png", 
+            "UITintedMiniBackButtonMask@2x.png", 
             30, 
             48, 
-            17203200
+            17203200, 
+            0
         ], 
         [
-            "UITintedMiniBackButtonShadow.png", 
+            "UITintedMiniBackButtonShadow@2x.png", 
             30, 
             48, 
-            17211392
+            17211392, 
+            0
         ], 
         [
-            "UITintedMiniBottomBarHighlight.png", 
+            "UITintedMiniBottomBarHighlight@2x.png", 
             2, 
             64, 
-            17219584
+            17219584, 
+            0
         ], 
         [
-            "UITintedMiniButtonHighlight.png", 
+            "UITintedMiniButtonHighlight@2x.png", 
             18, 
             48, 
-            17223680
+            17223680, 
+            0
         ], 
         [
-            "UITintedMiniButtonMask.png", 
+            "UITintedMiniButtonMask@2x.png", 
             18, 
             48, 
-            17231872
+            17231872, 
+            0
         ], 
         [
-            "UITintedMiniButtonShadow.png", 
+            "UITintedMiniButtonShadow@2x.png", 
             18, 
             48, 
-            17240064
+            17240064, 
+            0
         ], 
         [
-            "UITintedMiniTopBarHighlight.png", 
+            "UITintedMiniTopBarHighlight@2x.png", 
             2, 
             64, 
-            17248256
+            17248256, 
+            0
         ], 
         [
-            "UITintedSegmentedBarDivider.png", 
+            "UITintedSegmentedBarDivider@2x.png", 
             2, 
             60, 
-            17252352
+            17252352, 
+            0
         ], 
         [
-            "UITintedSegmentedBarDividerSelected.png", 
+            "UITintedSegmentedBarDividerSelected@2x.png", 
             2, 
             60, 
-            17256448
+            17256448, 
+            0
         ], 
         [
-            "UITintedSegmentedBarHighlight.png", 
+            "UITintedSegmentedBarHighlight@2x.png", 
             22, 
             60, 
-            17260544
+            17260544, 
+            0
         ], 
         [
-            "UITintedSegmentedBarHighlightSelected.png", 
+            "UITintedSegmentedBarHighlightSelected@2x.png", 
             22, 
             60, 
-            17268736
+            17268736, 
+            0
         ], 
         [
-            "UITintedSegmentedBarMask.png", 
+            "UITintedSegmentedBarMask@2x.png", 
             22, 
             60, 
-            17276928
+            17276928, 
+            0
         ], 
         [
-            "UITintedSegmentedBarMaskSelected.png", 
+            "UITintedSegmentedBarMaskSelected@2x.png", 
             22, 
             60, 
-            17285120
+            17285120, 
+            0
         ], 
         [
-            "UITintedSegmentedBarShadow.png", 
+            "UITintedSegmentedBarShadow@2x.png", 
             22, 
             60, 
-            17293312
+            17293312, 
+            0
         ], 
         [
-            "UITintedSegmentedBarShadowSelected.png", 
+            "UITintedSegmentedBarShadowSelected@2x.png", 
             22, 
             60, 
-            17301504
+            17301504, 
+            0
         ], 
         [
-            "UITintedSegmentedMiniBarDivider.png", 
+            "UITintedSegmentedMiniBarDivider@2x.png", 
             2, 
             48, 
-            17309696
+            17309696, 
+            0
         ], 
         [
-            "UITintedSegmentedMiniBarDividerSelected.png", 
+            "UITintedSegmentedMiniBarDividerSelected@2x.png", 
             2, 
             48, 
-            17313792
+            17313792, 
+            0
         ], 
         [
-            "UITintedSegmentedMiniBarHighlight.png", 
+            "UITintedSegmentedMiniBarHighlight@2x.png", 
             18, 
             48, 
-            17317888
+            17317888, 
+            0
         ], 
         [
-            "UITintedSegmentedMiniBarHighlightSelected.png", 
+            "UITintedSegmentedMiniBarHighlightSelected@2x.png", 
             18, 
             48, 
-            17326080
+            17326080, 
+            0
         ], 
         [
-            "UITintedSegmentedMiniBarMask.png", 
+            "UITintedSegmentedMiniBarMask@2x.png", 
             18, 
             48, 
-            17334272
+            17334272, 
+            0
         ], 
         [
-            "UITintedSegmentedMiniBarMaskSelected.png", 
+            "UITintedSegmentedMiniBarMaskSelected@2x.png", 
             18, 
             48, 
-            17342464
+            17342464, 
+            0
         ], 
         [
-            "UITintedSegmentedMiniBarShadow.png", 
+            "UITintedSegmentedMiniBarShadow@2x.png", 
             18, 
             48, 
-            17350656
+            17350656, 
+            0
         ], 
         [
-            "UITintedSegmentedMiniBarShadowSelected.png", 
+            "UITintedSegmentedMiniBarShadowSelected@2x.png", 
             18, 
             48, 
-            17358848
+            17358848, 
+            0
         ], 
         [
-            "UITintedTopBarHighlight.png", 
+            "UITintedTopBarHighlight@2x.png", 
             2, 
             88, 
-            17367040
+            17367040, 
+            0
         ], 
         [
-            "UITintedTopBarHighlightTall.png", 
+            "UITintedTopBarHighlightTall@2x.png", 
             2, 
             100, 
-            17371136
+            17371136, 
+            0
         ], 
         [
-            "UIUnreadIndicator.png", 
+            "UIUnreadIndicator@2x.png", 
             26, 
             26, 
-            17375232
+            17375232, 
+            0
         ], 
         [
-            "UIUnreadIndicatorPartial.png", 
+            "UIUnreadIndicatorPartial@2x.png", 
             26, 
             26, 
-            17379328
+            17379328, 
+            0
         ], 
         [
-            "UIUnreadIndicatorPartialPressed.png", 
+            "UIUnreadIndicatorPartialPressed@2x.png", 
             26, 
             26, 
-            17383424
+            17383424, 
+            0
         ], 
         [
-            "UIUnreadIndicatorPressed.png", 
+            "UIUnreadIndicatorPressed@2x.png", 
             26, 
             26, 
-            17387520
+            17387520, 
+            0
         ], 
         [
-            "body.png", 
+            "body@2x.png", 
             640, 
             832, 
-            17391617
+            17391616, 
+            1
         ], 
         [
-            "check.png", 
+            "check@2x.png", 
             48, 
             52, 
-            19521536
+            19521536, 
+            0
         ], 
         [
-            "edgeTopMarginThin.png", 
+            "edgeTopMarginThin@2x.png", 
             640, 
             22, 
-            19533824
+            19533824, 
+            0
         ], 
         [
-            "kb-arrow-blue.png", 
+            "kb-arrow-blue@2x.png", 
             22, 
             18, 
-            19591168
+            19591168, 
+            0
         ], 
         [
-            "kb-arrow-brown.png", 
+            "kb-arrow-brown@2x.png", 
             22, 
             18, 
-            19595264
+            19595264, 
+            0
         ], 
         [
-            "kb-arrow-white.png", 
+            "kb-arrow-white@2x.png", 
             22, 
             18, 
-            19599360
+            19599360, 
+            0
         ], 
         [
-            "kb-autocorrection-cancel-blue.png", 
+            "kb-autocorrection-cancel-blue@2x.png", 
             16, 
             16, 
-            19603456
+            19603456, 
+            0
         ], 
         [
-            "kb-autocorrection-cancel-hi.png", 
+            "kb-autocorrection-cancel-hi@2x.png", 
             16, 
             16, 
-            19607552
+            19607552, 
+            0
         ], 
         [
-            "kb-autocorrection-cancel-notes.png", 
+            "kb-autocorrection-cancel-notes@2x.png", 
             16, 
             16, 
-            19611648
+            19611648, 
+            0
         ], 
         [
-            "kb-autocorrection-cancel.png", 
+            "kb-autocorrection-cancel@2x.png", 
             16, 
             16, 
-            19615744
+            19615744, 
+            0
         ], 
         [
-            "kb-autofill-cancel.png", 
+            "kb-autofill-cancel@2x.png", 
             14, 
             14, 
-            19619840
+            19619840, 
+            0
         ], 
         [
-            "kb-candidate-list-expand.png", 
+            "kb-candidate-list-expand@2x.png", 
             42, 
             42, 
-            19623936
+            19623936, 
+            0
         ], 
         [
-            "kb-drag-dot.png", 
+            "kb-drag-dot@2x.png", 
             30, 
             34, 
-            19632128
+            19632128, 
+            0
         ], 
         [
-            "kb-loupe-hi.png", 
+            "kb-loupe-hi@2x.png", 
             254, 
             254, 
-            19640320
+            19640320, 
+            0
         ], 
         [
-            "kb-loupe-lo.png", 
+            "kb-loupe-lo@2x.png", 
             254, 
             254, 
-            19902464
+            19902464, 
+            0
         ], 
         [
-            "kb-loupe-mask.png", 
+            "kb-loupe-mask@2x.png", 
             254, 
             254, 
-            20164608
+            20164608, 
+            0
         ], 
         [
-            "kb-magnifier-ranged-hi.png", 
+            "kb-magnifier-ranged-hi@2x.png", 
             290, 
             118, 
-            20426752
+            20426752, 
+            0
         ], 
         [
-            "kb-magnifier-ranged-lo-stemless.png", 
+            "kb-magnifier-ranged-lo-stemless@2x.png", 
             282, 
             110, 
-            20570112
+            20570112, 
+            0
         ], 
         [
-            "kb-magnifier-ranged-lo.png", 
+            "kb-magnifier-ranged-lo@2x.png", 
             290, 
             118, 
-            20697088
+            20697088, 
+            0
         ], 
         [
-            "kb-magnifier-ranged-mask.png", 
+            "kb-magnifier-ranged-mask@2x.png", 
             290, 
             118, 
-            20840448
+            20840448, 
+            0
         ], 
         [
-            "kb-notes-bg.png", 
+            "kb-notes-bg@2x.png", 
             40, 
             40, 
-            20983809
+            20983808, 
+            1
         ], 
         [
-            "kb-popup-114-36-center.png", 
+            "kb-popup-114-36-center@2x.png", 
             220, 
             228, 
-            20992000
+            20992000, 
+            0
         ], 
         [
-            "kb-popup-114-36-left.png", 
+            "kb-popup-114-36-left@2x.png", 
             220, 
             228, 
-            21196800
+            21196800, 
+            0
         ], 
         [
-            "kb-popup-114-36-right.png", 
+            "kb-popup-114-36-right@2x.png", 
             220, 
             228, 
-            21401600
+            21401600, 
+            0
         ], 
         [
-            "kb-popup-114-36-straight.png", 
+            "kb-popup-114-36-straight@2x.png", 
             220, 
             228, 
-            21606400
+            21606400, 
+            0
         ], 
         [
-            "kb-popup-114-42-center.png", 
+            "kb-popup-114-42-center@2x.png", 
             220, 
             228, 
-            21811200
+            21811200, 
+            0
         ], 
         [
-            "kb-popup-114-42-left.png", 
+            "kb-popup-114-42-left@2x.png", 
             220, 
             228, 
-            22016000
+            22016000, 
+            0
         ], 
         [
-            "kb-popup-114-42-right.png", 
+            "kb-popup-114-42-right@2x.png", 
             220, 
             228, 
-            22220800
+            22220800, 
+            0
         ], 
         [
-            "kb-popup-114-42-straight.png", 
+            "kb-popup-114-42-straight@2x.png", 
             220, 
             228, 
-            22425600
+            22425600, 
+            0
         ], 
         [
-            "kb-shift-halo.png", 
+            "kb-shift-halo@2x.png", 
             128, 
             128, 
-            22630400
+            22630400, 
+            0
         ], 
         [
-            "kb-std-active-bg-pop-center.png", 
+            "kb-std-active-bg-pop-center@2x.png", 
             204, 
             228, 
-            22695936
+            22695936, 
+            0
         ]
     ], 
     "version": "4.3.3", 

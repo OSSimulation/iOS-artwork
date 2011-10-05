@@ -44,7 +44,7 @@ def process_artwork_set(artwork_set, uikit_directory_name, output_directory_name
 
     images_jsonable = []
     for artwork_name, artwork_size in artwork_set.iter_artworks():
-        images_jsonable.append((artwork_name, artwork_size.width, artwork_size.height, artwork_size.offset))
+        images_jsonable.append((artwork_name, artwork_size.width, artwork_size.height, artwork_size.offset, artwork_size.flags))
 
     artwork_set_file_name = os.path.join(uikit_directory_name, "%s.artwork" % artwork_set.name)
     artwork_set_file_size = os.path.getsize(artwork_set_file_name)

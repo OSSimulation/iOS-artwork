@@ -45,6 +45,20 @@ class ArtworkInfo(object):
         self.width = jsonable[1]
         self.height = jsonable[2]
         self.offset = jsonable[3]
+        if len(jsonable) < 5:
+            self.flags = 0  # Old json files in supported_files don't have this
+        else:
+            self.flags = jsonable[4]
+    
+    @property
+    def is_premultiplied_alpha(self):
+        # It appears that all packed images use premultiplied alpha.
+        return True
+        
+    @property
+    def is_greyscale(self):
+        # It appears that some images use greyscale only
+        return (self.flags & 0x02) != 0
 
 class ArtworkSetInfo(object):
     def __init__(self, jsonable):
@@ -101,7 +115,7 @@ def action_export(artwork_file_name, directory):
     print "\nExporting %d images from %s (version %s)..." % (set_info.image_count, set_info.name, set_info.version)
     
     for image_info in set_info.iter_images():
-        pil_image = artwork_binary.get_pil_image(image_info.width, image_info.height, image_info.offset)
+        pil_image = artwork_binary.get_pil_image(image_info)
         export_file_name = os.path.join(directory, image_info.name)
         pil_image.save(export_file_name, file_extension(export_file_name))
         print "\texported %s" % export_file_name
@@ -149,7 +163,7 @@ def action_create(artwork_file_name, directory, create_file_name):
         #
         # Write it
         #
-        create_binary.write_pil_image(image_info.width, image_info.height, image_info.offset, pil_image)
+        create_binary.write_pil_image(image_info, pil_image)
         print "\timported %s" % image_info.name
     
     create_binary.close()

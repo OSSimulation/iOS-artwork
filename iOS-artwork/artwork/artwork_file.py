@@ -30,23 +30,36 @@ class ArtworkBinaryFile(BinaryFile):
         remainder = offset % ArtworkBinaryFile.WIDTH_BYTE_PACKING
         if remainder != 0: offset += (ArtworkBinaryFile.WIDTH_BYTE_PACKING - remainder)
         return offset        
-
-    def get_pil_image(self, width, height, offset):
+        
+    def get_pil_image(self, info):
         """Return a PIL image instance of given size, at a given offset in the .artwork file."""
+        width = info.width
+        height = info.height
+        offset = info.offset
+        
         pil_image = PIL.Image.new("RGBA", (width, height))
         pil_pixels = pil_image.load()
 
         aligned_width = ArtworkBinaryFile._align(width)
+        pixel_width = 1 if info.is_greyscale else 4
 
         for y in range(height):
             for x in range(width):
-                pixel_offset = offset + (4 * ((y * aligned_width) + x))
-                b, g, r, a = struct.unpack_from('<BBBB', self.data, pixel_offset)
-                if a != 0:
-                    r = (r*255 + a//2)//a
-                    g = (g*255 + a//2)//a
-                    b = (b*255 + a//2)//a
-                pil_pixels[x, y] = (r, g, b, a)
+                pixel_offset = offset + (pixel_width * ((y * aligned_width) + x))
+                if info.is_greyscale:
+                    gray = struct.unpack_from('<B', self.data, pixel_offset)[0]
+                    a = 255
+                    try:
+                        pil_pixels[x, y] = (gray, gray, gray, a)
+                    except:
+                        import pdb; pdb.set_trace()
+                else:
+                    b, g, r, a = struct.unpack_from('<BBBB', self.data, pixel_offset)
+                    if (info.is_premultiplied_alpha) and (a != 0):
+                        r = (r*255 + a//2)//a
+                        g = (g*255 + a//2)//a
+                        b = (b*255 + a//2)//a
+                    pil_pixels[x, y] = (r, g, b, a)
                 
         return pil_image       
         
@@ -90,21 +103,32 @@ class WritableArtworkBinaryFile(ArtworkBinaryFile):
         self.close()
         os.remove(self.filename)
         
-    def write_pil_image(self, width, height, offset, pil_image):
+    def write_pil_image(self, info, pil_image):
         """Write a PIL image instance of given size, to a given offset in the .artwork file."""
+        width = info.width
+        height = info.height
+        offset = info.offset
+        
         pil_pixels = pil_image.load()
         
         aligned_width = ArtworkBinaryFile._align(width)
+        pixel_width = 1 if info.is_greyscale else 4
         
         for y in range(height):
             for x in range(width):
                 if pil_image.mode == 'RGBA':
                     r, g, b, a = pil_pixels[x, y]
-                    packed = struct.pack('<BBBB', (b*a + 127)//255, (g*a + 127)//255, (r*a + 127)//255, a)
                 else:
                     r, g, b = pil_pixels[x, y]
-                    packed = struct.pack('<BBBB', b, g, r, 255)
-                pixel_offset = offset + (4 * ((y * aligned_width) + x))
-                self.data[pixel_offset:pixel_offset + 4] = packed    
-        
+                    a = 255
+                if info.is_greyscale:
+                    packed = struct.pack('<B', b)
+                else:
+                    if info.is_premultiplied_alpha:
+                        r = (r*a + 127)//255
+                        g = (g*a + 127)//255
+                        b = (b*a + 127)//255
+                    packed = struct.pack('<BBBB', b, g, r, a)
+                pixel_offset = offset + (pixel_width * ((y * aligned_width) + x))
+                self.data[pixel_offset:pixel_offset + pixel_width] = packed    
         
