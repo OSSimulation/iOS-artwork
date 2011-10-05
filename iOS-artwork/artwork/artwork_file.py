@@ -49,10 +49,7 @@ class ArtworkBinaryFile(BinaryFile):
                 if info.is_greyscale:
                     gray = struct.unpack_from('<B', self.data, pixel_offset)[0]
                     a = 255
-                    try:
-                        pil_pixels[x, y] = (gray, gray, gray, a)
-                    except:
-                        import pdb; pdb.set_trace()
+                    pil_pixels[x, y] = (gray, gray, gray, a)
                 else:
                     b, g, r, a = struct.unpack_from('<BBBB', self.data, pixel_offset)
                     if (info.is_premultiplied_alpha) and (a != 0):
