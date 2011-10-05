@@ -38,6 +38,13 @@ import json
 
 from artwork.uikit_file import UIKitBinaryFile
         
+        
+def get_version_major(version_string):
+    return int(version_string.split('.')[0])
+    
+def is_ios5_or_better(version_string):
+    return get_version_major(version_string) >= 5
+        
 def process_artwork_set(artwork_set, uikit_directory_name, output_directory_name, version_string):
     """Generate a json file for a single artwork set found in the mach-o binary."""
     print "Found artwork set named %s" % artwork_set.name
@@ -70,11 +77,17 @@ def main():
     
     output_directory_name = os.path.abspath(sys.argv[2])
     version_string = sys.argv[3]
+    version_major = get_version_major(version_string)
     
-    for artwork_set in uikit.iter_shared_iphone_image_sets():
+    for artwork_set in uikit.iter_shared_iphone_image_sets(version_major):
         process_artwork_set(artwork_set, uikit_directory_name, output_directory_name, version_string)
-    for artwork_set in uikit.iter_shared_ipad_image_sets():
+    for artwork_set in uikit.iter_shared_ipad_image_sets(version_major):
         process_artwork_set(artwork_set, uikit_directory_name, output_directory_name, version_string)
+    if is_ios5_or_better(version_string):
+        process_artwork_set(uikit.emoji_mapped_image_set, uikit_directory_name, output_directory_name, version_string)
+        process_artwork_set(uikit.emoji_mapped_image_set_2x, uikit_directory_name, output_directory_name, version_string)
+        process_artwork_set(uikit.emoji_mapped_image_set_ipad, uikit_directory_name, output_directory_name, version_string)
+        
     
 if __name__ == "__main__":
     main()

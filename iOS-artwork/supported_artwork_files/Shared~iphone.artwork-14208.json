@@ -1,0 +1,35 @@
+{
+    "images": [
+        [
+            "Corners_Black.png", 
+            4, 
+            4, 
+            0, 
+            0
+        ], 
+        [
+            "kb-extended-candidates-segmented-control-background.png", 
+            1, 
+            44, 
+            4096, 
+            1
+        ], 
+        [
+            "kb-extended-candidates-segmented-control-landscape-background.png", 
+            1, 
+            32, 
+            8192, 
+            1
+        ], 
+        [
+            "kb-notes-bg.png", 
+            20, 
+            20, 
+            12288, 
+            1
+        ]
+    ], 
+    "version": "5.0.0", 
+    "name": "Shared~iphone.artwork", 
+    "byte_size": 14208
+}

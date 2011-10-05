@@ -9,6 +9,7 @@
 #
 #-------------------------------------------------------------------------------
 
+import struct
 import macholib                     # You must have macholib installed. Search PyPi for it!
 from macholib.MachO import MachO
 
@@ -84,9 +85,21 @@ class MachOBinaryFile(BinaryFile, MachO):
             end += 1
         return self.data[offset:end].decode('ascii')
         
+    def read_unsigned_char(self, offset):
+        return struct.unpack_from('B', self.data, offset)[0]
+        
+    def read_uint16_t(self, offset):
+        return struct.unpack_from('%sH' % self.default_endian, self.data, offset)[0]
+        
+    def read_uint32_t(self, offset):
+        return struct.unpack_from('%sL' % self.default_endian, self.data, offset)[0]
+        
+    def read_uint64_t(self, offset):
+        return struct.unpack_from('%sQ' % self.default_endian, self.data, offset)[0]
+        
     def read_offset(self, offset):
         """Read a pointer value found at given offset."""
-        return struct.unpack_from('%sL' % self.default_endian, self.data, offset)
+        return struct.unpack_from('%sL' % self.default_endian, self.data, offset)[0]
 
     def find_symbol(self, symbol):
         """Given a symbol (potentially not exported), return the offset into the binary where

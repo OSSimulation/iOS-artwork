@@ -121,7 +121,7 @@ class ArtworkSetInformation(Struct):
             final_name_string = name_cfstring.string
             if self.is_2x:
                 final_name_split = final_name_string.split('.')
-                final_name_string = "%s@2x.%s" % (final_name_split[0], final_name_split[1])
+                final_name_string = "%s@2x.%s" % (final_name_split[0], '.'.join(final_name_split[1:]))
             
             yield (final_name_string, ai)
             

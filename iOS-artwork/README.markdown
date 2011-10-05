@@ -3,18 +3,23 @@ iOS Artwork Extractor
 
 You may have noticed that most of Apple's iOS artwork is packaged in files ending with the `.artwork` extension. The iOS Artwork Tool makes it easy to export images from those files. Exporting is useful for certain iOS development tasks. The tool also supports creating *new* `.artwork` files from images that you've tweaked; this is useful if you want to create mods that change the basic appearance of the iPhone or iPad's interface.
 
-The software is written in python. You must have python 2.x and the [Python Imaging Library](http://www.pythonware.com/products/pil/) installed in order for it to work. If you're using OSX, I suggest using [MacPorts](http://www.macports.org/) to install the PIL. On Windows, it is easiest to just install Python and the PIL directly from the installer executables.
+The software is written in python. You must have python 2.x (I use 2.7) and the [Python Imaging Library](http://www.pythonware.com/products/pil/) installed in order for it to work. If you're using OSX, I suggest using [MacPorts](http://www.macports.org/) to install the PIL. Or if you're comfortable with `pip` and `virtualenv`, that's actually an even nicer way to get stuff installed. On Windows, it is easiest to just install Python and the PIL directly from the installer executables.
 
 A number of artwork files are supported. The most recent files include:
 
-    .../iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Shared@2x.artwork
-    .../iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Shared~ipad.artwork
-    .../iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Shared~iphone.artwork
-    .../iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Keyboard-Emoji@2x.artwork
+    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Keyboard-Emoji.artwork
+    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Keyboard-Emoji@2x.artwork
+    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Keyboard-Emoji~ipad.artwork
+    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Shared.artwork
+    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Shared@2x.artwork
+    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Shared@2x~ipad.artwork
+    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Shared@2x~iphone.artwork
+    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Shared~ipad.artwork
+    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Shared~iphone.artwork
         
 To get going, download the python source code.
 
-Next, find the appropriate artwork files on disk. This tool supports iOS 2.0.0, 2.2.0, 3.2.0, 4.1.0, 4.2.1, and 4.3.2 artwork files.
+Next, find the appropriate artwork files on disk. This tool supports iOS 2.0.0, 2.2.0, 3.2.0, 4.1.0, 4.2.1, 4.3.2, 4.3.3, and 5.0.0GM artwork files.
 
 I apologize that there isn't a GUI version of this just yet. That would make things a lot easier and I have it on my list of stuff to do somewhere down the road...
 
@@ -42,7 +47,8 @@ You may wonder why you have to supply the *original* `.artwork` file in this exa
 
 ### VERSION HISTORY
 
-    v1.2 10/04/2011 - (CURRENT) fix major issues with premultiplied alpha and greyscale packaged images. support image flags. fix bugs in create.
+    v1.3 10/05/2011 - (CURRENT) Support iOS 5!!!
+    v1.2 10/04/2011 - fix major issues with premultiplied alpha and greyscale packaged images. support image flags. fix bugs in create.
     v1.1  8/21/2011 - fix problems with the 4.3.2 artwork files (and update them to 4.3.3)
     v1.0  7/07/2011 - support iOS 4.3. support Emoji files.
     v0.9 12/06/2010 - massive rewrite to support iOS 4.2.1 files. Totally new generator script based on cracking mach-o files.
