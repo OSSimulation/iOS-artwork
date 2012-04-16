@@ -7,15 +7,12 @@ The software is written in python. You must have python 2.x (I use 2.7) and the 
 
 A number of artwork files are supported. The most recent files include:
 
-    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Keyboard-Emoji.artwork
-    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Keyboard-Emoji@2x.artwork
-    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Keyboard-Emoji~ipad.artwork
-    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Shared.artwork
-    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Shared@2x.artwork
-    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Shared@2x~ipad.artwork
-    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Shared@2x~iphone.artwork
-    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Shared~ipad.artwork
-    .../iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/Shared~iphone.artwork
+    .../iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Shared.artwork
+    .../iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Shared@2x.artwork
+    .../iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Shared@2x~ipad.artwork
+    .../iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Shared@2x~iphone.artwork
+    .../iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Shared~ipad.artwork
+    .../iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Shared~iphone.artwork
         
 To get going, download the python source code.
 
@@ -47,7 +44,8 @@ You may wonder why you have to supply the *original* `.artwork` file in this exa
 
 ### VERSION HISTORY
 
-    v1.3 10/05/2011 - (CURRENT) Support iOS 5!!!
+    v1.4 04/15/2012 - (CURRENT) Support iOS 5.1
+    v1.3 10/05/2011 - Support iOS 5!!!
     v1.2 10/04/2011 - fix major issues with premultiplied alpha and greyscale packaged images. support image flags. fix bugs in create.
     v1.1  8/21/2011 - fix problems with the 4.3.2 artwork files (and update them to 4.3.3)
     v1.0  7/07/2011 - support iOS 4.3. support Emoji files.
