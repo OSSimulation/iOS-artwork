@@ -97,6 +97,7 @@ def supported_artwork_json_file_name(artwork_file_name):
 
 def is_artwork_file_supported(artwork_file_name):
     supported_artwork = supported_artwork_json_file_name(artwork_file_name)
+    print supported_artwork
     return os.path.exists(supported_artwork)
 
 def get_artwork_set_info(artwork_file_name):

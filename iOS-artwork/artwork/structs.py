@@ -92,6 +92,9 @@ class ArtworkSetInformation(Struct):
         self.endian = endian
         self.data = data
         self.offset = offset
+
+    def __repr__(self):
+        return "ArtworkSetInformation %s [sno: %x; so: %x; no: %x; ac: %d; e: %r; o: %x]" % (self.name, self.set_name_offset, self.sizes_offset, self.names_offset, self.artwork_count, self.endian, self.offset)
     
     @property
     def name(self):

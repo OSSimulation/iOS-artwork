@@ -27,6 +27,10 @@ class UIKitBinaryFile(MachOBinaryFile):
         return self.find_symbol("___mappedImages")
         
     @property
+    def shared_image_sets_offset(self):
+        return self.find_symbol("___sharedImageSets")
+
+    @property
     def shared_iphone_image_sets_offset(self):
         return self.find_symbol("___sharedImageSetsPhone")
         
@@ -46,25 +50,38 @@ class UIKitBinaryFile(MachOBinaryFile):
     def emoji_mapped_image_set_ipad_offset(self):
         return self.find_symbol("_EmojiMappedImageSet_iPad")
         
-    def shared_image_sets_count(self, version_major):
+    def shared_image_sets_count(self, version_string):
         # TODO I figure this has got to be available in some symbol
         # somewhere in the UIKit binary, but... I can't find it.
         # (The obvious choice, ___sharedImageSetsCount, is actually a
         # BSS section symbol, so apparently not what we're looking for.)
-        return 3 if version_major >= 5 else 2
+        version_major = int(version_string.split('.')[0])
+        version_minor = int(version_string.split('.')[1])
+        if (version_major >= 5):
+            if (version_minor == 0):
+                return 3
+            return 4
+        return 2
+        # return 3 if version_major >= 5 else 2
 
     def read_artwork_set_information(self, offset):
         return ArtworkSetInformation(self.default_endian, self.data, offset)
 
-    def iter_shared_iphone_image_sets(self, version_major):
-        offset = self.shared_iphone_image_sets_offset
-        for artwork_set_i in range(self.shared_image_sets_count(version_major)):
+    def iter_shared_image_sets(self, version_string):
+        offset = self.shared_image_sets_offset
+        for artwork_set_i in range(self.shared_image_sets_count(version_string)):
             yield self.read_artwork_set_information(offset)
             offset += ArtworkSetInformation.SIZE
 
-    def iter_shared_ipad_image_sets(self, version_major):
+    def iter_shared_iphone_image_sets(self, version_string):
+        offset = self.shared_iphone_image_sets_offset
+        for artwork_set_i in range(self.shared_image_sets_count(version_string)):
+            yield self.read_artwork_set_information(offset)
+            offset += ArtworkSetInformation.SIZE
+
+    def iter_shared_ipad_image_sets(self, version_string):
         offset = self.shared_ipad_image_sets_offset
-        for artwork_set_i in range(self.shared_image_sets_count(version_major)):
+        for artwork_set_i in range(self.shared_image_sets_count(version_string)):
             yield self.read_artwork_set_information(offset)
             offset += ArtworkSetInformation.SIZE
             
