@@ -73,4 +73,8 @@ The `supported_artwork_files` directory contains a bunch of JSON files that have
 
 Finally, the `artwork` directory is a Python package that contains most of the interesting code for making things work.
 
+### What happened to all the old stuff that used to be part of this repo?
+
+I used to have a bunch of other random stuff in this repo, like tools to help with reading/writing streaming binary data in Objective-C. Most of those bits of code were old and crufty, written in the iOS3 era and in definite need of attention. I axed them, although you can find them if you go back through the `git` history.
+
 
