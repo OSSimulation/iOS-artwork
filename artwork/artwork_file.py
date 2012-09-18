@@ -24,6 +24,19 @@ class ArtworkBinaryFile(BinaryFile):
     def __init__(self, filename):
         super(ArtworkBinaryFile, self).__init__(filename)
         
+    @classmethod
+    def byte_size(width, height, is_greyscale):
+        aligned_width = width
+        remainder = aligned_width % 8
+        if remainder != 0: aligned_width += (8 - remainder)
+
+        pixel_width = 1 if is_greyscale else 4
+
+        pixel_size = (pixel_width * ((image_height * aligned_width) + image_width))
+        
+
+
+
     @staticmethod
     def _align(offset):
         """Perform packing alignment appropriate for image pixels in the .artwork file"""
