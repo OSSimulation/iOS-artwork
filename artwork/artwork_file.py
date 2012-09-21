@@ -1,11 +1,11 @@
 #-------------------------------------------------------------------------------
 #
 # iOS .artwork file extractor
-# (c)2008-2011 Dave Peck <code [at] davepeck [dot] org> All Rights Reserved
+# (c)2008-2012 Dave Peck <davepeck [at] davepeck [dot] org> All Rights Reserved
 # 
 # Released under the three-clause BSD license.
 #
-# http://github.com/davepeck/iphone-tidbits/
+# http://github.com/davepeck/iOS-artwork/
 #
 #-------------------------------------------------------------------------------
 
@@ -16,33 +16,122 @@ import PIL.Image # You must have the Python Imaging Library (PIL) installed
 
 from .binary_file import BinaryFile
 
+class ModernArtworkStruct(object):
+    LONG = 4
+    SHORT = 2
+    BYTE = 1
+
+    def __init__(self, data, endian="<"):
+        super(ModernArtworkStruct, self).__init__()
+        self.endian = endian
+        self.data = data
+
+    def unpack(self, structure, offset):
+        return struct.unpack_from("%s%s" % (self.endian, structure), self.data, offset)
+
+    def read_long_at(self, offset):
+        return self.unpack("L", offset)[0]
+
+    def read_short_at(self, offset):
+        return self.unpack("H", offset)[0]
+
+    def read_null_terminated_utf8_string_at(self, offset):
+        start = offset
+        while ord(self.data[offset]) != 0:
+            offset += 1
+        bytes = self.data[start:offset]
+        return bytes.decode("utf-8")
+    
+    
+class ModernArtworkSetInfo(ModernArtworkStruct):
+    """
+    Represents the full header for an iOS6+ .artwork file. 
+    (Prior to iOS6, this information was in the framework binaries, not the
+    artwork files themselves -- that was *far* harder to crack open.)
+
+    The header in iOS6 artwork files is as follows:
+
+    count: LONG
+    offset to artwork info array: LONG
+    array of offsets to artwork names: LONG * count
+    array of arwork image descriptions: 12-bytes * count
+    """
+    def __init__(self, data, name, endian="<"):
+        super(ModernArtworkSetInfo, self).__init__(data, endian)
+        self.name = name
+
+    @property
+    def version(self):
+        return "iOS6 or above"
+
+    @property
+    def image_infos_offset(self):
+        return self.read_long_at(4)
+
+    @property
+    def name_offsets_offset(self):
+        return 8
+
+    @property
+    def image_count(self):
+        """Return the number of artworks in this file."""
+        return self.read_long_at(0)
+
+    def iter_images(self):
+        info_offset = self.image_infos_offset
+        name_offset_offset = self.name_offsets_offset
+        for i in range(self.image_count):
+            name_offset = self.read_long_at(name_offset_offset)
+            name = self.read_null_terminated_utf8_string_at(name_offset)
+            yield ModernArtworkImageInfo(self.data, info_offset, name, self.endian)
+            name_offset_offset += ModernArtworkStruct.LONG
+            info_offset += ModernArtworkImageInfo.SIZE
+
+
+class ModernArtworkImageInfo(ModernArtworkStruct):
+    """
+    Represents a single image description, a part of the overall
+    iOS6 .artwork header.
+        flags: LONG
+        width: SHORT
+        height: SHORT
+        image offset: LONG
+    """
+    SIZE = 12
+
+    def __init__(self, data, offset, name, endian="<"):
+        super(ModernArtworkImageInfo, self).__init__(data, endian)
+        self.flags, self.width, self.height, self.offset = self.unpack("LHHL", offset)
+        self.name = name
+
+    @property
+    def is_premultiplied_alpha(self):
+        return True # Appears to be true for all images
+
+    @property
+    def is_greyscale(self):
+        # HACK. I only _think_ this is correct. It seems to be.
+        return (self.flags & 0x02) != 0
+
+
 class ArtworkBinaryFile(BinaryFile):
     """Represents an iOS SDK .artwork file"""
     
-    WIDTH_BYTE_PACKING = 8 # Determined by inspection/luck.
+    WIDTH_BYTE_PACKING = 1 # Determined by inspection/luck.
     
     def __init__(self, filename):
         super(ArtworkBinaryFile, self).__init__(filename)
         
-    @classmethod
-    def byte_size(width, height, is_greyscale):
-        aligned_width = width
-        remainder = aligned_width % 8
-        if remainder != 0: aligned_width += (8 - remainder)
-
-        pixel_width = 1 if is_greyscale else 4
-
-        pixel_size = (pixel_width * ((image_height * aligned_width) + image_width))
-        
-
-
-
     @staticmethod
     def _align(offset):
         """Perform packing alignment appropriate for image pixels in the .artwork file"""
         remainder = offset % ArtworkBinaryFile.WIDTH_BYTE_PACKING
-        if remainder != 0: offset += (ArtworkBinaryFile.WIDTH_BYTE_PACKING - remainder)
-        return offset        
+        if remainder != 0: 
+            offset += (ArtworkBinaryFile.WIDTH_BYTE_PACKING - remainder)
+        return offset   
+
+    def get_modern_artwork_set_info(self):
+        return ModernArtworkSetInfo(self.data, self.basename)
         
     def get_pil_image(self, info):
         """Return a PIL image instance of given size, at a given offset in the .artwork file."""
@@ -66,9 +155,9 @@ class ArtworkBinaryFile(BinaryFile):
                 else:
                     b, g, r, a = struct.unpack_from('<BBBB', self.data, pixel_offset)
                     if (info.is_premultiplied_alpha) and (a != 0):
-                        r = (r*255 + a//2)//a
-                        g = (g*255 + a//2)//a
-                        b = (b*255 + a//2)//a
+                        r = (r * 255 + a // 2) // a
+                        g = (g * 255 + a // 2) // a
+                        b = (b * 255 + a // 2) // a
                     pil_pixels[x, y] = (r, g, b, a)
                 
         return pil_image       
@@ -101,6 +190,7 @@ class WritableArtworkBinaryFile(ArtworkBinaryFile):
     def open(self):
         # HACK. Clearly not the right object model.
         ignored = self.data
+        ignored = ignored # Linters
         
     def close(self):
         self._data.flush()
@@ -135,9 +225,9 @@ class WritableArtworkBinaryFile(ArtworkBinaryFile):
                     packed = struct.pack('<B', b)
                 else:
                     if info.is_premultiplied_alpha:
-                        r = (r*a + 127)//255
-                        g = (g*a + 127)//255
-                        b = (b*a + 127)//255
+                        r = (r * a + 127) // 255
+                        g = (g * a + 127) // 255
+                        b = (b * a + 127) // 255
                     packed = struct.pack('<BBBB', b, g, r, a)
                 pixel_offset = offset + (pixel_width * ((y * aligned_width) + x))
                 self.data[pixel_offset:pixel_offset + pixel_width] = packed    

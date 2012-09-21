@@ -1,14 +1,17 @@
 #-------------------------------------------------------------------------------
 #
 # iOS .artwork file extractor
-# (c)2008-2011 Dave Peck <code [at] davepeck [dot] org> All Rights Reserved
+# (c)2008-2012 Dave Peck <davepeck [at] davepeck [dot] org> All Rights Reserved
 # 
 # Released under the three-clause BSD license.
 #
-# http://github.com/davepeck/iphone-tidbits/
+# http://github.com/davepeck/iOS-artwork/
 #
 #-------------------------------------------------------------------------------
 
+import os
+import os.path
+import struct
 import mmap
 
 from .util import KnuthMorrisPratt
@@ -32,6 +35,10 @@ class BinaryFile(object):
         if self._file is not None:
             self._file.close()
             self._file = None
+
+    @property
+    def basename(self):
+        return os.path.basename(self.filename)
             
     @property
     def data(self):

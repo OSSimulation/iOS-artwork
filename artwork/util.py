@@ -1,11 +1,11 @@
 #-------------------------------------------------------------------------------
 #
 # iOS .artwork file extractor
-# (c)2008-2011 Dave Peck <code [at] davepeck [dot] org> All Rights Reserved
+# (c)2008-2012 Dave Peck <davepeck [at] davepeck [dot] org> All Rights Reserved
 # 
 # Released under the three-clause BSD license.
 #
-# http://github.com/davepeck/iphone-tidbits/
+# http://github.com/davepeck/iOS-artwork/
 #
 #-------------------------------------------------------------------------------
 

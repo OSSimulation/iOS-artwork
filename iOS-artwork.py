@@ -3,11 +3,11 @@
 #-------------------------------------------------------------------------------
 #
 # iOS .artwork file extractor
-# (c)2008-2011 Dave Peck <code [at] davepeck [dot] org> All Rights Reserved
+# (c)2008-2012 Dave Peck <davepeck [at] davepeck [dot] org> All Rights Reserved
 # 
 # Released under the three-clause BSD license.
 #
-# http://github.com/davepeck/iphone-tidbits/
+# http://github.com/davepeck/iOS-artwork/
 #
 #-------------------------------------------------------------------------------
 
@@ -25,7 +25,7 @@
 #
 #   ./iOS-artwork.py create -a original_artwork_file.artwork -d import_directory -c created_artwork_file.artwork
 #
-# Please see the README.markdown file for more details.
+# Please see the README file for more details.
 
 import os
 import sys
@@ -95,12 +95,12 @@ def supported_artwork_json_file_name(artwork_file_name):
     artwork_file_basename = os.path.basename(artwork_file_name)
     return os.path.join(supported_artwork_files_directory(), "%s-%d.json" % (artwork_file_basename, artwork_file_size))
 
-def is_artwork_file_supported(artwork_file_name):
+def is_legacy_artwork_file_supported(artwork_file_name):
     supported_artwork = supported_artwork_json_file_name(artwork_file_name)
     print supported_artwork
     return os.path.exists(supported_artwork)
 
-def get_artwork_set_info(artwork_file_name):
+def get_legacy_artwork_set_info(artwork_file_name):
     f = open(supported_artwork_json_file_name(artwork_file_name), "r")
     jsonable = json.loads(f.read())
     f.close()
@@ -109,9 +109,12 @@ def get_artwork_set_info(artwork_file_name):
 def file_extension(file_name):
     return os.path.splitext(file_name)[1][1:]
     
-def action_export(artwork_file_name, directory):
-    set_info = get_artwork_set_info(artwork_file_name)
+def action_export(artwork_file_name, directory, is_legacy):
     artwork_binary = ArtworkBinaryFile(artwork_file_name)
+    if is_legacy:
+        set_info = get_legacy_artwork_set_info(artwork_file_name)
+    else:
+        set_info = artwork_binary.get_modern_artwork_set_info()
     
     print "\nExporting %d images from %s (version %s)..." % (set_info.image_count, set_info.name, set_info.version)
     
@@ -123,9 +126,12 @@ def action_export(artwork_file_name, directory):
         
     print "\nDONE EXPORTING!"
     
-def action_create(artwork_file_name, directory, create_file_name):
-    set_info = get_artwork_set_info(artwork_file_name)
+def action_create(artwork_file_name, directory, create_file_name, is_legacy):
     artwork_binary = ArtworkBinaryFile(artwork_file_name)
+    if is_legacy:
+        set_info = get_legacy_artwork_set_info(artwork_file_name)
+    else:
+        set_info = artwork_binary.get_modern_artwork_set_info()
     create_binary = WritableArtworkBinaryFile(create_file_name, artwork_binary)
     create_binary.open()
     
@@ -221,25 +227,26 @@ def main(argv):
     if not os.path.exists(abs_artwork_file_name):
         bail("No artwork file named %s was found." % options.artwork_file_name)
         
-    if not is_artwork_file_supported(abs_artwork_file_name):
-        bail("Sorry, but the artwork file %s is not currently supported by this software." % options.artwork_file_name)
-    
     abs_directory = os.path.abspath(options.directory)
     
     if not os.path.exists(abs_directory):
         bail("No directory named %s was found." % options.directory)
+
+    # Are we legacy (iOS3.X through iOS5.x) or new-style (iOS6) artwork?
+    is_legacy = is_legacy_artwork_file_supported(abs_artwork_file_name)
+
 
     #
     # Execute
     #
 
     if command == "export":
-        action_export(abs_artwork_file_name, abs_directory)
+        action_export(abs_artwork_file_name, abs_directory, is_legacy)
     elif command == "create":
         abs_create_file_name = os.path.abspath(options.create_file_name)
         if os.path.exists(abs_create_file_name):
             bail("Sorry, but the create file %s already exists." % options.create_file_name)
-        action_create(abs_artwork_file_name, abs_directory, abs_create_file_name)
+        action_create(abs_artwork_file_name, abs_directory, abs_create_file_name, is_legacy)
             
 if __name__ == "__main__":
     main(sys.argv)
