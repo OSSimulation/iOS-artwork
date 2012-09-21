@@ -9,226 +9,215 @@
 #
 #-------------------------------------------------------------------------------
 
-import os
-import mmap
-import struct
-import PIL.Image # You must have the Python Imaging Library (PIL) installed
+import PIL.Image
+from .binary_file import BinaryFile, WritableBinaryFile
 
-from .binary_file import BinaryFile
 
-class ModernArtworkStruct(object):
-    LONG = 4
-    SHORT = 2
-    BYTE = 1
+#------------------------------------------------------------------------------
+# ArtworkImage
+#------------------------------------------------------------------------------
 
-    def __init__(self, data, endian="<"):
-        super(ModernArtworkStruct, self).__init__()
-        self.endian = endian
-        self.data = data
-
-    def unpack(self, structure, offset):
-        return struct.unpack_from("%s%s" % (self.endian, structure), self.data, offset)
-
-    def read_long_at(self, offset):
-        return self.unpack("L", offset)[0]
-
-    def read_short_at(self, offset):
-        return self.unpack("H", offset)[0]
-
-    def read_null_terminated_utf8_string_at(self, offset):
-        start = offset
-        while ord(self.data[offset]) != 0:
-            offset += 1
-        bytes = self.data[start:offset]
-        return bytes.decode("utf-8")
-    
-    
-class ModernArtworkSetInfo(ModernArtworkStruct):
+class ArtworkImage(object):
     """
-    Represents the full header for an iOS6+ .artwork file. 
-    (Prior to iOS6, this information was in the framework binaries, not the
-    artwork files themselves -- that was *far* harder to crack open.)
-
-    The header in iOS6 artwork files is as follows:
-
-    count: LONG
-    offset to artwork info array: LONG
-    array of offsets to artwork names: LONG * count
-    array of arwork image descriptions: 12-bytes * count
+    Abstract class for metadata and accessor for a single image in 
+    an artwork file.
     """
-    def __init__(self, data, name, endian="<"):
-        super(ModernArtworkSetInfo, self).__init__(data, endian)
-        self.name = name
+    def __init__(self, artwork_file, artwork_set):
+        super(ArtworkImage, self).__init__()
+        self.artwork_file = artwork_file
+        self.artwork_set = artwork_set
 
     @property
-    def version(self):
-        return "iOS6 or above"
+    def name(self):
+        raise NotImplementedError("Implement in a derived class.")
 
     @property
-    def image_infos_offset(self):
-        return self.read_long_at(4)
+    def width(self):
+        raise NotImplementedError("Implement in a derived class.")
 
     @property
-    def name_offsets_offset(self):
-        return 8
+    def height(self):
+        raise NotImplementedError("Implement in a derived class.")
 
     @property
-    def image_count(self):
-        """Return the number of artworks in this file."""
-        return self.read_long_at(0)
-
-    def iter_images(self):
-        info_offset = self.image_infos_offset
-        name_offset_offset = self.name_offsets_offset
-        for i in range(self.image_count):
-            name_offset = self.read_long_at(name_offset_offset)
-            name = self.read_null_terminated_utf8_string_at(name_offset)
-            yield ModernArtworkImageInfo(self.data, info_offset, name, self.endian)
-            name_offset_offset += ModernArtworkStruct.LONG
-            info_offset += ModernArtworkImageInfo.SIZE
-
-
-class ModernArtworkImageInfo(ModernArtworkStruct):
-    """
-    Represents a single image description, a part of the overall
-    iOS6 .artwork header.
-        flags: LONG
-        width: SHORT
-        height: SHORT
-        image offset: LONG
-    """
-    SIZE = 12
-
-    def __init__(self, data, offset, name, endian="<"):
-        super(ModernArtworkImageInfo, self).__init__(data, endian)
-        self.flags, self.width, self.height, self.offset = self.unpack("LHHL", offset)
-        self.name = name
-
-    @property
-    def is_premultiplied_alpha(self):
-        return True # Appears to be true for all images
+    def image_offset(self):
+        raise NotImplementedError("Implement in a derived class.")
 
     @property
     def is_greyscale(self):
-        # HACK. I only _think_ this is correct. It seems to be.
-        return (self.flags & 0x02) != 0
+        raise NotImplementedError("Implement in a derived class.")
+
+    @property
+    def retina_appropriate_name(self):
+        name = self.name
+        if self.artwork_set.is_retina and ("@2x" not in name):
+            name = name.replace(".png", "@2x.png")
+        return name
+
+    def get_pil_image(self):
+        return self.artwork_file.read_pil_image_at(self.image_offset, self.width, self.height, self.is_greyscale)
 
 
-class ArtworkBinaryFile(BinaryFile):
-    """Represents an iOS SDK .artwork file"""
-    
-    WIDTH_BYTE_PACKING = 1 # Determined by inspection/luck.
-    
-    def __init__(self, filename):
-        super(ArtworkBinaryFile, self).__init__(filename)
-        
-    @staticmethod
-    def _align(offset):
+
+#------------------------------------------------------------------------------
+# ArtworkSet
+#------------------------------------------------------------------------------
+
+class ArtworkSet(object):
+    """
+    Abstract base class for a group of objects that repsent metadata
+    for all images found in an artwork file.
+    """
+    def __init__(self, artwork_file):
+        super(ArtworkSet, self).__init__()
+        self.artwork_file = artwork_file
+
+    @property
+    def version(self):
+        raise NotImplementedError("Implement in a derived class.")
+
+    @property
+    def image_count(self):
+        raise NotImplementedError("Implement in a derived class.")
+
+    def iter_images(self):
+        raise NotImplementedError("Implement in a derived class.")
+
+    @property
+    def name(self):
+        return self.artwork_file.basename
+
+    @property
+    def is_retina(self):
+        return "@2x" in self.name
+
+
+#------------------------------------------------------------------------------
+# ArtworkFileCommon
+#------------------------------------------------------------------------------
+
+class ArtworkFileCommon(object):
+    """
+    APIs that apply to both read and write artwork files.
+    """
+    def byte_align(self, offset, alignment):
         """Perform packing alignment appropriate for image pixels in the .artwork file"""
-        remainder = offset % ArtworkBinaryFile.WIDTH_BYTE_PACKING
+        remainder = offset % alignment
         if remainder != 0: 
-            offset += (ArtworkBinaryFile.WIDTH_BYTE_PACKING - remainder)
+            offset += (alignment - remainder)
         return offset   
 
-    def get_modern_artwork_set_info(self):
-        return ModernArtworkSetInfo(self.data, self.basename)
-        
-    def get_pil_image(self, info):
+    def width_byte_align(self, width):
+        return self.byte_align(width, self.width_byte_packing)
+
+    @property
+    def width_byte_packing(self):
+        raise NotImplementedError("Implement in a derived class.")
+
+    @property
+    def artwork_set(self):
+        raise NotImplementedError("Implement in a derived class.")
+
+
+#------------------------------------------------------------------------------
+# ArtworkFile
+#------------------------------------------------------------------------------
+
+class ArtworkFile(BinaryFile, ArtworkFileCommon):
+    """Base class for reading an iOS SDK .artwork file, of any iOS era."""
+    
+    def __init__(self, filename):
+        super(ArtworkFile, self).__init__(filename)
+
+    def read_greyscale_pixel_at(self, offset):
+        return self.read_byte_at(offset)
+
+    def read_color_pixel_at(self, offset):
+        # Returns b, g, r, a
+        return self.unpack("BBBB", offset)
+
+    def read_pil_greyscale_pixel_at(self, offset):
+        grey = self.read_greyscale_pixel_at(offset)
+        return (grey, grey, grey, 255)
+
+    def read_pil_color_pixel_at(self, offset):
+        b, g, r, a = self.read_color_pixel_at(offset)
+        # Handle premultiplied alpha
+        if (a != 0):
+            r = (r * 255 + a // 2) // a
+            g = (g * 255 + a // 2) // a
+            b = (b * 255 + a // 2) // a
+        return (r, g, b, a)
+
+    def read_pil_image_at(self, offset, width, height, is_greyscale):
         """Return a PIL image instance of given size, at a given offset in the .artwork file."""
-        width = info.width
-        height = info.height
-        offset = info.offset
-        
         pil_image = PIL.Image.new("RGBA", (width, height))
         pil_pixels = pil_image.load()
-
-        aligned_width = ArtworkBinaryFile._align(width)
-        pixel_width = 1 if info.is_greyscale else 4
+        aligned_width = self.width_byte_align(width)
+        pixel_width = 1 if is_greyscale else 4
 
         for y in range(height):
             for x in range(width):
                 pixel_offset = offset + (pixel_width * ((y * aligned_width) + x))
-                if info.is_greyscale:
-                    gray = struct.unpack_from('<B', self.data, pixel_offset)[0]
-                    a = 255
-                    pil_pixels[x, y] = (gray, gray, gray, a)
+                if is_greyscale:
+                    pil_pixels[x, y] = self.read_pil_greyscale_pixel_at(pixel_offset)
                 else:
-                    b, g, r, a = struct.unpack_from('<BBBB', self.data, pixel_offset)
-                    if (info.is_premultiplied_alpha) and (a != 0):
-                        r = (r * 255 + a // 2) // a
-                        g = (g * 255 + a // 2) // a
-                        b = (b * 255 + a // 2) // a
-                    pil_pixels[x, y] = (r, g, b, a)
+                    pil_pixels[x, y] = self.read_pil_color_pixel_at(pixel_offset)
                 
-        return pil_image       
-        
+        return pil_image
 
-class WritableArtworkBinaryFile(ArtworkBinaryFile):
+    def iter_images(self):
+        raise NotImplementedError("Implement in a derived class.")
+
+
+#------------------------------------------------------------------------------
+# WritableArtworkFile
+#------------------------------------------------------------------------------
+
+class WriteableArtworkFile(WritableBinaryFile, ArtworkFileCommon):
     """Represents a writable iOS SDK .artwork file"""
     
     def __init__(self, filename, template_binary):
-        super(WritableArtworkBinaryFile, self).__init__(filename)
-        self._data_length = template_binary.data_length
-        self.template_binary = template_binary
-    
-    @property
-    def data(self):
-        if self._data is None:
-            # Zero out the file...
-            self._file = open(self.filename, "wb")
-            self._file.write(self.template_binary.data) # TODO: I don't know why I can't just zero out. Is there something else in these artwork files?
-            self._file.close()
+        super(WriteableArtworkFile, self).__init__(filename, template_binary)
 
-            self._file = open(self.filename, "r+b")
-            self._data = mmap.mmap(self._file.fileno(), self.data_length, access=mmap.ACCESS_WRITE)
-        return self._data
-    
-    @property
-    def data_length(self):
-        return self._data_length
-        
-    def open(self):
-        # HACK. Clearly not the right object model.
-        ignored = self.data
-        ignored = ignored # Linters
-        
-    def close(self):
-        self._data.flush()
-        self._data.close()
-        self._file.close()
-        self._data = None
-        self._file = None
-        
-    def delete(self):
-        self.close()
-        os.remove(self.filename)
-        
-    def write_pil_image(self, info, pil_image):
+    def write_greyscale_pixel_at(self, offset, grey):
+        self.write_byte_at(offset, grey)
+
+    def write_color_pixel_at(self, offset, b, g, r, a):
+        self.pack("BBBB", offset, b, g, r, a)
+
+    def write_pil_greyscale_pixel_at(self, offset, r, g, b, a):
+        self.write_greyscale_pixel_at(offset, grey=b)
+
+    def write_pil_color_pixel_at(self, offset, r, g, b, a):
+        # handle premultiplied alpha
+        r = (r * a + 127) // 255
+        g = (g * a + 127) // 255
+        b = (b * a + 127) // 255
+        self.write_color_pixel_at(offset, b, g, r, a)
+
+    def write_pil_image_at(self, offset, width, height, is_greyscale, pil_image):
         """Write a PIL image instance of given size, to a given offset in the .artwork file."""
-        width = info.width
-        height = info.height
-        offset = info.offset
-        
-        pil_pixels = pil_image.load()
-        
-        aligned_width = ArtworkBinaryFile._align(width)
-        pixel_width = 1 if info.is_greyscale else 4
+        pil_pixels = pil_image.load()        
+        aligned_width = self.width_byte_align(width)
+        pixel_width = 1 if is_greyscale else 4
         
         for y in range(height):
             for x in range(width):
+                pixel_offset = offset + (pixel_width * ((y * aligned_width) + x))
+
                 if pil_image.mode == 'RGBA':
                     r, g, b, a = pil_pixels[x, y]
                 else:
                     r, g, b = pil_pixels[x, y]
                     a = 255
-                if info.is_greyscale:
-                    packed = struct.pack('<B', b)
+
+                if is_greyscale:
+                    self.write_pil_greyscale_pixel_at(pixel_offset, r, g, b, a)
                 else:
-                    if info.is_premultiplied_alpha:
-                        r = (r * a + 127) // 255
-                        g = (g * a + 127) // 255
-                        b = (b * a + 127) // 255
-                    packed = struct.pack('<BBBB', b, g, r, a)
-                pixel_offset = offset + (pixel_width * ((y * aligned_width) + x))
-                self.data[pixel_offset:pixel_offset + pixel_width] = packed    
-        
+                    self.write_pil_color_pixel_at(pixel_offset, r, g, b, a) 
+
+    def write_images(self, artwork_set):
+        raise NotImplementedError("Implement in a derived class.")
+
+
