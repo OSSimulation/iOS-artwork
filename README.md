@@ -3,22 +3,13 @@ iOS Artwork Extractor
 
 You may have noticed that most of Apple's iOS artwork is packaged in files ending with the `.artwork` extension. The iOS Artwork Tool makes it easy to export images from those files. Exporting is useful for certain iOS development tasks. The tool also supports creating *new* `.artwork` files from images that you've tweaked; this is useful if you want to create mods that change the basic appearance of the iPhone or iPad's interface.
 
-The software is written in python. You must have python 2.x (I use 2.7) and the [Python Imaging Library](http://www.pythonware.com/products/pil/) installed in order for it to work. If you're using OSX, I suggest using [MacPorts](http://www.macports.org/) to install the PIL. Or if you're comfortable with `pip` and `virtualenv`, that's actually an even nicer way to get stuff installed. On Windows, it is easiest to just install Python and the PIL directly from the installer executables.
+With iOS6, this tool supports _all_ the SDK `.artwork` files! For SDKs prior to iOS6, only specific `.artwork` files are supported -- namely, all artwork referenced by `UIKit`, including shared artwork, Emoji artwork, and keyboard layout artwork.
 
-A number of artwork files are supported. The most recent files include:
+### GET STARTED
 
-    .../iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Shared.artwork
-    .../iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Shared@2x.artwork
-    .../iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Shared@2x~ipad.artwork
-    .../iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Shared@2x~iphone.artwork
-    .../iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Shared~ipad.artwork
-    .../iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/Shared~iphone.artwork
-        
-To get going, download the python source code.
+The software is written in python. You must have Python 2.7 and the [Python Imaging Library](http://www.pythonware.com/products/pil/) installed in order for it to work. To do this, create a new `virtualenv`, activate it, and `pip install -r requirements.txt`. 
 
-Next, find the appropriate artwork files on disk. This tool supports iOS 2.0.0, 2.2.0, 3.2.0, 4.1.0, 4.2.1, 4.3.2, 4.3.3, and 5.0.0GM artwork files.
-
-I apologize that there isn't a GUI version of this just yet. That would make things a lot easier and I have it on my list of stuff to do somewhere down the road...
+Next, find the appropriate artwork files on disk. This tool supports iOS2 through iOS6. It's up to you to locate the `.artwork` files; if you're an Apple developer with the SDK, look in the Xcode app bundle.
 
 ### EXPORTING
 
@@ -40,11 +31,12 @@ To create a new `.artwork` file, run the tool as follows:
 
 This will read all the PNGs in the `import_directory` directory and place them in the file named `created_artwork_file.artwork`. Again, easy!
 
-You may wonder why you have to supply the *original* `.artwork` file in this example. The reason is that in iOS, the artwork files sometimes contain extra data that is *not* image data. And of course it is important to keep this data around. So we only use the original `.artwork` file for *reading* in this example -- of course, we never write to it!
+You may wonder why you have to supply the *original* `.artwork` file in this example. That's because the images we import to the newly created `.artwork` must have the same dimensions and color space as the original -- otherwise iOS is likely to be unhappy with you.
 
 ### VERSION HISTORY
 
-    v1.4 04/15/2012 - (CURRENT) Support iOS 5.1
+    v1.5 09/21/2012 - (CURRENT) Support iOS6.0.0! Major rewrite to support multiple styles of artwork file.
+    v1.4 04/15/2012 - Support iOS 5.1
     v1.3 10/05/2011 - Support iOS 5!!!
     v1.2 10/04/2011 - fix major issues with premultiplied alpha and greyscale packaged images. support image flags. fix bugs in create.
     v1.1  8/21/2011 - fix problems with the 4.3.2 artwork files (and update them to 4.3.3)
@@ -65,11 +57,11 @@ Feel free to send comments, suggestions, and improvements my way. See code comme
 
 ### What's in this directory?
 
-The `iOS-artwork.py` script is the main workhorse here. It's probably the only thing you'll want to use.
+The `iOS-artwork.py` script is the main workhorse here. It's the only thing you'll want to use.
 
-The `generate-from-macho-binary.py` script is a helper that is capable of cracking a Mach-O binary, such as `UIKit`, and finding appropriate symbols for image information.
+The `generate-legacy-metadata.py` script is a helper that is capable of reading structs from SDK Mach-O binaries, such as `UIKit`, and finding appropriate symbols and offsets for images. You shouldn't use this.
 
-The `supported_artwork_files` directory contains a bunch of JSON files that have information about supported `.artwork` files and the images they contain.
+The `legacy_metadata` directory contains a bunch of JSON files that have metadata about supported `.artwork` files and the images they contain. There's a `README` in there that explains more: as the name implies, this directory only contains metadata for "legacy"-style `.artwork` files. Modern `.artwork` files found in iOS6 don't need this metadata because the `.artwork` files themselves contain it.
 
 Finally, the `artwork` directory is a Python package that contains most of the interesting code for making things work.
 

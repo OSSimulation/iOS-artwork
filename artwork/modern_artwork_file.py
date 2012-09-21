@@ -119,15 +119,27 @@ class ModernArtworkFile(ArtworkFile):
     def artwork_set(self):
         return ModernArtworkSet(self)
 
+    @property
+    def is_legacy(self):
+        return False
+
+    @property
+    def is_modern(self):
+        return True
+
+    @property
+    def is_modern_supported(self):
+        artwork_set = self.artwork_set
+        return (artwork_set.image_count > 0) and (artwork_set.image_count <= 4096)
+
 
 #------------------------------------------------------------------------------
 # ModernWriteableArtworkFile
 #------------------------------------------------------------------------------
 
-class ModernWriteableArtworkFile(WriteableArtworkFile):
-    # XXX TODO
+class WriteableModernArtworkFile(WriteableArtworkFile):
     def __init__(self, filename, template_binary):
-        super(ModernWriteableArtworkFile, self).__init__(filename, template_binary)
+        super(WriteableModernArtworkFile, self).__init__(filename, template_binary)
 
     @property
     def width_byte_packing(self):

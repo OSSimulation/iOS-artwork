@@ -29,12 +29,14 @@
 
 import os
 import sys
+import PIL
+import PIL.Image
 from optparse import OptionParser
 
 # import PIL.Image
 
-from artwork.legacy_artwork_file import LegacyArtworkFile
-from artwork.modern_artwork_file import ModernArtworkFile
+from artwork.legacy_artwork_file import LegacyArtworkFile, WriteableLegacyArtworkFile
+from artwork.modern_artwork_file import ModernArtworkFile, WriteableModernArtworkFile
     
 COMMANDS = ["export", "create"]
 
@@ -53,6 +55,8 @@ def action_export(artwork_file_name, directory):
     artwork_file = LegacyArtworkFile(artwork_file_name)
     if not artwork_file.is_legacy_supported:
         artwork_file = ModernArtworkFile(artwork_file_name)
+        if not artwork_file.is_modern_supported:
+            bail("FAIL. This tool does not currently support %s" % artwork_file_name)
 
     artwork_set = artwork_file.artwork_set    
     print "\nExporting %d images from %s (version %s)..." % (artwork_set.image_count, artwork_set.name, artwork_set.version)
@@ -65,57 +69,61 @@ def action_export(artwork_file_name, directory):
         
     print "\nDONE EXPORTING!"
     
-# XXX TODO
-# def action_create(artwork_file_name, directory, create_file_name, is_legacy):
-#     artwork_binary = ArtworkBinaryFile(artwork_file_name)
-#     if is_legacy:
-#         set_info = get_legacy_artwork_set_info(artwork_file_name)
-#     else:
-#         set_info = artwork_binary.get_modern_artwork_set_info()
-#     create_binary = WritableArtworkBinaryFile(create_file_name, artwork_binary)
-#     create_binary.open()
+def action_create(artwork_file_name, directory, create_file_name):
+    artwork_file = LegacyArtworkFile(artwork_file_name)
+    if not artwork_file.is_legacy_supported:
+        artwork_file = ModernArtworkFile(artwork_file_name)
+        if not artwork_file.is_modern_supported:
+            bail("FAIL. This tool does not currently support %s" % artwork_file_name)
+
+    if artwork_file.is_legacy:
+        create_file = WriteableLegacyArtworkFile(create_file_name, artwork_file)
+    else:
+        create_file = WriteableModernArtworkFile(create_file_name, artwork_file)        
+    create_file.open()
+
+    artwork_set = artwork_file.artwork_set
+    print "\nCreating a new file named %s by importing %d images...\n\t(Using %s version %s as a template.)" % (create_file_name, artwork_set.image_count, artwork_set.name, artwork_set.version)
     
-#     print "\nCreating a new file named %s by importing %d images...\n\t(Using %s version %s as a template.)" % (create_file_name, set_info.image_count, set_info.name, set_info.version)
-    
-#     for image_info in set_info.iter_images():
-#         #
-#         # Grab the image from disk
-#         #
-#         pil_image_name = os.path.join(directory, image_info.name)
-#         if not os.path.exists(pil_image_name):
-#             create_binary.delete()
-#             bail("FAIL. An image named %s was not found in directory %s" % (image_info.name, directory))
+    for artwork_image in artwork_set.iter_images():
+        #
+        # Grab the image from disk
+        #
+        pil_image_name = os.path.join(directory, artwork_image.retina_appropriate_name)
+        if not os.path.exists(pil_image_name):
+            create_file.delete()
+            bail("FAIL. An image named %s was not found in directory %s" % (artwork_image.retina_appropriate_name, directory))
             
-#         #
-#         # Validate the image
-#         #
-#         try:
-#             pil_image = PIL.Image.open(pil_image_name)
-#         except IOError:
-#             create_binary.delete()
-#             bail("FAIL. The image file named %s was invalid or could not be read." % pil_image_name)
+        #
+        # Validate the image
+        #
+        try:
+            pil_image = PIL.Image.open(pil_image_name)
+        except IOError:
+            create_file.delete()
+            bail("FAIL. The image file named %s was invalid or could not be read." % pil_image_name)
         
-#         actual_width, actual_height = pil_image.size
-#         if (actual_width != image_info.width) or (actual_height != image_info.height):
-#             create_binary.delete()
-#             bail("FAIL. The image file named %s should be %d x %d in size, but is actually %d x %d." % (pil_image_name, image_info.width, image_info.height, actual_width, actual_height))
+        actual_width, actual_height = pil_image.size
+        if (actual_width != artwork_image.width) or (actual_height != artwork_image.height):
+            create_file.delete()
+            bail("FAIL. The image file named %s should be %d x %d in size, but is actually %d x %d." % (pil_image_name, artwork_image.width, artwork_image.height, actual_width, actual_height))
         
-#         try:
-#             if (pil_image.mode != 'RGBA') and (pil_image.mode != 'RGB'):
-#                 pil_image = pil_image.convert('RGBA')
-#         except:
-#             create_binary.delete()
-#             bail("FAIL. The image file named %s could not be converted to a usable format." % pil_image_name)
+        try:
+            if (pil_image.mode != 'RGBA') and (pil_image.mode != 'RGB'):
+                pil_image = pil_image.convert('RGBA')
+        except:
+            create_file.delete()
+            bail("FAIL. The image file named %s could not be converted to a usable format." % pil_image_name)
         
-#         #
-#         # Write it
-#         #
-#         create_binary.write_pil_image(image_info, pil_image)
-#         print "\timported %s" % image_info.name
+        #
+        # Write it
+        #
+        create_file.write_pil_image_at(artwork_image.image_offset, artwork_image.width, artwork_image.height, artwork_image.is_greyscale, pil_image)
+        print "\timported %s" % artwork_image.retina_appropriate_name
     
-#     create_binary.close()
+    create_file.close()
     
-#     print "\nDONE CREATING!"
+    print "\nDONE CREATING!"
     
 def main(argv):
     #
@@ -179,11 +187,11 @@ def main(argv):
 
     if command == "export":
         action_export(abs_artwork_file_name, abs_directory)
-    # elif command == "create":
-    #     abs_create_file_name = os.path.abspath(options.create_file_name)
-    #     if os.path.exists(abs_create_file_name):
-    #         bail("Sorry, but the create file %s already exists." % options.create_file_name)
-    #     action_create(abs_artwork_file_name, abs_directory, abs_create_file_name, is_legacy)
+    elif command == "create":
+        abs_create_file_name = os.path.abspath(options.create_file_name)
+        if os.path.exists(abs_create_file_name):
+            bail("FAIL. The create file %s already exists -- don't want to overwrite it." % options.create_file_name)
+        action_create(abs_artwork_file_name, abs_directory, abs_create_file_name)
             
 if __name__ == "__main__":
     main(sys.argv)

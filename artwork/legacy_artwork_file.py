@@ -123,25 +123,33 @@ class LegacyArtworkFile(ArtworkFile):
         return os.path.join(self._legacy_metadata_directory, "%s-%d.json" % (self.basename, self.file_size))
 
     @property
-    def is_legacy_supported(self):
-        legacy_metadata_json_file_name = self._legacy_metadata_json_file_name
-        return os.path.exists(legacy_metadata_json_file_name)
-
-    @property
     def legacy_jsonable(self):
         with open(self._legacy_metadata_json_file_name) as f:
             jsonable = json.loads(f.read())
         return jsonable
+
+    @property
+    def is_legacy(self):
+        return True
+
+    @property
+    def is_modern(self):
+        return False
+
+    @property
+    def is_legacy_supported(self):
+        legacy_metadata_json_file_name = self._legacy_metadata_json_file_name
+        return os.path.exists(legacy_metadata_json_file_name)
+
 
 
 #------------------------------------------------------------------------------
 # LegacyWriteableArtworkFile
 #------------------------------------------------------------------------------
 
-class LegacyWriteableArtworkFile(WriteableArtworkFile):
-    # XXX TODO
+class WriteableLegacyArtworkFile(WriteableArtworkFile):
     def __init__(self, filename, template_binary):
-        super(LegacyWriteableArtworkFile, self).__init__(filename, template_binary)
+        super(WriteableLegacyArtworkFile, self).__init__(filename, template_binary)
 
     @property
     def width_byte_packing(self):

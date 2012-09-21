@@ -217,7 +217,3 @@ class WriteableArtworkFile(WritableBinaryFile, ArtworkFileCommon):
                 else:
                     self.write_pil_color_pixel_at(pixel_offset, r, g, b, a) 
 
-    def write_images(self, artwork_set):
-        raise NotImplementedError("Implement in a derived class.")
-
-
