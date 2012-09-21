@@ -105,7 +105,7 @@ class ArtworkSetMetadata(object):
             "images": [image_metadata.to_jsonable() for image_metadata in self.iter_images()],
             "name": self.name,
             "version": self.version,
-            "byte_size": self.framework_file.file_size,
+            "byte_size": "FILL_THIS_IN",
         }
             
 
