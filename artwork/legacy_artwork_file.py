@@ -15,7 +15,8 @@ import json
 from .artwork_file import ArtworkImage, ArtworkSet, ArtworkFile, WriteableArtworkFile
 
 #
-# Legacy *.artwork files are found in iOS5 and earlier.
+# Legacy *.artwork files are found in iOS5 and earlier, and are also
+# found in the occasional odd iOS6 artwork file (such as AssistantMic@2x.artwork)
 #
 # These artwork files contain images in raw RGBA and/or greyscale form,
 # but the problem is that the metadata needed to extract those images

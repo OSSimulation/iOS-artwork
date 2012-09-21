@@ -13,6 +13,8 @@ from .artwork_file import ArtworkImage, ArtworkSet, ArtworkFile, WriteableArtwor
 
 #
 # Modern *.artwork files are found in iOS6 and (hopefully) above.
+# Just about all of the iOS6 SDK artwork files are "modern" -- there appear
+# to be a handful of stragglers.
 #
 # Unlike previous generations of iOS, these files are self-contained:
 # they contain both the images (in raw RGBA and/or greyscale form)

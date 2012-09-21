@@ -44,6 +44,10 @@ class BinaryFile(object):
             self._file = None
 
     @property
+    def is_little_endian(self):
+        return self._endian == "<"
+        
+    @property
     def basename(self):
         return os.path.basename(self.filename)
             

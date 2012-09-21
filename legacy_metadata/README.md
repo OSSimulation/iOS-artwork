@@ -13,6 +13,7 @@ Since it was a pain to use `generate-from-macho-binary.py`, I ended up having it
 
 This directory contains metadata all the `*.artwork` files that my tool knows about for iOS3 through iOS5. 
 
-Thankfully, this nonsense is no longer necessary with iOS6. With any luck, it won't be necessary with iOS7, either!
+Thankfully, this nonsense is no longer necessary with _almost all_ `.artwork` files in iOS6. There are a few stragglers, like `AssistantMic@2x.artwork`. With any luck, this kind of nonsense won't be necessary _at all_ with iOS7. Fingers crossed.
+
 
 
