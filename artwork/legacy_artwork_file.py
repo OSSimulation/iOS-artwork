@@ -9,6 +9,8 @@
 #
 #-------------------------------------------------------------------------------
 
+from __future__ import with_statement  # For compatibility with python 2.5 -- this is legacy.
+
 import os
 import os.path
 import json
