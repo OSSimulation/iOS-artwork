@@ -7,7 +7,7 @@ With iOS6, this tool supports _all_ the SDK `.artwork` files! For SDKs prior to 
 
 ### GET STARTED
 
-The software is written in python. You must have Python 2.7 and the [Python Imaging Library](http://www.pythonware.com/products/pil/) installed in order for it to work. To do this, create a new `virtualenv`, activate it, and `pip install -r requirements.txt`. 
+The software is written in python. You must have Python 2.7 and the [Python Imaging Library](http://www.pythonware.com/products/pil/) installed in order for it to work. To do this, create a new `virtualenv`, activate it, and `pip install -r requirements.txt`.
 
 Next, find the appropriate artwork files on disk. This tool supports iOS2 through iOS6. It's up to you to locate the `.artwork` files; if you're an Apple developer with the SDK, look in the Xcode app bundle.
 
@@ -35,7 +35,8 @@ You may wonder why you have to supply the *original* `.artwork` file in this exa
 
 ### VERSION HISTORY
 
-    v1.5 09/21/2012 - (CURRENT) Support iOS6.0.0! Major rewrite to support multiple styles of artwork file.
+    v1.6 12/13/2012 - (CURRENT) Bugfix: properly handle iOS6 greyscale images. Their byte alignment is different.
+    v1.5 09/21/2012 - Support iOS6.0.0! Major rewrite to support multiple styles of artwork file.
     v1.4 04/15/2012 - Support iOS 5.1
     v1.3 10/05/2011 - Support iOS 5!!!
     v1.2 10/04/2011 - fix major issues with premultiplied alpha and greyscale packaged images. support image flags. fix bugs in create.
@@ -50,7 +51,7 @@ You may wonder why you have to supply the *original* `.artwork` file in this exa
     v0.3  7/19/2008 - use os.path to manipulate paths so that things work nicely on windows
     v0.2  7/18/2008 - change command line structure to use -export (preparing to also add -import) and fix bugs in usage_* methods
     v0.1  7/13/2008 - released initial version, with export support for all 2.0.0 UIKit artwork
-    
+
 ### Contact Me
 
 Feel free to send comments, suggestions, and improvements my way. See code comments for details on making improvements. You can find my email address in the information area below.

@@ -2,7 +2,7 @@
 #
 # iOS .artwork file extractor
 # (c)2008-2012 Dave Peck <davepeck [at] davepeck [dot] org> All Rights Reserved
-# 
+#
 # Released under the three-clause BSD license.
 #
 # http://github.com/davepeck/iOS-artwork/
@@ -19,7 +19,7 @@ from .binary_file import BinaryFile, WritableBinaryFile
 
 class ArtworkImage(object):
     """
-    Abstract class for metadata and accessor for a single image in 
+    Abstract class for metadata and accessor for a single image in
     an artwork file.
     """
     def __init__(self, artwork_file, artwork_set):
@@ -103,15 +103,14 @@ class ArtworkFileCommon(object):
     def byte_align(self, offset, alignment):
         """Perform packing alignment appropriate for image pixels in the .artwork file"""
         remainder = offset % alignment
-        if remainder != 0: 
+        if remainder != 0:
             offset += (alignment - remainder)
-        return offset   
+        return offset
 
-    def width_byte_align(self, width):
-        return self.byte_align(width, self.width_byte_packing)
+    def width_byte_align(self, width, **kwargs):
+        return self.byte_align(width, self.width_byte_packing(**kwargs))
 
-    @property
-    def width_byte_packing(self):
+    def width_byte_packing(self, **kwargs):
         raise NotImplementedError("Implement in a derived class.")
 
     @property
@@ -125,9 +124,11 @@ class ArtworkFileCommon(object):
 
 class ArtworkFile(BinaryFile, ArtworkFileCommon):
     """Base class for reading an iOS SDK .artwork file, of any iOS era."""
-    
+
     def __init__(self, filename):
         super(ArtworkFile, self).__init__(filename)
+        self.greyscale_pixel_size = 1
+        self.color_pixel_size = 4
 
     def read_greyscale_pixel_at(self, offset):
         return self.read_byte_at(offset)
@@ -153,8 +154,8 @@ class ArtworkFile(BinaryFile, ArtworkFileCommon):
         """Return a PIL image instance of given size, at a given offset in the .artwork file."""
         pil_image = PIL.Image.new("RGBA", (width, height))
         pil_pixels = pil_image.load()
-        aligned_width = self.width_byte_align(width)
-        pixel_width = 1 if is_greyscale else 4
+        aligned_width = self.width_byte_align(width, is_greyscale=is_greyscale)
+        pixel_width = self.greyscale_pixel_size if is_greyscale else self.color_pixel_size
 
         for y in range(height):
             for x in range(width):
@@ -163,7 +164,7 @@ class ArtworkFile(BinaryFile, ArtworkFileCommon):
                     pil_pixels[x, y] = self.read_pil_greyscale_pixel_at(pixel_offset)
                 else:
                     pil_pixels[x, y] = self.read_pil_color_pixel_at(pixel_offset)
-                
+
         return pil_image
 
     def iter_images(self):
@@ -176,7 +177,7 @@ class ArtworkFile(BinaryFile, ArtworkFileCommon):
 
 class WriteableArtworkFile(WritableBinaryFile, ArtworkFileCommon):
     """Represents a writable iOS SDK .artwork file"""
-    
+
     def __init__(self, filename, template_binary):
         super(WriteableArtworkFile, self).__init__(filename, template_binary)
 
@@ -198,10 +199,10 @@ class WriteableArtworkFile(WritableBinaryFile, ArtworkFileCommon):
 
     def write_pil_image_at(self, offset, width, height, is_greyscale, pil_image):
         """Write a PIL image instance of given size, to a given offset in the .artwork file."""
-        pil_pixels = pil_image.load()        
-        aligned_width = self.width_byte_align(width)
+        pil_pixels = pil_image.load()
+        aligned_width = self.width_byte_align(width, is_greyscale=is_greyscale)
         pixel_width = 1 if is_greyscale else 4
-        
+
         for y in range(height):
             for x in range(width):
                 pixel_offset = offset + (pixel_width * ((y * aligned_width) + x))
@@ -215,5 +216,5 @@ class WriteableArtworkFile(WritableBinaryFile, ArtworkFileCommon):
                 if is_greyscale:
                     self.write_pil_greyscale_pixel_at(pixel_offset, r, g, b, a)
                 else:
-                    self.write_pil_color_pixel_at(pixel_offset, r, g, b, a) 
+                    self.write_pil_color_pixel_at(pixel_offset, r, g, b, a)
 

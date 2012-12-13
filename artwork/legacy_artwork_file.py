@@ -2,7 +2,7 @@
 #
 # iOS .artwork file extractor
 # (c)2008-2012 Dave Peck <davepeck [at] davepeck [dot] org> All Rights Reserved
-# 
+#
 # Released under the three-clause BSD license.
 #
 # http://github.com/davepeck/iOS-artwork/
@@ -22,7 +22,7 @@ from .artwork_file import ArtworkImage, ArtworkSet, ArtworkFile, WriteableArtwor
 #
 # These artwork files contain images in raw RGBA and/or greyscale form,
 # but the problem is that the metadata needed to extract those images
-# (namely, their names, sizes, colorspaces, and byte offsets in the file) 
+# (namely, their names, sizes, colorspaces, and byte offsets in the file)
 # are *not* found in the artwork file. Instead, the metadata are found
 # in a motley assortment of Mach-O binaries. For example, you can find
 # the metadata for iOS5's Shared~iphone.artwork in the UIKit binary.
@@ -31,10 +31,10 @@ from .artwork_file import ArtworkImage, ArtworkSet, ArtworkFile, WriteableArtwor
 # (now deleted) called generate-from-macho-binary.py that looks for
 # (unexported) symbols that point to the metadata table. That script
 # outputs the files now housed in the legacy_metadata/ directory.
-# 
+#
 # In order to crack a legacy artwork binary file, it must be married
 # with a corresponding json file. If the json file is missing, the file
-# is not supported, although you could try and support it by going 
+# is not supported, although you could try and support it by going
 # back in time and running generate-from-macho-binary.py yourself.
 #
 
@@ -71,7 +71,7 @@ class LegacyArtworkImage(ArtworkImage):
 
     @property
     def is_greyscale(self):
-        return (self._flags & 0x02) != 0        
+        return (self._flags & 0x02) != 0
 
 
 #------------------------------------------------------------------------------
@@ -104,8 +104,7 @@ class LegacyArtworkFile(ArtworkFile):
     def __init__(self, filename):
         super(LegacyArtworkFile, self).__init__(filename)
 
-    @property
-    def width_byte_packing(self):
+    def width_byte_packing(self, **kwargs):
         return 8
 
     @property
@@ -153,12 +152,11 @@ class WriteableLegacyArtworkFile(WriteableArtworkFile):
     def __init__(self, filename, template_binary):
         super(WriteableLegacyArtworkFile, self).__init__(filename, template_binary)
 
-    @property
-    def width_byte_packing(self):
+    def width_byte_packing(self, **kwargs):
         return 8
 
     @property
     def artwork_set(self):
         return self.template_binary.artwork_set()
 
-    
+

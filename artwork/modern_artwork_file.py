@@ -2,7 +2,7 @@
 #
 # iOS .artwork file extractor
 # (c)2008-2012 Dave Peck <davepeck [at] davepeck [dot] org> All Rights Reserved
-# 
+#
 # Released under the three-clause BSD license.
 #
 # http://github.com/davepeck/iOS-artwork/
@@ -67,7 +67,7 @@ class ModernArtworkImage(ArtworkImage):
 
     @property
     def is_greyscale(self):
-        return (self._flags & 0x02) != 0        
+        return (self._flags & 0x02) != 0
 
 
 #------------------------------------------------------------------------------
@@ -111,9 +111,8 @@ class ModernArtworkFile(ArtworkFile):
     def __init__(self, filename):
         super(ModernArtworkFile, self).__init__(filename)
 
-    @property
-    def width_byte_packing(self):
-        return 1
+    def width_byte_packing(self, is_greyscale, **kwargs):
+        return 4 if is_greyscale else 1
 
     @property
     def artwork_set(self):
@@ -141,12 +140,11 @@ class WriteableModernArtworkFile(WriteableArtworkFile):
     def __init__(self, filename, template_binary):
         super(WriteableModernArtworkFile, self).__init__(filename, template_binary)
 
-    @property
-    def width_byte_packing(self):
-        return 1
+    def width_byte_packing(self, is_greyscale, **kwargs):
+        return 4 if is_greyscale else 1
 
     @property
     def artwork_set(self):
         return self.template_binary.artwork_set()
 
-    
+
