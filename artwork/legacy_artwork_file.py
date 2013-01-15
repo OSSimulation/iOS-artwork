@@ -40,7 +40,7 @@ from .artwork_file import ArtworkImage, ArtworkSet, ArtworkFile, WriteableArtwor
 
 
 #------------------------------------------------------------------------------
-# LegacyArtworkImage: for iOS6 and (hopefully) beyond
+# LegacyArtworkImage: for iOS5 and previous (and one or two iOS6 files, ugh.)
 #------------------------------------------------------------------------------
 
 class LegacyArtworkImage(ArtworkImage):
