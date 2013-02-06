@@ -35,22 +35,23 @@ You may wonder why you have to supply the *original* `.artwork` file in this exa
 
 ### VERSION HISTORY
 
-    v1.6 12/13/2012 - (CURRENT) Bugfix: properly handle iOS6 greyscale images. Their byte alignment is different.
+    v1.7 02/05/2012 - (CURRENT) Test support for iOS6.1, too. All is well.
+    v1.6 12/13/2012 - Bugfix: properly handle iOS6 greyscale images. Their byte alignment is different.
     v1.5 09/21/2012 - Support iOS6.0.0! Major rewrite to support multiple styles of artwork file.
     v1.4 04/15/2012 - Support iOS 5.1
     v1.3 10/05/2011 - Support iOS 5!!!
     v1.2 10/04/2011 - fix major issues with premultiplied alpha and greyscale packaged images. support image flags. fix bugs in create.
-    v1.1  8/21/2011 - fix problems with the 4.3.2 artwork files (and update them to 4.3.3)
-    v1.0  7/07/2011 - support iOS 4.3. support Emoji files.
+    v1.1 08/21/2011 - fix problems with the 4.3.2 artwork files (and update them to 4.3.3)
+    v1.0 07/07/2011 - support iOS 4.3. support Emoji files.
     v0.9 12/06/2010 - massive rewrite to support iOS 4.2.1 files. Totally new generator script based on cracking mach-o files.
-    v0.8  9/13/2010 - support iPhone OS 4.1.0 and 3.2.0 artwork files.
+    v0.8 09/13/2010 - support iPhone OS 4.1.0 and 3.2.0 artwork files.
     v0.7 12/07/2008 - support iPhone OS 2.2.0 artwork files from UIKit
-    v0.6  7/28/2008 - support other image formats besides RGBA. Fix a filename-related bug (used relative name instead of absolute.)
-    v0.5  7/25/2008 - add support for MobilePhone images, and clean up usage messages.
-    v0.4  7/24/2008 - add feature support for -import so that you can make artwork files
-    v0.3  7/19/2008 - use os.path to manipulate paths so that things work nicely on windows
-    v0.2  7/18/2008 - change command line structure to use -export (preparing to also add -import) and fix bugs in usage_* methods
-    v0.1  7/13/2008 - released initial version, with export support for all 2.0.0 UIKit artwork
+    v0.6 07/28/2008 - support other image formats besides RGBA. Fix a filename-related bug (used relative name instead of absolute.)
+    v0.5 07/25/2008 - add support for MobilePhone images, and clean up usage messages.
+    v0.4 07/24/2008 - add feature support for -import so that you can make artwork files
+    v0.3 07/19/2008 - use os.path to manipulate paths so that things work nicely on windows
+    v0.2 07/18/2008 - change command line structure to use -export (preparing to also add -import) and fix bugs in usage_* methods
+    v0.1 07/13/2008 - released initial version, with export support for all 2.0.0 UIKit artwork
 
 ### Contact Me
 
