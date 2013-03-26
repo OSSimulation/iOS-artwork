@@ -35,7 +35,8 @@ You may wonder why you have to supply the *original* `.artwork` file in this exa
 
 ### VERSION HISTORY
 
-    v1.7 02/05/2012 - (CURRENT) Test support for iOS6.1, too. All is well.
+    v1.8 03/25/2013 - (CURRENT) Add support for AssistantMic-163r@1x~ipad.artwork -- found only on the iPad Mini firmware, not even in the SDK
+    v1.7 02/05/2013 - Test support for iOS6.1, too. All is well.
     v1.6 12/13/2012 - Bugfix: properly handle iOS6 greyscale images. Their byte alignment is different.
     v1.5 09/21/2012 - Support iOS6.0.0! Major rewrite to support multiple styles of artwork file.
     v1.4 04/15/2012 - Support iOS 5.1
