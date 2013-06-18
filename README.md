@@ -1,5 +1,54 @@
-iOS Artwork Extractor
-=====================
+An Important Note About iOS7
+============================
+
+### This tool is no longer supported.
+
+June 18, 2013: This extractor tool is officially dead. It will not support `iOS7` or any future release of `iOS`. It will see no future updates for iOS6, either.
+
+Without violating my NDA, `iOS7` introduces a new notion of "asset catalogs" which are managed by `XCode` and which are ultimately compiled down into `.car` files by the `actool` binary.
+
+Asset catalogs in `iOS7` are radically different than the `.artwork` files found in previous versions of `iOS`. They contain images, yes, but they also contain complex metadata (like 3- and 9-grid slicing information), embedded fonts, paths, glyphs, icons, and a whole bunch of other stuff besides.
+
+The bottom line: reverse-engineering these files is going to be a massive undertaking. More importantly, it may not be necessary anymore. Read on for details.
+
+### What you should use instead of this tool.
+
+If you want to extract the contents of `.car` files, you'll want to build a native iOS app that uses undocumented `UIKit` APIs to iterate through the available images. The best option right now is probably `0xced`'s [`UIKit-Artwork-Extractor`](https://github.com/0xced/UIKit-Artwork-Extractor) &mdash; I suspect we'll see it quickly updated for iOS7.
+
+If you want to create _new_ `.car` files, you're in luck: just create an XCode 5 project, create an image catalog, and add your images to it. When you build your project, XCode5 will build a proper `.car` file for you.
+
+Don't want to use XCode projects? No problem; inside the `XCode 5` app bundle is a binary called `actool` that is used to turn an image catalog into a `.car` file. You can `man actool` for more information; it's not terribly well documented, but I was able to get it to create simple and valid `.car` files.
+
+It's worth pointing out some notable disadvantages to this approach over using my tool in the past:
+
+1. You have to be a registered Apple developer in order to use these tools
+2. The overall process of extracting images
+
+### What you should know if you want to try reverse-engineering this stuff.
+
+All this said, it *is* fundamentally possible to update my `iOS-artwork-tool` for `iOS7`. I just don't think it's worth it to do so, especially given that there are other tools that can accomplish similar goals.
+
+If you feel like you're up to the challenge, here's what I know.
+
+Under the hood, the `.car` file format is actually a Mac OS X BOM (Bill Of Materials) file.
+
+Typical BOM files can be manipulated with the `lsbom` and `mkbom` command-line utilities. However, iOS7 `.car` files aren't typical BOM files. Standard BOM files contain a `Paths` variable in the BOM manifest; the `Paths` section is basically a directory tree.
+
+While the new `.car` files are BOM files, they don't contain a `Paths` variable. Instead, they have ten unique variables, including `CARHEADER`, `RENDITIONS`, `COLORS`, `FONTS`, `FONTSIZES`, `GLYPHS`, `BEZELS`, `FACETKEYS`, `ELEMENT_INFO`, and `PART_INFO`. In order to properly support the new `*.car` files, you'll have to reverse-engineer each of these sections. The good news is that `actool` is quite capable of _creating_ content for each of these sections, so it should be possible to generate a number of handy example files from which you can then reverse-engineer the file layout.
+
+One last "gotcha": the Mac OS X BOM file format is itself undocumented. Luckily, someone has taken a crack at it and has built a good-enough implementation of `lsbom` that you can at least get started on understanding the layout of the files. You can find this re-implementation at [cooljeanius/osxbom](https://github.com/cooljeanius/osxbom)
+
+### Thanks for using the extractor throughout the years.
+
+Lots and lots of people have used my extractor, and I really appreciate it!
+
+But the time has come to move on to better tools and approaches. Godspeed, `iOS-artwork-extractor`... Godspeed.
+
+-Dave
+
+
+iOS Artwork Extractor for iOS6 and Earlier
+==========================================
 
 You may have noticed that most of Apple's iOS artwork is packaged in files ending with the `.artwork` extension. The iOS Artwork Tool makes it easy to export images from those files. Exporting is useful for certain iOS development tasks. The tool also supports creating *new* `.artwork` files from images that you've tweaked; this is useful if you want to create mods that change the basic appearance of the iPhone or iPad's interface.
 
