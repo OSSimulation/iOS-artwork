@@ -22,7 +22,7 @@ Don't want to use XCode projects? No problem; inside the `XCode 5` app bundle is
 It's worth pointing out some notable disadvantages to this approach over using my tool in the past:
 
 1. You have to be a registered Apple developer in order to use these tools
-2. The overall process of extracting images
+2. The overall process of extracting images and then creating new archives _for the purposes of modding the iOS UI_ has gotten a lot more cumbersome. (Although a few shell scripts could theoretically help you here.)
 
 ### What you should know if you want to try reverse-engineering this stuff.
 
