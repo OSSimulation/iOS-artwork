@@ -1,0 +1,93 @@
+{
+    "images": [
+        [
+            "com.apple.Dataclass.Backup.png", 
+            29, 
+            29, 
+            0, 
+            0
+        ], 
+        [
+            "com.apple.Dataclass.CKDatabaseService.png", 
+            29, 
+            29, 
+            4096, 
+            0
+        ],
+        [
+            "com.apple.Dataclass.KeychainSync.png", 
+            29, 
+            29, 
+            8192, 
+            0
+        ],
+        [
+            "com.apple.Dataclass.Ubiquity.png", 
+            29, 
+            29, 
+            12288, 
+            0
+        ],
+        [
+            "com.apple.Dataclass.Contacts.png", 
+            29, 
+            29, 
+            16384, 
+            0
+        ], 
+        [
+            "com.apple.Dataclass.Mail.png", 
+            29, 
+            29, 
+            20480, 
+            0
+        ],
+        [
+            "com.apple.Dataclass.Calendars.png", 
+            29, 
+            29, 
+            24576, 
+            0
+        ],
+        [
+            "com.apple.Dataclass.Reminders.png", 
+            29, 
+            29, 
+            28672, 
+            0
+        ], 
+        [
+            "com.apple.Dataclass.Notes.png", 
+            29, 
+            29, 
+            32768, 
+            0
+        ],
+        [
+            "com.apple.Dataclass.Bookmarks.png", 
+            29, 
+            29, 
+            36864, 
+            0
+        ],
+        [
+            "com.apple.Dataclass.Shoebox.png", 
+            29, 
+            29, 
+            40960, 
+            0
+        ],
+        [
+            "com.apple.Dataclass.Mediastream.png", 
+            29, 
+            29, 
+            45056, 
+            0
+        ]
+
+
+    ], 
+    "version": "8.0.0", 
+    "name": "dataclassIconCache.artwork", 
+    "byte_size": 49252
+}
