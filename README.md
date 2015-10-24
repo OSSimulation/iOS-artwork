@@ -1,3 +1,7 @@
+Forked originally from Dave Peck's GitHub and updated for iOS9 Support
+
+The repo includes support for ALL iOS 6 - 9.X iconCache & dataclassIconCache .artwork files found in iOS
+
 An Important Note About iOS7
 ============================
 
