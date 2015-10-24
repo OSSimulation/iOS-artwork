@@ -2,11 +2,11 @@
 
 The repo includes support for ALL iOS 6 - 9.X iconCache & dataclassIconCache .artwork files found in iOS
 
-###Dave Peck's original README below...
+Dave Peck's original README below...
 
-An Important Note About iOS7
+### An Important Note About iOS7
 
-## This tool is no longer supported.
+This tool is no longer supported.
 
 June 18, 2013: This extractor tool is officially dead. It will not support `iOS7` or any future release of `iOS`. It will see no future updates for iOS6, either.
 
