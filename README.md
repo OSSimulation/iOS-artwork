@@ -6,7 +6,7 @@ With the iOS 10 "@3x" .artwork files you will currently need to run the "artwork
 It creates a duplicate but remones the null padding Apple have applied to the @3x .artwork files. Essentially putting 
 the iOS 10 @3x files back to iOS 9 specs.
 
-Usage:<artwork_hack_py> <path/to/@3x/artwork/file> 
+Usage:artwork_hack_py path/to/@3x/artwork/file 
 
 Then run this artwork extract tool as expected.
 
