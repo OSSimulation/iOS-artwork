@@ -1,6 +1,14 @@
-###Forked originally from Dave Peck's GitHub and updated for iOS9 Support
+###Forked originally from Dave Peck's GitHub and updated for iOS10 Support
 
-The repo includes support for ALL iOS 6 - 9.X iconCache & dataclassIconCache .artwork files found in iOS
+The repo includes support for ALL iOS 6 - 10.X iconCache & dataclassIconCache .artwork files found in iOS
+
+With the iOS 10 "@3x" .artwork files you will currently need to run the "artwork_hack.py" script over your file.
+It creates a duplicate but remones the null padding Apple have applied to the @3x .artwork files. Essentially putting 
+the iOS 10 @3x files back to iOS 9 specs.
+
+Usage:<artwork_hack_py> <path/to/@3x/artwork/file> 
+
+Then run this artwork extract tool as expected.
 
 Dave Peck's original README below...
 
