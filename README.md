@@ -1,6 +1,6 @@
 # iOS-artwork
 
-### Forked from [Jato-BZ/iOS-artwork](https://github.com/Jato-BZ/iOS-artwork)'s fork to add Python 3 support.
+### Forked from [Jato-BZ/iOS-artwork](https://github.com/Jato-BZ/iOS-artwork) to add Python 3 support.
 
 ### Please note that the create function has been removed. Use the original fork instead.
 
