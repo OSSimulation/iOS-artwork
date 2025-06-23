@@ -45,7 +45,7 @@ def usage(parser):
     sys.exit(-1)
 
 def bail(message):
-    print "\n%s\n" % message
+    print("\n%s\n" % message)
     sys.exit(-1)
 
 def file_extension(file_name):
@@ -59,15 +59,15 @@ def action_export(artwork_file_name, directory):
             bail("FAIL. This tool does not currently support %s" % artwork_file_name)
 
     artwork_set = artwork_file.artwork_set    
-    print "\nExporting %d images from %s (version %s)..." % (artwork_set.image_count, artwork_set.name, artwork_set.version)
+    print("\nExporting %d images from %s (version %s)..." % (artwork_set.image_count, artwork_set.name, artwork_set.version))
     
     for artwork_image in artwork_set.iter_images():
         pil_image = artwork_image.get_pil_image()
         export_file_name = os.path.join(directory, artwork_image.retina_appropriate_name)
         pil_image.save(export_file_name, file_extension(export_file_name))
-        print "\texported %s" % export_file_name
+        print("\texported %s" % export_file_name)
         
-    print "\nDONE EXPORTING!"
+    print("\nDONE EXPORTING!")
     
 def action_create(artwork_file_name, directory, create_file_name):
     artwork_file = LegacyArtworkFile(artwork_file_name)
@@ -83,7 +83,7 @@ def action_create(artwork_file_name, directory, create_file_name):
     create_file.open()
 
     artwork_set = artwork_file.artwork_set
-    print "\nCreating a new file named %s by importing %d images...\n\t(Using %s version %s as a template.)" % (create_file_name, artwork_set.image_count, artwork_set.name, artwork_set.version)
+    print("\nCreating a new file named %s by importing %d images...\n\t(Using %s version %s as a template.)" % (create_file_name, artwork_set.image_count, artwork_set.name, artwork_set.version))
     
     for artwork_image in artwork_set.iter_images():
         #
@@ -119,11 +119,11 @@ def action_create(artwork_file_name, directory, create_file_name):
         # Write it
         #
         create_file.write_pil_image_at(artwork_image.image_offset, artwork_image.width, artwork_image.height, artwork_image.is_greyscale, pil_image)
-        print "\timported %s" % artwork_image.retina_appropriate_name
+        print("\timported %s" % artwork_image.retina_appropriate_name)
     
     create_file.close()
     
-    print "\nDONE CREATING!"
+    print("\nDONE CREATING!")
     
 def main(argv):
     #
