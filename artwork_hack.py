@@ -33,7 +33,7 @@ def main():
 
     else:
 
-        print "\n%s is not a valid .artwork file!!!" % file
+        print("\n%s is not a valid .artwork file!!!" % file)
         sys.exit()
     #
     # Work out from the icon image size declared in the .artwork file if @1x,@2x or @3x type .artwork file.
@@ -69,7 +69,7 @@ def main():
             #
             if os.path.isfile(file):
 
-                print "\nFAIL. %s already exists -- don't want to overwrite it." % (file)
+                print("\nFAIL. %s already exists -- don't want to overwrite it." % (file))
                 artwork_file.close()
                 exit()
 
@@ -133,20 +133,20 @@ def main():
             new_artwork_file_data = new_artwork_file.read()
             total_bytes_new_artwork = len(new_artwork_file_data)
 
-            print "\n%s created using %s as a template" % (new_artwork_file_header, artwork_file_path)
-            print "\nOriginal file size: %d" % artwork_file_data_size
-            print "Total bytes skipped: %d" % total_bytes            
-            print "New file size: %d" % total_bytes_new_artwork
+            print("\n%s created using %s as a template" % (new_artwork_file_header, artwork_file_path))
+            print("\nOriginal file size: %d" % artwork_file_data_size)
+            print("Total bytes skipped: %d" % total_bytes)            
+            print("New file size: %d" % total_bytes_new_artwork)
 
         else:
 
             artwork_file.close()
-            print "\nThis tool does not support iOS 8 - 9.2.1 @3x type files -- as not required."    
+            print("\nThis tool does not support iOS 8 - 9.2.1 @3x type files -- as not required.")    
 
     else:
         
         artwork_file.close()
-        print "\nThis tool does not support %s type files -- as not required." % (artwork_type) 
+        print("\nThis tool does not support %s type files -- as not required." % (artwork_type))
 
 if __name__ == "__main__":
     main()
