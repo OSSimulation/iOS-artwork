@@ -1,9 +1,15 @@
+# iOS-artwork
+
 ### Forked from Jato-BZ's fork to add semi Python3 support for exporting
 
-Please note that I did not test creating. No pull requests will be accepted.
+Please note that creating an .artwork file will most likely will not work.
+You need the PIL (Pillow) library installed in order for this to function.
+Make sure you clone the entire repository or the below command will not work.
 Example command:
 
-    ./iOS_artwork.py export -a /path/to/artwork_file@2x.artwork -d /path/to/export/directory
+    python3 ./iOS_artwork.py export -a /path/to/artwork_file@2x.artwork -d /path/to/export_directory
+
+## Original README.md below
 
 ### Forked originally from Dave Peck's GitHub and updated for iOS10 Support
 
