@@ -1,9 +1,11 @@
 # iOS-artwork
 
-### Forked from Jato-BZ's fork to add Python 3 support
+### Forked from Jato-BZ's fork to add Python 3 support.
 
-Please note that creating an .artwork file will most likely will not work.
+### Please note that creating an .artwork file has been disabled. Use the original fork instead.
+
 You need the PIL (Pillow) library installed in order for this to function.
+
 Make sure you clone the entire repository or the below command will not work.
 Example command:
 
