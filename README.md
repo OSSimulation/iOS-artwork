@@ -1,4 +1,10 @@
-###Forked originally from Dave Peck's GitHub and updated for iOS10 Support
+### Forked from Jato-BZ's fork to add semi Python3 support for exporting
+
+Example command:
+
+    ./iOS_artwork.py export -a /path/to/artwork_file@3x.artwork -d /path/to/export/directory
+
+### Forked originally from Dave Peck's GitHub and updated for iOS10 Support
 
 The repo includes support for ALL iOS 6 - 10.X iconCache & dataclassIconCache .artwork files found in iOS
 
