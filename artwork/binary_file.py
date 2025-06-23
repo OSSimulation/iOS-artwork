@@ -82,7 +82,7 @@ class BinaryFile(object):
 
     def read_null_terminated_utf8_string_at(self, offset):
         start = offset
-        while ord(self.data[offset]) != 0:
+        while self.data[offset] != 0:
             offset += 1
         bytes = self.data[start:offset]
         return bytes.decode("utf-8")
