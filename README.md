@@ -3,7 +3,7 @@
 Please note that I did not test creating. No pull requests will be accepted.
 Example command:
 
-    ./iOS_artwork.py export -a /path/to/artwork_file@3x.artwork -d /path/to/export/directory
+    ./iOS_artwork.py export -a /path/to/artwork_file@2x.artwork -d /path/to/export/directory
 
 ### Forked originally from Dave Peck's GitHub and updated for iOS10 Support
 
