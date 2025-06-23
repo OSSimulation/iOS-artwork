@@ -1,6 +1,6 @@
 # iOS-artwork
 
-### Forked from Jato-BZ's fork to add Python 3 support.
+### Forked from [Jato-BZ/iOS-artwork](https://github.com/Jato-BZ/iOS-artwork)'s fork to add Python 3 support.
 
 ### Please note that the create function has been removed. Use the original fork instead.
 
@@ -11,9 +11,9 @@ Example command:
 
     python3 ./iOS_artwork.py export -a /path/to/artwork_file@2x.artwork -d /path/to/export_directory
 
-## Original README.md below
+## Original README.md below from [Jato-BZ/iOS-artwork](https://github.com/Jato-BZ/iOS-artwork)
 
-### Forked originally from Dave Peck's GitHub and updated for iOS10 Support
+### Forked originally from [cwalther/iphone-tidbits](https://github.com/cwalther/iphone-tidbits) and updated for iOS10 Support
 
 The repo includes support for ALL iOS 6 - 10.X iconCache & dataclassIconCache .artwork files found in iOS
 
