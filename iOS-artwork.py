@@ -21,9 +21,6 @@
 #
 #   ./iOS-artwork.py export -a artwork_file.artwork -d export_directory
 #
-# You can also create a new .artwork file by importing a directory of images:
-#
-#   ./iOS-artwork.py create -a original_artwork_file.artwork -d import_directory -c created_artwork_file.artwork
 #
 # Please see the README file for more details.
 
@@ -38,7 +35,7 @@ from optparse import OptionParser
 from artwork.legacy_artwork_file import LegacyArtworkFile, WriteableLegacyArtworkFile
 from artwork.modern_artwork_file import ModernArtworkFile, WriteableModernArtworkFile
     
-COMMANDS = ["export", "create"]
+COMMANDS = ["export"]
 
 def usage(parser):
     parser.print_help()
@@ -56,8 +53,9 @@ def action_export(artwork_file_name, directory):
     if not artwork_file.is_legacy_supported:
         artwork_file = ModernArtworkFile(artwork_file_name)
         if not artwork_file.is_modern_supported:
+            bail("FAIL. This tool does not currently support %s" % artwork_file_name)
 
-    artwork_set = artwork_file.artwork_set    
+    artwork_set = artwork_file.artwork_set
     print("\nExporting %d images from %s (version %s)..." % (artwork_set.image_count, artwork_set.name, artwork_set.version))
     
     for artwork_image in artwork_set.iter_images():
@@ -67,9 +65,6 @@ def action_export(artwork_file_name, directory):
         print("\texported %s" % export_file_name)
         
     print("\nDONE EXPORTING!")
-    
-def action_create(artwork_file_name, directory, create_file_name):
-    bail("FAIL. This tool does not support creating .artwork files. Use the original fork instead.")
     
 def main(argv):
     #
@@ -83,11 +78,10 @@ def main(argv):
     
         Exports the contents of artwork_file.artwork as a set
         of images in the export_directory
-    
+
     """)
     parser.add_option("-a", "--artwork", dest="artwork_file_name", help="Specify the input artwork file name. (Read-only.)", default = None)
     parser.add_option("-d", "--directory", dest="directory", help="Specify the directory to export images to/import images from.", default = None)
-    parser.add_option("-c", "--create", dest="create_file_name", help="Specify the output artwork file name. (DISABLED, USE ORIGINAL FORK)", default = None)
 
     #
     # Parse
@@ -102,9 +96,6 @@ def main(argv):
         
     command = arguments[0].lower()
     if command not in COMMANDS:
-        usage(parser)
-        
-    if (command == "create") and (options.create_file_name is None):
         usage(parser)
         
     abs_artwork_file_name = os.path.abspath(options.artwork_file_name)
@@ -124,8 +115,7 @@ def main(argv):
 
     if command == "export":
         action_export(abs_artwork_file_name, abs_directory)
-    elif command == "create":
-        bail("FAIL. This tool does not support creating .artwork files. Use the original fork instead.")
+
             
 if __name__ == "__main__":
     main(sys.argv)
