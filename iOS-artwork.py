@@ -34,8 +34,6 @@ from optparse import OptionParser
 
 from artwork.legacy_artwork_file import LegacyArtworkFile, WriteableLegacyArtworkFile
 from artwork.modern_artwork_file import ModernArtworkFile, WriteableModernArtworkFile
-    
-COMMANDS = ["export"]
 
 def usage(parser):
     parser.print_help()
@@ -70,14 +68,13 @@ def main(argv):
     #
     # Set up command-line options parser
     #
-    parser = OptionParser(usage = """%prog [command] [parameters]
+    parser = OptionParser(usage = """%prog -a artwork_file.artwork -d export_directory
 
-    export 
-        -a artwork_file.artwork 
-        -d export_directory
+    -a artwork_file.artwork 
+    -d export_directory
     
-        Exports the contents of artwork_file.artwork as a set
-        of images in the export_directory
+    Exports the contents of artwork_file.artwork as a set
+    of images in the export_directory
 
     """)
     parser.add_option("-a", "--artwork", dest="artwork_file_name", help="Specify the input artwork file name. (Read-only.)", default = None)
@@ -91,11 +88,7 @@ def main(argv):
     #
     # Validate
     #
-    if (len(arguments) != 1) or (options.artwork_file_name is None) or (options.directory is None):
-        usage(parser)
-        
-    command = arguments[0].lower()
-    if command not in COMMANDS:
+    if (options.artwork_file_name is None) or (options.directory is None):
         usage(parser)
         
     abs_artwork_file_name = os.path.abspath(options.artwork_file_name)
@@ -108,13 +101,11 @@ def main(argv):
     if not os.path.exists(abs_directory):
         bail("No directory named %s was found." % options.directory)
 
-
     #
     # Execute
     #
 
-    if command == "export":
-        action_export(abs_artwork_file_name, abs_directory)
+    action_export(abs_artwork_file_name, abs_directory)
 
             
 if __name__ == "__main__":

@@ -9,7 +9,7 @@ You need the PIL (Pillow) library installed in order for this to function.
 Make sure you clone the entire repository or the below command will not work. You cannot download the iOS_artwork.py file individually.
 Example command:
 
-    python3 ./iOS_artwork.py export -a /path/to/artwork_file@2x.artwork -d /path/to/export_directory
+    python3 ./iOS_artwork.py -a /path/to/artwork_file@2x.artwork -d /path/to/export_directory
 
 For iOS 10 "@3x" files (not tested) you will need to run "artwork_hack.py" as well.
 It creates a duplicate but removes the null padding Apple have applied to the @3x .artwork files; essentially turning 
