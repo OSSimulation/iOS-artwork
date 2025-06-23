@@ -1,4 +1,4 @@
-# iOS-artwork
+# iOS .artwork extractor
 
 This repository supports ONLY extracting iPhoneOS 2.0 - 10.X? .artwork files, updated for Python 3.
 
@@ -18,5 +18,3 @@ the iOS 10 @3x files back to the iOS 9 spec.
 Run this command, then run the above command as normal.
 
     python3 ./artwork_hack.py /path/to/artwork_file@3x.artwork
-
-
