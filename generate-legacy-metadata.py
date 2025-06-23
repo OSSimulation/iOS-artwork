@@ -40,7 +40,7 @@ def main(framework_file_name, artwork_set_metadata_offset):
     artwork_set_metadata = framework_file.read_artwork_set_metadata_at(artwork_set_metadata_offset)
     jsonable = artwork_set_metadata.to_jsonable()
     json_string = json.dumps(jsonable, indent=4)
-    print json_string    
+    print(json_string)    
 
 if __name__ == "__main__":
     main(sys.argv[1], int(sys.argv[2]))
