@@ -1,5 +1,6 @@
 ### Forked from Jato-BZ's fork to add semi Python3 support for exporting
 
+Please note that I did not test creating. No pull requests will be accepted.
 Example command:
 
     ./iOS_artwork.py export -a /path/to/artwork_file@3x.artwork -d /path/to/export/directory
