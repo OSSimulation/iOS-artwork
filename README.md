@@ -2,7 +2,7 @@
 
 ### Forked from Jato-BZ's fork to add Python 3 support.
 
-### Please note that creating an .artwork file has been disabled. Use the original fork instead.
+### Please note that the create function has been removed. Use the original fork instead.
 
 You need the PIL (Pillow) library installed in order for this to function.
 
